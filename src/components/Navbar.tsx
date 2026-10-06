@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, ArrowUpRight } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { NAV_ITEMS, NavItem } from '../types';
 
 interface NavbarProps {
@@ -71,20 +71,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           })}
         </nav>
 
-        {/* Zone 3: Primary Action / Quick Touchpoint */}
-        <div className="flex items-center gap-3">
-          <a
-            href="index.html#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              onNavigate('contact');
-            }}
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold font-title text-teal-300 bg-teal-950/50 hover:bg-teal-900/60 border border-teal-800/50 rounded-lg transition-all shadow-sm hover:shadow-teal-950/50 whitespace-nowrap"
-          >
-            <span>Say Hello</span>
-            <ArrowUpRight className="w-3.5 h-3.5 text-teal-400" />
-          </a>
-        </div>
+        {/* Zone 3: Empty */}
+        <div className="hidden sm:block" />
       </div>
     </header>
   );

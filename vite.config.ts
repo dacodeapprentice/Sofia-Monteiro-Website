@@ -17,10 +17,11 @@ export default defineConfig(() => {
       rollupOptions: {
         input: {
           main: path.resolve(rootDir, 'index.html'),
-          personal: path.resolve(rootDir, 'personal.html'),
+          about: path.resolve(rootDir, 'about.html'),
           projects: path.resolve(rootDir, 'projects.html'),
           career: path.resolve(rootDir, 'career.html'),
           writing: path.resolve(rootDir, 'writing.html'),
+          website: path.resolve(rootDir, 'website.html'),
           contact: path.resolve(rootDir, 'contact.html'),
         },
       },

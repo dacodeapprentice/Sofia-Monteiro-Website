@@ -7,10 +7,11 @@ import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { LeftMenuDrawer } from './components/LeftMenuDrawer';
 import { HeroSection } from './components/HeroSection';
-import { PersonalSection } from './components/PersonalSection';
+import { AboutSection } from './components/AboutSection';
 import { ProjectsSection } from './components/ProjectsSection';
 import { CareerSection } from './components/CareerSection';
 import { WritingSection } from './components/WritingSection';
+import { WebsitesSection } from './components/WebsitesSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { NAV_ITEMS } from './types';
@@ -137,20 +138,22 @@ export default function App() {
           /* Continuous Scroll: All pages connected with href anchors */
           <>
             <HeroSection onNavigate={handleNavigate} />
-            <PersonalSection />
+            <AboutSection />
             <ProjectsSection />
             <CareerSection />
             <WritingSection />
+            <WebsitesSection />
             <ContactSection />
           </>
         ) : (
           /* Focused Single Page View */
           <div className="py-4">
             {activeSection === 'hero' && <HeroSection onNavigate={handleNavigate} />}
-            {activeSection === 'personal' && <PersonalSection />}
+            {activeSection === 'about' && <AboutSection />}
             {activeSection === 'projects' && <ProjectsSection />}
             {activeSection === 'career' && <CareerSection />}
             {activeSection === 'writing' && <WritingSection />}
+            {activeSection === 'website' && <WebsitesSection />}
             {activeSection === 'contact' && <ContactSection />}
 
             {/* Quick Next Page Footer in Single Page Mode */}

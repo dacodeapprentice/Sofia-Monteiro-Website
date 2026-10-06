@@ -49,11 +49,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Bottom bar with copyright and back to top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-slate-500">
           <div className="flex items-center gap-2">
-            <span>&copy; {new Date().getFullYear()} Sofia. All personal notes &amp; archives reserved.</span>
+            <span>&copy; {new Date().getFullYear()} Sofia. All archives reserved.</span>
           </div>
 
           <div className="flex items-center gap-4">
-            <span className="text-slate-400">Executable from <code className="text-teal-400 font-mono">index.html</code></span>
             <button
               onClick={scrollToTop}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0a1118] hover:bg-[#101b26] text-slate-300 hover:text-white border border-teal-900/40 transition-colors"

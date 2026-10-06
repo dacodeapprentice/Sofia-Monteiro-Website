@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowDown, Sparkles, Compass, FolderGit2, Briefcase, Feather, ArrowUpRight } from 'lucide-react';
+import { ArrowDown, Sparkles, Compass, FolderGit2, Briefcase, Feather, ArrowUpRight, Globe, User, Mail } from 'lucide-react';
 
 interface HeroSectionProps {
   onNavigate: (sectionId: string) => void;
@@ -15,16 +15,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
       aria-label="Introduction"
       className="relative min-h-[85vh] flex items-center justify-center py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
-      {/* Ambient background backdrop image (hosted remotely) */}
+      {/* Ambient background backdrop image (hosted remotely) - subtle & atmospheric */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden select-none" aria-hidden="true">
         <img
           src="https://iili.io/naGx4yb.jpg"
           alt="Hero ambient backdrop"
           referrerPolicy="no-referrer"
-          className="w-full h-full object-cover object-center opacity-30 mix-blend-screen filter saturate-125"
+          className="w-full h-full object-cover object-center opacity-[0.16] scale-105 filter brightness-100 saturate-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#080d12]/75 via-[#080d12]/80 to-[#080d12]"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#080d12] via-[#080d12]/30 to-[#080d12]"></div>
+        {/* Soft atmospheric scrims preserving text contrast while letting subtle abstract emerald/cyan artwork stay in background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#080d12]/90 via-transparent to-[#080d12]"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#080d12]/95 via-[#080d12]/50 to-[#080d12]/90"></div>
       </div>
 
       <div className="relative max-w-5xl mx-auto w-full">
@@ -35,11 +36,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             {/* Unboxed Metadata (Zero-pill discipline) */}
             <div className="flex items-center gap-2.5 text-xs text-slate-400 font-sans tracking-wide">
               <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-teal-300 font-medium">Personal Archive</span>
+              <span className="text-teal-300 font-medium">Portfolio &amp; Archive</span>
               <span aria-hidden="true" className="text-slate-600">·</span>
               <span>Selected Works</span>
               <span aria-hidden="true" className="text-slate-600">·</span>
-              <span>Life &amp; Craft</span>
+              <span>Digital Tools</span>
             </div>
 
             {/* Non-serif Title */}
@@ -50,50 +51,86 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             {/* Serif Reading Prose - Sofia's Core Statement */}
             <div className="relative pl-4 border-l-2 border-teal-500/40 py-1">
               <p className="font-serif text-lg sm:text-xl text-slate-300 leading-relaxed italic">
-                "This is the personal aspect of my life, and here are the things I've done over the years with projects and at work. Browse through them, and thank you."
+                "Here are the things I've done over the years with projects and at work. Browse through them, and thank you."
               </p>
             </div>
 
             <p className="font-serif text-base sm:text-lg text-slate-400 leading-relaxed max-w-xl">
-              Welcome to my digital corner — an evolving sanctuary bringing together personal chapters, crafted projects, career chronicles, and reflective essays under one tranquil roof.
+              Welcome to my digital corner — an evolving sanctuary bringing together in-depth reflections, crafted projects, career chronicles, everyday tools, and written notes under one tranquil roof.
             </p>
 
-            {/* Quick Action Buttons (Connected with href="index.html#...") */}
+            {/* Quick Action Buttons - Unified single style across all buttons */}
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <a
-                href="index.html#projects"
+                href="about.html"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('about');
+                }}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm"
+              >
+                <span>About Sofia</span>
+                <User className="w-4 h-4 text-teal-400" />
+              </a>
+
+              <a
+                href="projects.html"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate('projects');
                 }}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-title text-sm font-semibold bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 transition-all shadow-lg shadow-emerald-950/20"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm"
               >
                 <span>Browse Projects</span>
-                <FolderGit2 className="w-4 h-4 text-emerald-400" />
+                <FolderGit2 className="w-4 h-4 text-teal-400" />
               </a>
 
               <a
-                href="index.html#personal"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onNavigate('personal');
-                }}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-title text-sm font-semibold bg-[#0e1924] hover:bg-[#142332] text-slate-200 border border-teal-900/40 transition-all"
-              >
-                <span>Personal Aspect</span>
-                <Compass className="w-4 h-4 text-teal-400" />
-              </a>
-
-              <a
-                href="index.html#career"
+                href="career.html"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate('career');
                 }}
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium text-slate-400 hover:text-slate-200 transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm"
               >
-                <span>Work Timeline</span>
-                <ArrowUpRight className="w-4 h-4 text-slate-500" />
+                <span>Career &amp; Work</span>
+                <Briefcase className="w-4 h-4 text-teal-400" />
+              </a>
+
+              <a
+                href="website.html"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('website');
+                }}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm"
+              >
+                <span>Everyday Websites</span>
+                <Globe className="w-4 h-4 text-teal-400" />
+              </a>
+
+              <a
+                href="writing.html"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('writing');
+                }}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm"
+              >
+                <span>Writing &amp; Notes</span>
+                <Feather className="w-4 h-4 text-teal-400" />
+              </a>
+
+              <a
+                href="contact.html"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('contact');
+                }}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm"
+              >
+                <span>Contact</span>
+                <Mail className="w-4 h-4 text-teal-400" />
               </a>
             </div>
           </div>
@@ -148,7 +185,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
 
                 {/* Micro caption under image */}
                 <div className="pt-3 px-1 flex items-center justify-between text-xs text-slate-400 font-sans">
-                  <span>Personal Spaces &amp; Endeavors</span>
+                  <span>Digital Works &amp; Endeavors</span>
                   <span className="text-emerald-400 font-medium">Active</span>
                 </div>
               </div>
@@ -159,10 +196,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
         {/* Scroll Indicator */}
         <div className="mt-16 pt-8 border-t border-teal-950/60 flex flex-col items-center justify-center text-slate-500">
           <a
-            href="index.html#personal"
+            href="index.html#about"
             onClick={(e) => {
               e.preventDefault();
-              onNavigate('personal');
+              onNavigate('about');
             }}
             className="group flex flex-col items-center gap-1.5 text-xs font-sans text-slate-400 hover:text-teal-300 transition-colors"
           >

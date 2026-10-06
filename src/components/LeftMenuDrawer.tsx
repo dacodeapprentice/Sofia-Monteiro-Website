@@ -56,10 +56,13 @@ export const LeftMenuDrawer: React.FC<LeftMenuDrawerProps> = ({
         {/* Drawer Header */}
         <div className="p-6 border-b border-teal-950/60 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-teal-700 to-emerald-500 p-[1px] shadow-sm">
-              <div className="w-full h-full rounded-full bg-[#080d12] flex items-center justify-center">
-                <span className="font-title text-sm font-bold text-teal-300">S</span>
-              </div>
+            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-teal-700 to-emerald-500 p-[1.5px] shadow-sm overflow-hidden shrink-0">
+              <img
+                src="https://iili.io/naGxr8u.jpg"
+                alt="Sofia"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover rounded-full"
+              />
             </div>
             <div>
               <a
@@ -73,7 +76,7 @@ export const LeftMenuDrawer: React.FC<LeftMenuDrawerProps> = ({
               >
                 Sofia
               </a>
-              <p className="text-xs text-slate-400 font-sans">Personal &amp; Work Space</p>
+              <p className="text-xs text-slate-400 font-sans">Creative &amp; Digital Archive</p>
             </div>
           </div>
 
