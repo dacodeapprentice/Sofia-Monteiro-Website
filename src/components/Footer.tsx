@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </span>
             </div>
             <p className="font-serif text-slate-300 text-base italic max-w-md">
-              "This is the personal aspect of my life, and here are the things I've done over the years with projects and at work. Browse through them, and thank you."
+              "Here are the things I've done over the years with websites and everyday tools. Browse through them, and thank you."
             </p>
           </div>
 

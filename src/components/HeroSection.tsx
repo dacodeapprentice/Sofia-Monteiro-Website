@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowDown, Sparkles, Compass, FolderGit2, Briefcase, Feather, ArrowUpRight, Globe, User, Mail } from 'lucide-react';
+import { ArrowDown, Sparkles, Compass, ArrowUpRight, Globe, User, Mail } from 'lucide-react';
 
 interface HeroSectionProps {
   onNavigate: (sectionId: string) => void;
@@ -21,11 +21,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
           src="https://iili.io/naGx4yb.jpg"
           alt="Hero ambient backdrop"
           referrerPolicy="no-referrer"
-          className="w-full h-full object-cover object-center opacity-[0.16] scale-105 filter brightness-100 saturate-105"
+          className="w-full h-full object-cover object-center opacity-[0.06] scale-105 filter brightness-90 saturate-100"
         />
         {/* Soft atmospheric scrims preserving text contrast while letting subtle abstract emerald/cyan artwork stay in background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#080d12]/90 via-transparent to-[#080d12]"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#080d12]/95 via-[#080d12]/50 to-[#080d12]/90"></div>
+        <div className="absolute inset-0 bg-[#080d12]/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#080d12]/95 via-transparent to-[#080d12]"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#080d12]/95 via-[#080d12]/60 to-[#080d12]/95"></div>
       </div>
 
       <div className="relative max-w-5xl mx-auto w-full">
@@ -56,7 +57,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             </div>
 
             <p className="font-serif text-base sm:text-lg text-slate-400 leading-relaxed max-w-xl">
-              Welcome to my digital corner — an evolving sanctuary bringing together in-depth reflections, crafted projects, career chronicles, everyday tools, and written notes under one tranquil roof.
+              Welcome to my digital corner — an evolving sanctuary bringing together in-depth reflections, everyday digital tools, and quiet communication under one tranquil roof.
             </p>
 
             {/* Quick Action Buttons - Unified single style across all buttons */}
@@ -74,30 +75,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
               </a>
 
               <a
-                href="projects.html"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onNavigate('projects');
-                }}
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm"
-              >
-                <span>Browse Projects</span>
-                <FolderGit2 className="w-4 h-4 text-teal-400" />
-              </a>
-
-              <a
-                href="career.html"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onNavigate('career');
-                }}
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm"
-              >
-                <span>Career &amp; Work</span>
-                <Briefcase className="w-4 h-4 text-teal-400" />
-              </a>
-
-              <a
                 href="website.html"
                 onClick={(e) => {
                   e.preventDefault();
@@ -107,18 +84,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
               >
                 <span>Everyday Websites</span>
                 <Globe className="w-4 h-4 text-teal-400" />
-              </a>
-
-              <a
-                href="writing.html"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onNavigate('writing');
-                }}
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm"
-              >
-                <span>Writing &amp; Notes</span>
-                <Feather className="w-4 h-4 text-teal-400" />
               </a>
 
               <a
@@ -150,7 +115,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
                   {!imageError ? (
                     <img
                       src="https://iili.io/naGxr8u.jpg"
-                      alt="Sofia — Personal portrait"
+                      alt="Sofia — Portrait"
                       referrerPolicy="no-referrer"
                       onLoad={() => setImageLoaded(true)}
                       onError={() => setImageError(true)}
@@ -168,7 +133,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
                       </div>
                       <h3 className="font-title text-white font-semibold text-base">Sofia</h3>
                       <p className="font-reading text-xs text-slate-400 mt-1 max-w-[200px]">
-                        Personal, Projects &amp; Work Archive
+                        Everyday Websites &amp; Digital Archive
                       </p>
                     </div>
                   )}

@@ -18,15 +18,14 @@ export default defineConfig(() => {
         input: {
           main: path.resolve(rootDir, 'index.html'),
           about: path.resolve(rootDir, 'about.html'),
-          projects: path.resolve(rootDir, 'projects.html'),
-          career: path.resolve(rootDir, 'career.html'),
-          writing: path.resolve(rootDir, 'writing.html'),
           website: path.resolve(rootDir, 'website.html'),
           contact: path.resolve(rootDir, 'contact.html'),
         },
       },
     },
     server: {
+      port: 3000,
+      host: '0.0.0.0',
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       // Do not modify—file watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',

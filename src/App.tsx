@@ -8,9 +8,6 @@ import { Navbar } from './components/Navbar';
 import { LeftMenuDrawer } from './components/LeftMenuDrawer';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
-import { ProjectsSection } from './components/ProjectsSection';
-import { CareerSection } from './components/CareerSection';
-import { WritingSection } from './components/WritingSection';
 import { WebsitesSection } from './components/WebsitesSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
@@ -139,9 +136,6 @@ export default function App() {
           <>
             <HeroSection onNavigate={handleNavigate} />
             <AboutSection />
-            <ProjectsSection />
-            <CareerSection />
-            <WritingSection />
             <WebsitesSection />
             <ContactSection />
           </>
@@ -150,9 +144,6 @@ export default function App() {
           <div className="py-4">
             {activeSection === 'hero' && <HeroSection onNavigate={handleNavigate} />}
             {activeSection === 'about' && <AboutSection />}
-            {activeSection === 'projects' && <ProjectsSection />}
-            {activeSection === 'career' && <CareerSection />}
-            {activeSection === 'writing' && <WritingSection />}
             {activeSection === 'website' && <WebsitesSection />}
             {activeSection === 'contact' && <ContactSection />}
 

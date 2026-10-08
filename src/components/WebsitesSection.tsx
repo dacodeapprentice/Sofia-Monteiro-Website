@@ -17,34 +17,34 @@ interface WebsiteItem {
 // =========================================================================
 const WEBSITES_DATA: WebsiteItem[] = [
   {
-    id: 'calmflow',
-    title: 'CalmFlow — Daily Routine Assistant',
-    category: 'Daily Well-being & Habits',
-    badge: 'Free Web App',
-    url: 'https://example.com',
+    id: 'paroxetine-taper-guide',
+    title: 'Paroxetine Taper Guide',
+    category: 'Health & Well-being',
+    badge: 'Live Tracker',
+    url: 'https://paroxetine-taper-guide.vercel.app',
     thumbnailUrl: 'https://iili.io/naGx4yb.jpg',
     description:
-      'An unhurried daily breathing and time-blocking tool designed to help neurodivergent thinkers organize their routine without sensory overload. Features gentle audio chimes, tactile check-ins, and zero registration requirements.',
+      'A live tracker and guidance tool to help individuals safely and gradually taper paroxetine. Features dosage reduction schedules, symptom monitoring, milestone tracking, and supportive resources to navigate discontinuation with confidence.',
   },
   {
-    id: 'pantrycraft',
-    title: 'PantryCraft — Zero-Waste Meal Planner',
-    category: 'Household & Food Waste',
-    badge: 'Free Web App',
-    url: 'https://example.com',
+    id: 'typing-pro',
+    title: 'Typing Pro',
+    category: 'Productivity & Skill Building',
+    badge: 'Speed Trainer',
+    url: 'https://typing-practice-steel.vercel.app',
     thumbnailUrl: 'https://iili.io/naGx4yb.jpg',
     description:
-      'Helps families make healthy meals using ingredients already sitting in their kitchen cupboards. Built to reduce grocery waste, minimize cooking stress on busy weeknights, and recommend simple, wholesome recipes.',
+      'An interactive typing trainer designed to help anyone type faster and improve muscle memory with real-time WPM calculation, accuracy tracking, and focused practice drills.',
   },
   {
-    id: 'kindwords',
-    title: 'KindWords — Local Mutual Aid Noticeboard',
-    category: 'Community & Mutual Aid',
-    badge: 'Free Web Platform',
-    url: 'https://example.com',
+    id: 'easy-doc',
+    title: 'Easy Doc',
+    category: 'Utility & Documentation',
+    badge: 'Document Generator',
+    url: 'https://easy-doc-2-0.vercel.app',
     thumbnailUrl: 'https://iili.io/naGx4yb.jpg',
     description:
-      'A simple, lightweight neighborhood bulletin board for lending tools, offering rides for elder care, and sharing local book exchanges without commercial ads or algorithmic trackers.',
+      'Document generator made easy — create, format, customize, and export clean, structured documents effortlessly without complex software or formatting headaches.',
   },
 ];
 

@@ -36,7 +36,7 @@ export const ContactSection: React.FC = () => {
     >
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Left Column: Direct Info & Personal Note */}
+          {/* Left Column: Direct Info & Studio Note */}
           <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center gap-2 text-xs text-teal-400 font-sans tracking-wide uppercase">
               <Mail className="w-3.5 h-3.5" />
@@ -155,7 +155,7 @@ export const ContactSection: React.FC = () => {
                       required
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      placeholder="Share a thought, project idea, or hello..."
+                      placeholder="Share a thought, inquiry, or hello..."
                       className="w-full px-3.5 py-2.5 bg-[#070c12] border border-teal-900/50 rounded-xl text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-teal-500 font-serif leading-relaxed transition-colors"
                     />
                   </div>

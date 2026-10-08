@@ -52,9 +52,9 @@ const DOSSIER_ITEMS: DossierItem[] = [
     id: 'everyday-tools',
     category: 'tech',
     categoryLabel: 'Tech & Craft',
-    title: 'Everyday Tools & Neighborhood Utilities',
-    summary: 'Independent tools created for daily living — meal planning, mindfulness, local exchanges.',
-    details: 'Created dedicated web apps to assist with daily living: WeekBreeze (intuitive family meal planner), StillPulse (distraction-free rhythmic breathing timer), and HearthShare (community equipment loan directory). These are live, free to access, and require no account barrier.',
+    title: 'Everyday Tools & Purposeful Websites',
+    summary: 'Independent tools created for daily living — taper tracking, typing acceleration, easy documents.',
+    details: 'Created dedicated web apps to assist with daily living: Paroxetine Taper Guide (a live tracker to help taper paroxetine safely), Typing Pro (speed trainer that helps a person type faster), and Easy Doc (document generator made easy). These are live, free to access, and open to all.',
     tags: ['Everyday Websites', 'Web Applications', 'Tools', 'Utility'],
   },
   {
@@ -79,7 +79,7 @@ const DOSSIER_ITEMS: DossierItem[] = [
     id: 'faq-collaborations',
     category: 'faq',
     categoryLabel: 'Deep Inquiry & FAQ',
-    title: 'Are you open to collaborative projects or advisory roles?',
+    title: 'Are you open to collaborative initiatives or advisory roles?',
     summary: 'Yes, selectively open to purposeful commissions and technical systems advisory.',
     details: 'I take on a limited number of collaborations each year, specifically focused on products with genuine human benefit, nonprofit utilities, and teams seeking uncompromising design clarity and performance.',
     tags: ['FAQ', 'Consulting', 'Contact', 'Work'],
@@ -318,7 +318,7 @@ export const AboutSection: React.FC = () => {
 
         <div className="mt-6 pt-6 border-t border-teal-950/60 flex flex-wrap items-center justify-between gap-4">
           <p className="font-serif text-sm text-slate-300 italic">
-            "Browse through the projects, explore the everyday websites, and thank you for taking the time."
+            "Explore the dossier, use the everyday websites, and thank you for taking the time."
           </p>
           <a
             href="contact.html"

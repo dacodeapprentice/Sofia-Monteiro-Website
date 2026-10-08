@@ -139,10 +139,10 @@ export const LeftMenuDrawer: React.FC<LeftMenuDrawerProps> = ({
           <div className="mt-8 mx-2 p-4 rounded-xl bg-[#0e1822]/80 border border-teal-900/30">
             <div className="flex items-center gap-2 mb-2 text-teal-400 text-xs font-title font-medium">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Personal Note</span>
+              <span>Studio Note</span>
             </div>
             <p className="text-xs font-reading text-slate-300 leading-relaxed italic">
-              "This is the personal aspect of my life, and here are the things I've done over the years with projects and at work."
+              "Here are the websites and digital tools I've created to help people in everyday life. Browse through them, and thank you."
             </p>
           </div>
         </div>
