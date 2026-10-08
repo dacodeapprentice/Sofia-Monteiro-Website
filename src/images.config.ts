@@ -12,6 +12,7 @@ export const IMAGES = {
   WEBSITE_PAROXETINE_TAPER: 'https://iili.io/naGx4yb.jpg',
   WEBSITE_TYPING_PRO: 'https://iili.io/naGx4yb.jpg',
   WEBSITE_EASY_DOC: 'https://iili.io/naGx4yb.jpg',
+  WEBSITE_HIGH_OCTANE: 'https://iili.io/naGx4yb.jpg',
 } as const;
 
 export default IMAGES;

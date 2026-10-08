@@ -53,9 +53,9 @@ const DOSSIER_ITEMS: DossierItem[] = [
     category: 'tech',
     categoryLabel: 'Tech & Craft',
     title: 'Everyday Tools & Purposeful Websites',
-    summary: 'Independent tools created for daily living — taper tracking, typing acceleration, easy documents.',
-    details: 'Created dedicated web apps to assist with daily living: Paroxetine Taper Guide (a live tracker to help taper paroxetine safely), Typing Pro (speed trainer that helps a person type faster), and Easy Doc (document generator made easy). These are live, free to access, and open to all.',
-    tags: ['Everyday Websites', 'Web Applications', 'Tools', 'Utility'],
+    summary: 'Independent tools created for daily living — taper tracking, typing acceleration, easy documents, online racing.',
+    details: 'Created dedicated web apps to assist with daily living: Paroxetine Taper Guide (a live tracker to help taper paroxetine safely), Typing Pro (speed trainer that helps a person type faster), Easy Doc (document generator made easy), and High Octane (an online racing video game). These are live, free to access, and open to all.',
+    tags: ['Everyday Websites', 'Web Applications', 'Tools', 'Gaming', 'Utility'],
   },
   {
     id: 'daily-routine',

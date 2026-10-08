@@ -46,6 +46,16 @@ const WEBSITES_DATA: WebsiteItem[] = [
     description:
       'Document generator made easy — create, format, customize, and export clean, structured documents effortlessly without complex software or formatting headaches.',
   },
+  {
+    id: 'high-octane',
+    title: 'High Octane',
+    category: 'Gaming & Interactive',
+    badge: 'Online Racing Game',
+    url: 'https://high-octane-murex.vercel.app/',
+    thumbnailUrl: 'https://iili.io/naGx4yb.jpg',
+    description:
+      'An online racing video game featuring high-speed competition, challenging tracks, and responsive vehicle handling built for thrilling arcade racing directly in the browser.',
+  },
 ];
 
 export const WebsitesSection: React.FC = () => {
