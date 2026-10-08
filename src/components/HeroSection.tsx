@@ -82,7 +82,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
                 }}
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm"
               >
-                <span>Everyday Websites</span>
+                <span>Online Projects</span>
                 <Globe className="w-4 h-4 text-teal-400" />
               </a>
 

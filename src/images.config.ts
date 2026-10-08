@@ -13,6 +13,20 @@ export const IMAGES = {
   WEBSITE_TYPING_PRO: 'https://iili.io/naGx4yb.jpg',
   WEBSITE_EASY_DOC: 'https://iili.io/naGx4yb.jpg',
   WEBSITE_HIGH_OCTANE: 'https://iili.io/naGx4yb.jpg',
+
+  // YouTube Channels Thumbnails
+  YOUTUBE_SOFIA_MONTEIRO: 'https://iili.io/naGxr8u.jpg',
+  YOUTUBE_SECASKI_GAMES: 'https://iili.io/naGx4yb.jpg',
+  YOUTUBE_MONTEIRO_ARCHIVE: 'https://iili.io/naGx4yb.jpg',
+
+  // UX/UI Projects Thumbnails
+  UXUI_AETHER: 'https://iili.io/naGx4yb.jpg',
+  UXUI_PULSE: 'https://iili.io/naGx4yb.jpg',
+  UXUI_MONOLITH: 'https://iili.io/naGx4yb.jpg',
+  UXUI_CIVIC: 'https://iili.io/naGx4yb.jpg',
+
+  // Instagram Showcase Thumbnail
+  INSTAGRAM_SHOWCASE: 'https://iili.io/naGxr8u.jpg',
 } as const;
 
 export default IMAGES;

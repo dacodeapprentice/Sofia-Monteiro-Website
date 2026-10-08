@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Heart } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { NAV_ITEMS, NavItem } from '../types';
 
 interface FooterProps {
@@ -28,21 +28,47 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </p>
           </div>
 
-          {/* Navigation links - All with href="index.html#..." */}
+          {/* Navigation links */}
           <nav className="flex flex-wrap items-center gap-6" aria-label="Footer Navigation">
-            {NAV_ITEMS.map((item: NavItem) => (
-              <a
-                key={item.id}
-                href={item.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  onNavigate(item.id);
-                }}
-                className="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors"
-              >
-                {item.label}
-              </a>
-            ))}
+            {NAV_ITEMS.map((item: NavItem) => {
+              if (item.isGroup && item.children) {
+                return (
+                  <div key={item.id} className="flex items-center gap-4">
+                    <span className="font-title text-xs uppercase tracking-wider text-teal-400/80 font-semibold">
+                      Online Projects:
+                    </span>
+                    {item.children
+                      .filter((child) => !child.isCategoryTitle)
+                      .map((child) => (
+                        <a
+                          key={child.id}
+                          href={child.href}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            onNavigate(child.id);
+                          }}
+                          className="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors"
+                        >
+                          {child.label}
+                        </a>
+                      ))}
+                  </div>
+                );
+              }
+              return (
+                <a
+                  key={item.id}
+                  href={item.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (item.id) onNavigate(item.id);
+                  }}
+                  className="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors"
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </nav>
         </div>
 
@@ -55,7 +81,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="flex items-center gap-4">
             <button
               onClick={scrollToTop}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0a1118] hover:bg-[#101b26] text-slate-300 hover:text-white border border-teal-900/40 transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0a1118] hover:bg-[#101b26] text-slate-300 hover:text-white border border-teal-900/40 transition-colors cursor-pointer"
               aria-label="Back to top of page"
             >
               <span>Back to Top</span>

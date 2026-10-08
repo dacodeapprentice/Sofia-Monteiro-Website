@@ -9,9 +9,13 @@ import { LeftMenuDrawer } from './components/LeftMenuDrawer';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
 import { WebsitesSection } from './components/WebsitesSection';
+import { UxUiSection } from './components/UxUiSection';
+import { YoutubeSection } from './components/YoutubeSection';
+import { InstagramSection } from './components/InstagramSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
-import { NAV_ITEMS } from './types';
+
+const SECTION_IDS = ['hero', 'about', 'website', 'ux-ui', 'youtube', 'instagram', 'contact'];
 
 export default function App() {
   const [isLeftMenuOpen, setIsLeftMenuOpen] = useState(false);
@@ -22,7 +26,7 @@ export default function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '');
-      if (hash && NAV_ITEMS.some((item) => item.id === hash)) {
+      if (hash && SECTION_IDS.includes(hash)) {
         setActiveSection(hash);
         const element = document.getElementById(hash);
         if (element) {
@@ -40,7 +44,7 @@ export default function App() {
   useEffect(() => {
     if (viewMode !== 'continuous') return;
 
-    const sections = NAV_ITEMS.map((item) => document.getElementById(item.id)).filter(
+    const sections = SECTION_IDS.map((id) => document.getElementById(id)).filter(
       Boolean
     ) as HTMLElement[];
 
@@ -49,7 +53,6 @@ export default function App() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
-            // Non-destructively update history hash without triggering page reload
             if (window.history.replaceState) {
               window.history.replaceState(null, '', `index.html#${entry.target.id}`);
             }
@@ -71,13 +74,14 @@ export default function App() {
 
   // Navigate handler for top nav, drawer, hero buttons, and footer
   const handleNavigate = (sectionId: string) => {
-    setActiveSection(sectionId);
+    const targetId = sectionId === 'online-projects' || sectionId === 'social-media' ? 'website' : sectionId;
+    setActiveSection(targetId);
     if (window.history.pushState) {
-      window.history.pushState(null, '', `index.html#${sectionId}`);
+      window.history.pushState(null, '', `index.html#${targetId}`);
     }
 
     if (viewMode === 'continuous') {
-      const element = document.getElementById(sectionId);
+      const element = document.getElementById(targetId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
@@ -137,6 +141,9 @@ export default function App() {
             <HeroSection onNavigate={handleNavigate} />
             <AboutSection />
             <WebsitesSection />
+            <UxUiSection />
+            <YoutubeSection />
+            <InstagramSection />
             <ContactSection />
           </>
         ) : (
@@ -145,30 +152,29 @@ export default function App() {
             {activeSection === 'hero' && <HeroSection onNavigate={handleNavigate} />}
             {activeSection === 'about' && <AboutSection />}
             {activeSection === 'website' && <WebsitesSection />}
+            {activeSection === 'ux-ui' && <UxUiSection />}
+            {activeSection === 'youtube' && <YoutubeSection />}
+            {activeSection === 'instagram' && <InstagramSection />}
             {activeSection === 'contact' && <ContactSection />}
 
             {/* Quick Next Page Footer in Single Page Mode */}
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex justify-between items-center border-t border-teal-950/40 text-xs font-sans">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-wrap justify-between items-center gap-4 border-t border-teal-950/40 text-xs font-sans">
               <span className="text-slate-400">
-                Viewing page: <strong className="text-teal-300 capitalize">{activeSection}</strong>
+                Viewing section: <strong className="text-teal-300 capitalize">{activeSection.replace('-', ' ')}</strong>
               </span>
-              <div className="flex items-center gap-2">
-                {NAV_ITEMS.map((item) => (
-                  <a
-                    key={item.id}
-                    href={item.href}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleNavigate(item.id);
-                    }}
-                    className={`px-2.5 py-1 rounded-md transition-colors ${
-                      activeSection === item.id
+              <div className="flex flex-wrap items-center gap-2">
+                {SECTION_IDS.map((id) => (
+                  <button
+                    key={id}
+                    onClick={() => handleNavigate(id)}
+                    className={`px-2.5 py-1 rounded-md transition-colors capitalize cursor-pointer ${
+                      activeSection === id
                         ? 'bg-teal-900/60 text-teal-300 font-semibold'
                         : 'text-slate-400 hover:text-white'
                     }`}
                   >
-                    {item.label}
-                  </a>
+                    {id === 'hero' ? 'Home' : id.replace('-', ' ')}
+                  </button>
                 ))}
               </div>
             </div>

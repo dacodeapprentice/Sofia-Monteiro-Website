@@ -1,12 +1,12 @@
-<!doctype html>
-<html lang="en" class="dark scroll-smooth">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-[#080d12] text-slate-200">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Websites — Sofia</title>
-    <meta name="description" content="Websites created by Sofia to help people in their everyday lives." />
-    <meta property="og:title" content="Websites — Sofia" />
-    <meta property="og:description" content="Websites created by Sofia to help people in their everyday lives." />
+    <title>Sofia — UX/UI Design &amp; Product Systems</title>
+    <meta name="description" content="UX/UI case studies, design systems, and product interfaces designed by Sofia." />
+    <meta property="og:title" content="Sofia — UX/UI Design &amp; Product Systems" />
+    <meta property="og:description" content="UX/UI case studies, design systems, and product interfaces designed by Sofia." />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#080d12" />
 
@@ -60,12 +60,10 @@
     </style>
   </head>
   <body class="bg-[#080d12] text-slate-200 antialiased selection:bg-teal-500/30 selection:text-teal-200 min-h-screen flex flex-col justify-between relative">
-
-    <!-- Top Navigation Bar (Without 'Say Hello' button) -->
+    <!-- Top Sticky Navigation Bar -->
     <header class="sticky top-0 z-30 w-full bg-[#080d12]/90 backdrop-blur-md border-b border-teal-950/70 transition-colors">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        
-        <!-- Zone 1: Hamburger Menu Trigger (on the LEFT) + Sofia Wordmark -->
+        <!-- Zone 1: Hamburger Menu Trigger (Left) + Sofia Wordmark -->
         <div class="flex items-center gap-3.5">
           <button
             id="hamburger-btn"
@@ -92,7 +90,7 @@
           <a href="index.html" class="font-title text-sm tracking-tight text-slate-400 hover:text-slate-100 font-medium transition-colors py-1">Home</a>
           <a href="about.html" class="font-title text-sm tracking-tight text-slate-400 hover:text-slate-100 font-medium transition-colors py-1">About</a>
 
-          <!-- Online Projects Dropdown (Only a title, opens menu on hover or click) -->
+          <!-- Online Projects Dropdown -->
           <div class="relative" id="online-projects-dropdown">
             <button
               type="button"
@@ -108,7 +106,7 @@
               <span class="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full"></span>
             </button>
 
-            <!-- Dropdown Menu with 3 pages: Websites, UX/UI, Social Media -->
+            <!-- Dropdown Menu -->
             <div
               id="online-projects-menu"
               role="menu"
@@ -119,33 +117,33 @@
                 <span class="text-[10px] font-mono text-slate-500">3 Pages</span>
               </div>
               <div class="space-y-1">
-                <a href="website.html" role="menuitem" class="group/item flex items-start gap-3 p-2.5 rounded-xl bg-teal-950/70 border border-teal-800/60 text-white transition-all">
-                  <div class="p-2 rounded-lg bg-[#070c12] border border-teal-500/50 shrink-0 mt-0.5 transition-colors">
+                <a href="website.html" role="menuitem" class="group/item flex items-start gap-3 p-2.5 rounded-xl hover:bg-[#121e2b] text-slate-300 hover:text-white transition-all">
+                  <div class="p-2 rounded-lg bg-[#070c12] border border-teal-900/40 shrink-0 mt-0.5 group-hover/item:border-teal-500/50 transition-colors">
                     <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                     </svg>
                   </div>
                   <div class="flex-1 min-w-0">
                     <div class="flex items-center justify-between gap-1">
-                      <span class="font-title text-sm font-semibold tracking-tight text-teal-300">Websites</span>
-                      <span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-teal-900 text-teal-200 border border-teal-700/50">Active</span>
+                      <span class="font-title text-sm font-semibold tracking-tight group-hover/item:text-teal-300 transition-colors">Websites</span>
+                      <span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-teal-950/60 text-teal-300 border border-teal-900/40">4 tools</span>
                     </div>
-                    <p class="text-xs text-slate-300 font-reading mt-0.5 leading-snug truncate">Everyday tools &amp; web apps</p>
+                    <p class="text-xs text-slate-400 font-reading mt-0.5 leading-snug truncate">Everyday tools &amp; web apps</p>
                   </div>
                 </a>
 
-                <a href="ux-ui.html" role="menuitem" class="group/item flex items-start gap-3 p-2.5 rounded-xl hover:bg-[#121e2b] text-slate-300 hover:text-white transition-all">
-                  <div class="p-2 rounded-lg bg-[#070c12] border border-teal-900/40 shrink-0 mt-0.5 group-hover/item:border-teal-500/50 transition-colors">
+                <a href="ux-ui.html" role="menuitem" class="group/item flex items-start gap-3 p-2.5 rounded-xl bg-teal-950/70 border border-teal-800/60 text-white transition-all">
+                  <div class="p-2 rounded-lg bg-[#070c12] border border-cyan-500/50 shrink-0 mt-0.5 transition-colors">
                     <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                     </svg>
                   </div>
                   <div class="flex-1 min-w-0">
                     <div class="flex items-center justify-between gap-1">
-                      <span class="font-title text-sm font-semibold tracking-tight group-hover/item:text-teal-300 transition-colors">UX/UI</span>
-                      <span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-900/40">Design</span>
+                      <span class="font-title text-sm font-semibold tracking-tight text-cyan-300">UX/UI</span>
+                      <span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-cyan-900 text-cyan-200 border border-cyan-700/50">Active</span>
                     </div>
-                    <p class="text-xs text-slate-400 font-reading mt-0.5 leading-snug truncate">Product interfaces &amp; systems</p>
+                    <p class="text-xs text-slate-300 font-reading mt-0.5 leading-snug truncate">Product interfaces &amp; systems</p>
                   </div>
                 </a>
 
@@ -198,7 +196,6 @@
           <a href="contact.html" class="font-title text-sm tracking-tight text-slate-400 hover:text-slate-100 font-medium transition-colors py-1">Contact</a>
         </nav>
 
-        <!-- Right Side: Empty Zone 3 -->
         <div class="hidden sm:block"></div>
       </div>
     </header>
@@ -211,21 +208,13 @@
       aria-label="Navigation drawer"
       class="fixed top-0 bottom-0 left-0 z-50 w-80 max-w-[85vw] bg-[#0a1118] border-r border-teal-900/40 shadow-2xl flex flex-col justify-between transform -translate-x-full transition-transform duration-300 ease-out"
     >
-      <!-- Drawer Header with Sofia's Hosted Portrait Avatar -->
       <div class="p-6 border-b border-teal-950/60 flex items-center justify-between">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-teal-700 to-emerald-500 p-[1.5px] shadow-sm overflow-hidden shrink-0">
-            <img
-              src="https://iili.io/naGxr8u.jpg"
-              alt="Sofia"
-              referrerpolicy="no-referrer"
-              class="w-full h-full object-cover rounded-full"
-            />
+            <img src="https://iili.io/naGxr8u.jpg" alt="Sofia" referrerpolicy="no-referrer" class="w-full h-full object-cover rounded-full" />
           </div>
           <div>
-            <a href="index.html" class="font-title text-base font-semibold text-white tracking-tight hover:text-teal-300 transition-colors">
-              Sofia
-            </a>
+            <a href="index.html" class="font-title text-base font-semibold text-white tracking-tight hover:text-teal-300 transition-colors">Sofia</a>
             <p class="text-xs text-slate-400 font-sans">Creative &amp; Digital Archive</p>
           </div>
         </div>
@@ -242,7 +231,6 @@
         </button>
       </div>
 
-      <!-- Drawer Content -->
       <div class="flex-1 overflow-y-auto px-4 py-6">
         <div class="mb-3 px-3">
           <span class="text-[11px] font-semibold font-title tracking-wider uppercase text-teal-400/80">Navigation</span>
@@ -289,32 +277,32 @@
             </button>
 
             <div id="drawer-projects-sublist" class="px-2.5 pb-2.5 pt-1 space-y-1 border-t border-teal-950/60 bg-[#060b10]/60">
-              <a href="website.html" class="group flex items-center justify-between px-3 py-2.5 rounded-lg bg-teal-950/80 text-teal-300 border border-teal-800/50 font-medium transition-all">
+              <a href="website.html" class="group flex items-center justify-between px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
                 <div class="flex items-center gap-2.5 min-w-0">
                   <svg class="w-4 h-4 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                   </svg>
                   <div class="flex flex-col min-w-0">
-                    <span class="font-title text-xs font-medium tracking-tight truncate text-teal-200">Websites</span>
-                    <span class="text-[10px] text-slate-300 font-reading truncate">Everyday tools &amp; web apps</span>
+                    <span class="font-title text-xs font-medium tracking-tight truncate group-hover:text-teal-200">Websites</span>
+                    <span class="text-[10px] text-slate-400 font-reading truncate">Everyday tools &amp; web apps</span>
                   </div>
                 </div>
-                <svg class="w-3.5 h-3.5 text-teal-400 opacity-100 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <svg class="w-3.5 h-3.5 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>
 
-              <a href="ux-ui.html" class="group flex items-center justify-between px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
+              <a href="ux-ui.html" class="group flex items-center justify-between px-3 py-2.5 rounded-lg bg-teal-950/80 text-teal-300 border border-teal-800/50 font-medium transition-all">
                 <div class="flex items-center gap-2.5 min-w-0">
                   <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                   </svg>
                   <div class="flex flex-col min-w-0">
-                    <span class="font-title text-xs font-medium tracking-tight truncate group-hover:text-cyan-200">UX/UI</span>
-                    <span class="text-[10px] text-slate-400 font-reading truncate">Product interfaces &amp; systems</span>
+                    <span class="font-title text-xs font-medium tracking-tight truncate text-cyan-200">UX/UI</span>
+                    <span class="text-[10px] text-slate-300 font-reading truncate">Product interfaces &amp; systems</span>
                   </div>
                 </div>
-                <svg class="w-3.5 h-3.5 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <svg class="w-3.5 h-3.5 text-cyan-400 opacity-100 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>
@@ -380,7 +368,7 @@
             <span>Studio Note</span>
           </div>
           <p class="text-xs font-reading text-slate-300 leading-relaxed italic">
-            "Here are the things I've done over the years with websites and everyday tools. Browse through them, and thank you."
+            "Here are the online projects, design systems, and digital interfaces I've created. Browse through them, and thank you."
           </p>
         </div>
       </div>
@@ -398,292 +386,235 @@
       </div>
     </aside>
 
-    <!-- Main Content Container: Websites List -->
+    <!-- Main Content Container: UX/UI Projects List -->
     <main class="flex-1 w-full max-w-5xl mx-auto py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-      
       <!-- Page Header -->
       <div class="mb-14">
         <div class="flex items-center gap-2 text-xs text-teal-400 font-sans tracking-wide uppercase mb-2.5">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
           </svg>
-          <span>Online Projects · Section 01 / Websites</span>
+          <span>Online Projects · Section 02 / UX &amp; UI</span>
         </div>
         <h1 class="font-title text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
-          Websites
+          UX / UI Design
         </h1>
         <p class="font-serif text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl">
-          Websites and interactive utilities I created to help people in their everyday lives — simple, thoughtful tools designed for daily clarity.
+          Human-centered digital products, design systems, and thoughtful interface prototypes crafted for cognitive ease, accessibility, and enduring aesthetic clarity.
         </p>
       </div>
 
-      <!-- ============================================================== -->
-      <!-- WEBSITES LIST (Each item has thumbnail, title, description & link) -->
-      <!-- ============================================================== -->
+      <!-- UX/UI Projects List -->
       <div class="space-y-8">
-
-        <!-- ============================================================== -->
-        <!-- WEBSITE 1: Paroxetine Taper Guide                              -->
-        <!-- ============================================================== -->
-        <article class="group relative rounded-2xl bg-[#0c1520] border border-teal-900/30 hover:border-teal-700/60 transition-all p-6 sm:p-7 shadow-xl hover:shadow-2xl hover:shadow-teal-950/20">
-          <div class="flex flex-col md:flex-row md:items-center gap-6 sm:gap-8">
-            
-            <!-- Thumbnail Image -->
-            <a
-              href="https://paroxetine-taper-guide.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="relative aspect-[16/10] w-full md:w-72 rounded-xl overflow-hidden bg-[#070c12] border border-teal-900/40 shrink-0 block group-hover:border-teal-500/50 transition-colors"
-            >
-              <img
-                src="https://iili.io/naGx4yb.jpg"
-                alt="Paroxetine Taper Guide thumbnail"
-                referrerpolicy="no-referrer"
-                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-[10px] font-mono font-medium text-teal-300 bg-[#080d12]/90 backdrop-blur-md px-2 py-0.5 rounded border border-teal-900/50">
-                Live Tracker
-              </span>
-            </a>
-
-            <!-- Website Information & Redirect Action -->
-            <div class="flex-1 space-y-3">
-              <!-- Unboxed Tag & Status -->
-              <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-teal-400 font-semibold">Health &amp; Well-being</span>
+        <!-- Project 1: Aether -->
+        <article class="group relative rounded-2xl bg-[#0c1520] border border-teal-900/30 hover:border-teal-700/60 transition-all p-6 sm:p-8 shadow-xl hover:shadow-2xl hover:shadow-teal-950/20">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+            <div class="space-y-3 flex-1">
+              <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-sans">
+                <span class="text-teal-400 font-semibold">Design Systems &amp; Tokens</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-emerald-300 font-mono text-[11px]">Live Tracker</span>
+                <span class="text-emerald-300 font-mono text-[11px]">2024 — Present</span>
+                <span aria-hidden="true" class="text-slate-600">·</span>
+                <span class="text-slate-300">Lead Product Designer</span>
               </div>
-
-              <!-- Title of the Website -->
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
-                <a href="https://paroxetine-taper-guide.vercel.app" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-2">
-                  <span>Paroxetine Taper Guide</span>
-                  <svg class="w-4 h-4 text-teal-400 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
-                  </svg>
-                </a>
+                Aether Design System
               </h2>
-
-              <!-- What the Website Does -->
               <p class="font-serif text-slate-300 text-base leading-relaxed">
-                A live tracker and guidance tool to help individuals safely and gradually taper paroxetine. Features dosage reduction schedules, daily symptom monitoring, milestone tracking, and supportive resources to navigate discontinuation with confidence.
+                A token-driven design system engineered for cognitive calm and multi-brand scalability. Features WCAG AAA accessible contrast standards, fluid typography scales, and modular React/Tailwind component primitives.
               </p>
-
-              <!-- Redirect Button Link -->
               <div class="pt-2">
-                <a
-                  href="https://paroxetine-taper-guide.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all"
-                >
-                  <span>Visit Website</span>
-                  <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
+                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2">Key Architectural Decisions:</h4>
+                <ul class="space-y-1.5 font-sans text-xs text-slate-300">
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>Comprehensive design token pipeline linking Figma styles directly to CSS variables</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>80+ accessible component primitives with high-contrast keyboard navigation</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>Light &amp; dark themes optimized for long-duration data density and low eye strain</span>
+                  </li>
+                </ul>
               </div>
             </div>
-
+            <div class="lg:w-64 shrink-0 rounded-xl bg-[#080d12]/90 border border-teal-900/40 p-4 space-y-3">
+              <div>
+                <span class="text-[10px] font-mono uppercase tracking-wider text-teal-400/80 block mb-1.5">Disciplines &amp; Stack</span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">Figma</span>
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">Tokens</span>
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">React</span>
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">Tailwind</span>
+                </div>
+              </div>
+              <div class="pt-2 border-t border-teal-950/70 text-[11px] font-sans text-slate-400 flex items-center justify-between">
+                <span>Methodology</span>
+                <span class="text-teal-300 font-mono">User-Centered</span>
+              </div>
+            </div>
           </div>
         </article>
 
-        <!-- ============================================================== -->
-        <!-- WEBSITE 2: Typing Pro                                          -->
-        <!-- ============================================================== -->
-        <article class="group relative rounded-2xl bg-[#0c1520] border border-teal-900/30 hover:border-teal-700/60 transition-all p-6 sm:p-7 shadow-xl hover:shadow-2xl hover:shadow-teal-950/20">
-          <div class="flex flex-col md:flex-row md:items-center gap-6 sm:gap-8">
-            
-            <!-- Thumbnail Image -->
-            <a
-              href="https://typing-practice-steel.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="relative aspect-[16/10] w-full md:w-72 rounded-xl overflow-hidden bg-[#070c12] border border-teal-900/40 shrink-0 block group-hover:border-teal-500/50 transition-colors"
-            >
-              <img
-                src="https://iili.io/naGx4yb.jpg"
-                alt="Typing Pro thumbnail"
-                referrerpolicy="no-referrer"
-                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-[10px] font-mono font-medium text-emerald-300 bg-[#080d12]/90 backdrop-blur-md px-2 py-0.5 rounded border border-teal-900/50">
-                Speed Trainer
-              </span>
-            </a>
-
-            <!-- Info & Redirect Action -->
-            <div class="flex-1 space-y-3">
-              <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-emerald-400 font-semibold">Productivity &amp; Skill Building</span>
+        <!-- Project 2: Pulse Ledger -->
+        <article class="group relative rounded-2xl bg-[#0c1520] border border-teal-900/30 hover:border-teal-700/60 transition-all p-6 sm:p-8 shadow-xl hover:shadow-2xl hover:shadow-teal-950/20">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+            <div class="space-y-3 flex-1">
+              <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-sans">
+                <span class="text-teal-400 font-semibold">Fintech &amp; Behavioral UX</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-teal-300 font-mono text-[11px]">Speed Trainer</span>
+                <span class="text-emerald-300 font-mono text-[11px]">2023 — 2024</span>
+                <span aria-hidden="true" class="text-slate-600">·</span>
+                <span class="text-slate-300">UX Architect</span>
               </div>
-
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
-                <a href="https://typing-practice-steel.vercel.app" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-2">
-                  <span>Typing Pro</span>
-                  <svg class="w-4 h-4 text-teal-400 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
-                  </svg>
-                </a>
+                Pulse — Mindful Financial Ledger
               </h2>
-
               <p class="font-serif text-slate-300 text-base leading-relaxed">
-                An interactive typing trainer designed to help anyone type faster and improve muscle memory with real-time WPM calculation, accuracy tracking, and focused practice drills.
+                A private, distraction-free interface for intentional spending and personal accounting. Eliminated numerical anxiety by replacing overwhelming financial charts with calm visual cadences and intuitive flow states.
               </p>
-
               <div class="pt-2">
-                <a
-                  href="https://typing-practice-steel.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all"
-                >
-                  <span>Visit Website</span>
-                  <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
+                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2">Key Architectural Decisions:</h4>
+                <ul class="space-y-1.5 font-sans text-xs text-slate-300">
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>Conducted 18 user interviews exploring financial stress patterns in banking apps</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>Developed 1-tap micro-categorization interaction saving 65% interaction time</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>Offline-first architecture with local encrypted device storage</span>
+                  </li>
+                </ul>
               </div>
             </div>
-
+            <div class="lg:w-64 shrink-0 rounded-xl bg-[#080d12]/90 border border-teal-900/40 p-4 space-y-3">
+              <div>
+                <span class="text-[10px] font-mono uppercase tracking-wider text-teal-400/80 block mb-1.5">Disciplines &amp; Stack</span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">Figma Prototype</span>
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">User Research</span>
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">IA</span>
+                </div>
+              </div>
+              <div class="pt-2 border-t border-teal-950/70 text-[11px] font-sans text-slate-400 flex items-center justify-between">
+                <span>Focus</span>
+                <span class="text-teal-300 font-mono">Calm Tech</span>
+              </div>
+            </div>
           </div>
         </article>
 
-        <!-- ============================================================== -->
-        <!-- WEBSITE 3: Easy Doc                                            -->
-        <!-- ============================================================== -->
-        <article class="group relative rounded-2xl bg-[#0c1520] border border-teal-900/30 hover:border-teal-700/60 transition-all p-6 sm:p-7 shadow-xl hover:shadow-2xl hover:shadow-teal-950/20">
-          <div class="flex flex-col md:flex-row md:items-center gap-6 sm:gap-8">
-            
-            <!-- Thumbnail Image -->
-            <a
-              href="https://easy-doc-2-0.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="relative aspect-[16/10] w-full md:w-72 rounded-xl overflow-hidden bg-[#070c12] border border-teal-900/40 shrink-0 block group-hover:border-teal-500/50 transition-colors"
-            >
-              <img
-                src="https://iili.io/naGx4yb.jpg"
-                alt="Easy Doc thumbnail"
-                referrerpolicy="no-referrer"
-                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-[10px] font-mono font-medium text-cyan-300 bg-[#080d12]/90 backdrop-blur-md px-2 py-0.5 rounded border border-teal-900/50">
-                Document Generator
-              </span>
-            </a>
-
-            <!-- Info & Redirect Action -->
-            <div class="flex-1 space-y-3">
-              <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-cyan-400 font-semibold">Utility &amp; Documentation</span>
+        <!-- Project 3: Monolith Reader -->
+        <article class="group relative rounded-2xl bg-[#0c1520] border border-teal-900/30 hover:border-teal-700/60 transition-all p-6 sm:p-8 shadow-xl hover:shadow-2xl hover:shadow-teal-950/20">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+            <div class="space-y-3 flex-1">
+              <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-sans">
+                <span class="text-teal-400 font-semibold">Content &amp; Editorial UX</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-teal-300 font-mono text-[11px]">Document Generator</span>
+                <span class="text-emerald-300 font-mono text-[11px]">2023</span>
+                <span aria-hidden="true" class="text-slate-600">·</span>
+                <span class="text-slate-300">Interface Designer</span>
               </div>
-
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
-                <a href="https://easy-doc-2-0.vercel.app" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-2">
-                  <span>Easy Doc</span>
-                  <svg class="w-4 h-4 text-teal-400 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
-                  </svg>
-                </a>
+                Monolith — Distraction-Free Longform Canvas
               </h2>
-
               <p class="font-serif text-slate-300 text-base leading-relaxed">
-                Document generator made easy — create, format, customize, and export clean, structured documents effortlessly without complex software or formatting headaches.
+                An editorial reading workspace combining custom variable serif typography with ambient acoustic feedback. Tailored specifically for deep archival research, academic papers, and uninterrupted immersion.
               </p>
-
               <div class="pt-2">
-                <a
-                  href="https://easy-doc-2-0.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all"
-                >
-                  <span>Visit Website</span>
-                  <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
+                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2">Key Architectural Decisions:</h4>
+                <ul class="space-y-1.5 font-sans text-xs text-slate-300">
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>Dynamic line-length calculation respecting ergonomic 65-character golden ratios</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>Ambient soundscape interface dynamically adjusting textures based on reading pace</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>Zero-clutter margin annotation system keeping the focal text serene</span>
+                  </li>
+                </ul>
               </div>
             </div>
-
+            <div class="lg:w-64 shrink-0 rounded-xl bg-[#080d12]/90 border border-teal-900/40 p-4 space-y-3">
+              <div>
+                <span class="text-[10px] font-mono uppercase tracking-wider text-teal-400/80 block mb-1.5">Disciplines &amp; Stack</span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">Typography</span>
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">Figma</span>
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">Sound Design</span>
+                </div>
+              </div>
+              <div class="pt-2 border-t border-teal-950/70 text-[11px] font-sans text-slate-400 flex items-center justify-between">
+                <span>Craft</span>
+                <span class="text-teal-300 font-mono">Editorial UX</span>
+              </div>
+            </div>
           </div>
         </article>
 
-        <!-- ============================================================== -->
-        <!-- WEBSITE 4: High Octane                                         -->
-        <!-- ============================================================== -->
-        <article class="group relative rounded-2xl bg-[#0c1520] border border-teal-900/30 hover:border-teal-700/60 transition-all p-6 sm:p-7 shadow-xl hover:shadow-2xl hover:shadow-teal-950/20">
-          <div class="flex flex-col md:flex-row md:items-center gap-6 sm:gap-8">
-            
-            <!-- Thumbnail Image -->
-            <a
-              href="https://high-octane-murex.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="relative aspect-[16/10] w-full md:w-72 rounded-xl overflow-hidden bg-[#070c12] border border-teal-900/40 shrink-0 block group-hover:border-teal-500/50 transition-colors"
-            >
-              <img
-                src="https://iili.io/naGx4yb.jpg"
-                alt="High Octane thumbnail"
-                referrerpolicy="no-referrer"
-                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-[10px] font-mono font-medium text-amber-300 bg-[#080d12]/90 backdrop-blur-md px-2 py-0.5 rounded border border-teal-900/50">
-                Online Racing Game
-              </span>
-            </a>
-
-            <!-- Info & Redirect Action -->
-            <div class="flex-1 space-y-3">
-              <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-amber-400 font-semibold">Gaming &amp; Interactive</span>
+        <!-- Project 4: Civic Mesh -->
+        <article class="group relative rounded-2xl bg-[#0c1520] border border-teal-900/30 hover:border-teal-700/60 transition-all p-6 sm:p-8 shadow-xl hover:shadow-2xl hover:shadow-teal-950/20">
+          <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+            <div class="space-y-3 flex-1">
+              <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-sans">
+                <span class="text-teal-400 font-semibold">Public Utility &amp; Accessibility</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-teal-300 font-mono text-[11px]">Online Racing Game</span>
+                <span class="text-emerald-300 font-mono text-[11px]">2022 — 2023</span>
+                <span aria-hidden="true" class="text-slate-600">·</span>
+                <span class="text-slate-300">Accessibility Specialist</span>
               </div>
-
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
-                <a href="https://high-octane-murex.vercel.app/" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-2">
-                  <span>High Octane</span>
-                  <svg class="w-4 h-4 text-teal-400 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
-                  </svg>
-                </a>
+                Civic Mesh — Hyper-Accessible Community Directory
               </h2>
-
               <p class="font-serif text-slate-300 text-base leading-relaxed">
-                An action-packed online racing video game featuring high-speed competition, challenging tracks, and responsive vehicle handling built for thrilling arcade racing directly in the browser.
+                An ultra-accessible directory connecting municipal neighbors to essential health, food pantry, and shelter resources. Engineered for low-bandwidth devices, screen readers, and multilingual communities.
               </p>
-
               <div class="pt-2">
-                <a
-                  href="https://high-octane-murex.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all"
-                >
-                  <span>Visit Website</span>
-                  <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
+                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2">Key Architectural Decisions:</h4>
+                <ul class="space-y-1.5 font-sans text-xs text-slate-300">
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>100% WCAG 2.2 AAA compliant with rigorous screen-reader verification</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>Instant search and phone-dial actions usable on 2G mobile connections</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-teal-400 mt-0.5">✓</span>
+                    <span>Bilingual interface with plain-language readability scores under Grade 6</span>
+                  </li>
+                </ul>
               </div>
             </div>
-
+            <div class="lg:w-64 shrink-0 rounded-xl bg-[#080d12]/90 border border-teal-900/40 p-4 space-y-3">
+              <div>
+                <span class="text-[10px] font-mono uppercase tracking-wider text-teal-400/80 block mb-1.5">Disciplines &amp; Stack</span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">WCAG AAA</span>
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">Screen Reader</span>
+                  <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#0c1520] text-slate-300 border border-teal-900/30">Plain Language</span>
+                </div>
+              </div>
+              <div class="pt-2 border-t border-teal-950/70 text-[11px] font-sans text-slate-400 flex items-center justify-between">
+                <span>Standard</span>
+                <span class="text-teal-300 font-mono">Universal Design</span>
+              </div>
+            </div>
           </div>
         </article>
-
       </div>
-
     </main>
 
     <!-- Footer -->
@@ -705,8 +636,8 @@
             <a href="about.html" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors">About</a>
             <div class="flex items-center gap-3">
               <span class="font-title text-xs uppercase tracking-wider text-teal-400/80 font-semibold">Online Projects:</span>
-              <a href="website.html" class="font-title text-sm text-teal-300 font-semibold transition-colors">Websites</a>
-              <a href="ux-ui.html" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors">UX/UI</a>
+              <a href="website.html" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors">Websites</a>
+              <a href="ux-ui.html" class="font-title text-sm text-teal-300 font-semibold transition-colors">UX/UI</a>
               <a href="youtube.html" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors">YouTube</a>
               <a href="instagram.html" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors">Instagram</a>
             </div>

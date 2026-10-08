@@ -69,7 +69,7 @@ export const WebsitesSection: React.FC = () => {
       <div className="mb-14 text-left">
         <div className="flex items-center gap-2 text-xs text-teal-400 font-sans tracking-wide uppercase mb-2.5">
           <Globe className="w-3.5 h-3.5" />
-          <span>Section 06 · Purposeful Digital Tools</span>
+          <span>Online Projects · Section 01 / Websites</span>
         </div>
         <h2 className="font-title text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
           Websites
