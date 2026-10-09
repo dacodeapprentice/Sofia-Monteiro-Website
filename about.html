@@ -5,402 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About — Sofia</title>
     <meta name="description" content="In-depth information, background, creative philosophy, and detailed inquiry about Sofia." />
+    <link rel="canonical" href="about.html" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph & Social Card Previews -->
     <meta property="og:title" content="About — Sofia" />
     <meta property="og:description" content="In-depth information, background, creative philosophy, and detailed inquiry about Sofia." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="about.html" />
+    <meta property="og:image" content="https://iili.io/naGx4yb.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="About — Sofia" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About — Sofia" />
+    <meta name="twitter:description" content="In-depth information, background, creative philosophy, and detailed inquiry about Sofia." />
+    <meta name="twitter:image" content="https://iili.io/naGx4yb.jpg" />
     <meta name="theme-color" content="#080d12" />
 
     <!-- Google Fonts: Lora for reading text (serif), Plus Jakarta Sans for titles (non-serif) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              canvas: '#080d12',
-              surface: '#0c1520',
-              surfaceElevated: '#111e2d',
-              tealAccent: '#0d9488',
-              emeraldAccent: '#10b981',
-              cyanAccent: '#06b6d4',
-            },
-            fontFamily: {
-              sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
-              serif: ['Lora', 'Georgia', 'Cambria', 'serif'],
-            }
-          }
-        }
-      }
-    </script>
-
-    <style>
-      :root { color-scheme: dark; }
-      body {
-        background-color: #080d12;
-        color: #cbd5e1;
-        font-family: 'Lora', Georgia, serif;
-        overflow-x: hidden;
-      }
-      h1, h2, h3, h4, h5, h6, .font-title, nav, button, label, .font-ui {
-        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-      }
-      p, .font-reading, blockquote {
-        font-family: 'Lora', Georgia, serif;
-      }
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: #080d12; }
-      ::-webkit-scrollbar-thumb { background: #142533; border-radius: 4px; }
-      ::-webkit-scrollbar-thumb:hover { background: #1b3549; }
-    </style>
+    <!-- Shared Tailwind CSS Stylesheet -->
+    <link rel="stylesheet" href="/shared/style.css" />
   </head>
   <body class="bg-[#080d12] text-slate-200 antialiased selection:bg-teal-500/30 selection:text-teal-200 min-h-screen flex flex-col justify-between relative">
 
-    <!-- Top Navigation Bar -->
-    <header class="sticky top-0 z-30 w-full bg-[#080d12]/90 backdrop-blur-md border-b border-teal-950/70 transition-colors">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        
-        <!-- Zone 1: Hamburger Menu Trigger (on the LEFT) + Sofia Wordmark -->
-        <div class="flex items-center gap-3.5">
-          <button
-            id="hamburger-btn"
-            type="button"
-            class="flex items-center justify-center p-2 rounded-lg text-slate-300 hover:text-teal-300 hover:bg-[#101b26] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
-            aria-label="Open navigation menu"
-            aria-controls="left-hamburger-drawer"
-            aria-expanded="false"
-          >
-            <svg class="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <span class="sr-only">Toggle Menu</span>
-          </button>
+    <!-- Unified Header Mount -->
+    <header id="site-header" class="sticky top-0 z-30 w-full bg-[#080d12]/90 backdrop-blur-md border-b border-teal-950/70 transition-colors"></header>
 
-          <a href="index.html" class="group flex items-center gap-2 text-lg font-bold font-title tracking-tight text-white hover:text-teal-300 transition-colors">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 group-hover:scale-125 transition-transform"></span>
-            <span>Sofia</span>
-          </a>
-        </div>
-
-        <!-- Zone 2: Navigation Links -->
-        <nav class="hidden md:flex items-center gap-7" aria-label="Main Navigation">
-          <a href="index.html" class="font-title text-sm tracking-tight text-slate-400 hover:text-slate-100 font-medium transition-colors py-1">Home</a>
-          <a href="about.html" class="font-title text-sm tracking-tight text-teal-300 font-semibold transition-colors py-1 relative">
-            About
-            <span class="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full"></span>
-          </a>
-
-          <!-- Online Projects Dropdown -->
-          <div class="relative" id="online-projects-dropdown">
-            <button
-              type="button"
-              id="online-projects-btn"
-              aria-haspopup="true"
-              aria-expanded="false"
-              class="font-title text-sm tracking-tight text-slate-400 hover:text-slate-100 font-medium transition-colors py-1 flex items-center gap-1.5 focus:outline-none cursor-pointer"
-            >
-              <span>Online Projects</span>
-              <svg id="online-projects-chevron" class="w-3.5 h-3.5 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-
-            <!-- Dropdown Menu -->
-            <div
-              id="online-projects-menu"
-              role="menu"
-              class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 rounded-2xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-2 z-50 hidden"
-            >
-              <div class="px-3 py-1.5 border-b border-teal-950/60 flex items-center justify-between mb-1">
-                <span class="text-[10px] font-mono uppercase tracking-wider text-teal-400/80 font-semibold">Online Projects</span>
-                <span class="text-[10px] font-mono text-slate-500">3 Pages</span>
-              </div>
-              <div class="space-y-1">
-                <a href="website.html" role="menuitem" class="group/item flex items-start gap-3 p-2.5 rounded-xl hover:bg-[#121e2b] text-slate-300 hover:text-white transition-all">
-                  <div class="p-2 rounded-lg bg-[#070c12] border border-teal-900/40 shrink-0 mt-0.5 group-hover/item:border-teal-500/50 transition-colors">
-                    <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                    </svg>
-                  </div>
-                  <div class="flex-1 min-w-0">
-                    <div class="flex items-center justify-between gap-1">
-                      <span class="font-title text-sm font-semibold tracking-tight group-hover/item:text-teal-300 transition-colors">Websites</span>
-                      <span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-teal-950/60 text-teal-300 border border-teal-900/40">4 tools</span>
-                    </div>
-                    <p class="text-xs text-slate-400 font-reading mt-0.5 leading-snug truncate">Everyday tools &amp; web apps</p>
-                  </div>
-                </a>
-
-                <a href="ux-ui.html" role="menuitem" class="group/item flex items-start gap-3 p-2.5 rounded-xl hover:bg-[#121e2b] text-slate-300 hover:text-white transition-all">
-                  <div class="p-2 rounded-lg bg-[#070c12] border border-teal-900/40 shrink-0 mt-0.5 group-hover/item:border-teal-500/50 transition-colors">
-                    <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                    </svg>
-                  </div>
-                  <div class="flex-1 min-w-0">
-                    <div class="flex items-center justify-between gap-1">
-                      <span class="font-title text-sm font-semibold tracking-tight group-hover/item:text-teal-300 transition-colors">UX/UI</span>
-                      <span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-900/40">Design</span>
-                    </div>
-                    <p class="text-xs text-slate-400 font-reading mt-0.5 leading-snug truncate">Product interfaces &amp; systems</p>
-                  </div>
-                </a>
-
-                <!-- Social Media (Title only) -->
-                <div class="pt-2 pb-1 px-3 mt-1 border-t border-teal-950/60 flex items-center justify-between">
-                  <span class="font-title text-xs font-semibold uppercase tracking-wider text-teal-400 flex items-center gap-1.5">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-                    </svg>
-                    Social Media
-                  </span>
-                  <span class="text-[9px] font-mono text-slate-500">Channels</span>
-                </div>
-
-                <!-- YouTube -->
-                <a href="youtube.html" role="menuitem" class="group/item flex items-start gap-3 p-2.5 rounded-xl hover:bg-[#121e2b] text-slate-300 hover:text-white transition-all">
-                  <div class="p-2 rounded-lg bg-[#070c12] border border-teal-900/40 shrink-0 mt-0.5 group-hover/item:border-red-500/50 transition-colors">
-                    <svg class="w-4 h-4 text-red-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                    </svg>
-                  </div>
-                  <div class="flex-1 min-w-0">
-                    <div class="flex items-center justify-between gap-1">
-                      <span class="font-title text-sm font-semibold tracking-tight group-hover/item:text-teal-300 transition-colors">YouTube</span>
-                      <span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-red-950/60 text-red-300 border border-red-900/40">3 Channels</span>
-                    </div>
-                    <p class="text-xs text-slate-400 font-reading mt-0.5 leading-snug truncate">3 channels · video essays &amp; gaming</p>
-                  </div>
-                </a>
-
-                <!-- Instagram -->
-                <a href="instagram.html" role="menuitem" class="group/item flex items-start gap-3 p-2.5 rounded-xl hover:bg-[#121e2b] text-slate-300 hover:text-white transition-all">
-                  <div class="p-2 rounded-lg bg-[#070c12] border border-teal-900/40 shrink-0 mt-0.5 group-hover/item:border-pink-500/50 transition-colors">
-                    <svg class="w-4 h-4 text-pink-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                  </div>
-                  <div class="flex-1 min-w-0">
-                    <div class="flex items-center justify-between gap-1">
-                      <span class="font-title text-sm font-semibold tracking-tight group-hover/item:text-teal-300 transition-colors">Instagram</span>
-                      <span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-pink-950/60 text-pink-300 border border-pink-900/40">Visual Feed</span>
-                    </div>
-                    <p class="text-xs text-slate-400 font-reading mt-0.5 leading-snug truncate">Photography &amp; visual diary</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <a href="contact.html" class="font-title text-sm tracking-tight text-slate-400 hover:text-slate-100 font-medium transition-colors py-1">Contact</a>
-        </nav>
-
-        <!-- Zone 3: Empty (Personal Space & Say Hello removed) -->
-        <div class="hidden sm:block"></div>
-      </div>
-    </header>
-
-    <!-- Slide-out Drawer on the LEFT -->
-    <div id="drawer-backdrop" class="fixed inset-0 z-40 bg-[#04070a]/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" aria-hidden="true"></div>
-    
-    <aside
-      id="left-hamburger-drawer"
-      aria-label="Navigation drawer"
-      class="fixed top-0 bottom-0 left-0 z-50 w-80 max-w-[85vw] bg-[#0a1118] border-r border-teal-900/40 shadow-2xl flex flex-col justify-between transform -translate-x-full transition-transform duration-300 ease-out"
-    >
-      <!-- Drawer Header with Sofia's Hosted Portrait Avatar -->
-      <div class="p-6 border-b border-teal-950/60 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-teal-700 to-emerald-500 p-[1.5px] shadow-sm overflow-hidden shrink-0">
-            <img
-              src="https://iili.io/naGxr8u.jpg"
-              alt="Sofia"
-              referrerpolicy="no-referrer"
-              class="w-full h-full object-cover rounded-full"
-            />
-          </div>
-          <div>
-            <a href="index.html" class="font-title text-base font-semibold text-white tracking-tight hover:text-teal-300 transition-colors">
-              Sofia
-            </a>
-            <p class="text-xs text-slate-400 font-sans">Creative &amp; Digital Archive</p>
-          </div>
-        </div>
-
-        <button
-          id="drawer-close-btn"
-          type="button"
-          class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
-          aria-label="Close navigation menu"
-        >
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-
-      <!-- Drawer Content -->
-      <div class="flex-1 overflow-y-auto px-4 py-6">
-        <div class="mb-3 px-3">
-          <span class="text-[11px] font-semibold font-title tracking-wider uppercase text-teal-400/80">Navigation</span>
-        </div>
-
-        <nav class="space-y-1.5" aria-label="Sidebar Navigation">
-          <a href="index.html" class="group flex items-center justify-between px-3.5 py-3 rounded-xl transition-all duration-150 text-slate-300 hover:text-white hover:bg-[#101b26] border border-transparent">
-            <div class="flex flex-col">
-              <span class="font-title text-sm tracking-tight group-hover:text-teal-200 transition-colors">Home</span>
-              <span class="text-xs text-slate-400 font-reading mt-0.5">Welcome &amp; Introduction</span>
-            </div>
-            <svg class="w-4 h-4 text-slate-500 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
-
-          <a href="about.html" class="group flex items-center justify-between px-3.5 py-3 rounded-xl transition-all duration-150 bg-teal-950/40 text-teal-300 border border-teal-800/40 font-medium">
-            <div class="flex flex-col">
-              <span class="font-title text-sm tracking-tight text-teal-200">About</span>
-              <span class="text-xs text-slate-400 font-reading mt-0.5">Background &amp; detailed inquiry</span>
-            </div>
-            <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
-
-          <!-- Online Projects Accordion in Drawer -->
-          <div class="rounded-xl border border-teal-950/70 bg-[#070e14]/50 overflow-hidden">
-            <button
-              type="button"
-              id="drawer-projects-accordion-btn"
-              class="w-full flex items-center justify-between p-3.5 text-left text-slate-300 hover:text-white hover:bg-[#101b26] transition-colors cursor-pointer"
-            >
-              <div class="flex flex-col">
-                <div class="flex items-center gap-2">
-                  <span class="font-title text-sm font-semibold tracking-tight">Online Projects</span>
-                  <span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-teal-950 text-teal-400 border border-teal-800/40">Menu</span>
-                </div>
-                <span class="text-[11px] text-slate-400 font-reading mt-0.5">Websites · UX/UI · Social Media</span>
-              </div>
-              <svg id="drawer-projects-chevron" class="w-4 h-4 text-slate-400 transition-transform duration-200 rotate-180 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-
-            <div id="drawer-projects-sublist" class="px-2.5 pb-2.5 pt-1 space-y-1 border-t border-teal-950/60 bg-[#060b10]/60">
-              <a href="website.html" class="group flex items-center justify-between px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
-                <div class="flex items-center gap-2.5 min-w-0">
-                  <svg class="w-4 h-4 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                  </svg>
-                  <div class="flex flex-col min-w-0">
-                    <span class="font-title text-xs font-medium tracking-tight truncate group-hover:text-teal-200">Websites</span>
-                    <span class="text-[10px] text-slate-400 font-reading truncate">Everyday tools &amp; web apps</span>
-                  </div>
-                </div>
-                <svg class="w-3.5 h-3.5 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
-
-              <a href="ux-ui.html" class="group flex items-center justify-between px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
-                <div class="flex items-center gap-2.5 min-w-0">
-                  <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                  </svg>
-                  <div class="flex flex-col min-w-0">
-                    <span class="font-title text-xs font-medium tracking-tight truncate group-hover:text-cyan-200">UX/UI</span>
-                    <span class="text-[10px] text-slate-400 font-reading truncate">Product interfaces &amp; systems</span>
-                  </div>
-                </div>
-                <svg class="w-3.5 h-3.5 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
-
-              <!-- Social Media Category Title in Drawer -->
-              <div class="pt-2 pb-1 px-3 mt-1 border-t border-teal-950/60 flex items-center gap-1.5 text-teal-400 font-title text-xs font-semibold uppercase tracking-wider">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-                </svg>
-                <span>Social Media</span>
-              </div>
-
-              <!-- YouTube in Drawer -->
-              <a href="youtube.html" class="group flex items-center justify-between px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
-                <div class="flex items-center gap-2.5 min-w-0">
-                  <svg class="w-4 h-4 text-red-400 shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                  </svg>
-                  <div class="flex flex-col min-w-0">
-                    <span class="font-title text-xs font-medium tracking-tight truncate group-hover:text-teal-200">YouTube</span>
-                    <span class="text-[10px] text-slate-400 font-reading truncate">3 channels · video essays</span>
-                  </div>
-                </div>
-                <svg class="w-3.5 h-3.5 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
-
-              <!-- Instagram in Drawer -->
-              <a href="instagram.html" class="group flex items-center justify-between px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
-                <div class="flex items-center gap-2.5 min-w-0">
-                  <svg class="w-4 h-4 text-pink-400 shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                  </svg>
-                  <div class="flex flex-col min-w-0">
-                    <span class="font-title text-xs font-medium tracking-tight truncate group-hover:text-teal-200">Instagram</span>
-                    <span class="text-[10px] text-slate-400 font-reading truncate">Photography &amp; visual diary</span>
-                  </div>
-                </div>
-                <svg class="w-3.5 h-3.5 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <a href="contact.html" class="group flex items-center justify-between px-3.5 py-3 rounded-xl transition-all duration-150 text-slate-300 hover:text-white hover:bg-[#101b26] border border-transparent">
-            <div class="flex flex-col">
-              <span class="font-title text-sm tracking-tight group-hover:text-teal-200 transition-colors">Contact</span>
-              <span class="text-xs text-slate-400 font-reading mt-0.5">Say hello &amp; connect</span>
-            </div>
-            <svg class="w-4 h-4 text-slate-500 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
-        </nav>
-
-        <!-- Quote inside Drawer -->
-        <div class="mt-8 mx-2 p-4 rounded-xl bg-[#0e1822]/80 border border-teal-900/30">
-          <div class="flex items-center gap-2 mb-2 text-teal-400 text-xs font-title font-medium">
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span>Overview</span>
-          </div>
-          <p class="text-xs font-reading text-slate-300 leading-relaxed italic">
-            "Here are the things I've done over the years with projects and at work. Browse through them, and thank you."
-          </p>
-        </div>
-      </div>
-
-      <!-- Drawer Footer -->
-      <div class="p-5 border-t border-teal-950/60 bg-[#080e14]">
-        <a href="mailto:Sofiadmm58@gmail.com" class="flex items-center gap-2.5 text-xs text-slate-300 hover:text-teal-300 transition-colors py-1.5">
-          <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          <span class="font-sans">Sofiadmm58@gmail.com</span>
-        </a>
-        <p class="text-[11px] text-slate-400 font-reading mt-2">
-          Browse through them, and thank you.
-        </p>
-      </div>
-    </aside>
+    <!-- Unified Slide-out Drawer Mount -->
+    <div id="site-drawer"></div>
 
     <!-- Main Content Container: About Page -->
     <main class="flex-1 w-full max-w-5xl mx-auto py-16 md:py-24 px-4 sm:px-6 lg:px-8">
@@ -492,7 +129,7 @@
           <button
             id="search-clear-btn"
             type="button"
-            class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-xs text-slate-400 hover:text-white px-2 py-1 rounded bg-[#101b26]"
+            class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-xs text-slate-400 hover:text-white px-2 py-1 rounded bg-[#101b26] cursor-pointer"
           >
             Clear
           </button>
@@ -500,13 +137,13 @@
 
         <!-- Category Filters -->
         <div class="flex flex-wrap gap-2" id="category-filter-buttons">
-          <button type="button" data-category="all" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-teal-500/20 text-teal-300 border border-teal-500/40 font-medium">All Topics</button>
-          <button type="button" data-category="background" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30">Background</button>
-          <button type="button" data-category="philosophy" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30">Philosophy</button>
-          <button type="button" data-category="tech" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30">Tech &amp; Craft</button>
-          <button type="button" data-category="routine" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30">Everyday Routine</button>
-          <button type="button" data-category="influences" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30">Influences</button>
-          <button type="button" data-category="faq" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30">Deep FAQs</button>
+          <button type="button" data-category="all" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-teal-500/20 text-teal-300 border border-teal-500/40 font-medium cursor-pointer">All Topics</button>
+          <button type="button" data-category="background" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30 cursor-pointer">Background</button>
+          <button type="button" data-category="philosophy" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30 cursor-pointer">Philosophy</button>
+          <button type="button" data-category="tech" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30 cursor-pointer">Tech &amp; Craft</button>
+          <button type="button" data-category="routine" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30 cursor-pointer">Everyday Routine</button>
+          <button type="button" data-category="influences" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30 cursor-pointer">Influences</button>
+          <button type="button" data-category="faq" class="category-btn px-3 py-1.5 rounded-lg text-xs font-title transition-all bg-[#080d12] text-slate-400 hover:text-slate-200 border border-teal-900/30 cursor-pointer">Deep FAQs</button>
         </div>
       </section>
 
@@ -517,17 +154,17 @@
         <article class="dossier-card rounded-2xl bg-[#0c1520] border border-teal-900/30 p-6 flex flex-col justify-between hover:border-teal-700/50 transition-all duration-200" data-category="background" data-keywords="origins background trajectory timeline 2018 2026 experience history journey">
           <div>
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="text-[11px] font-sans font-medium uppercase tracking-wider text-teal-400">Background &amp; Trajectory</span>
-              <span class="text-[10px] font-mono text-slate-500">ID: bio-origin</span>
+              <span class="text-xs font-sans font-medium uppercase tracking-wider text-teal-400">Background &amp; Trajectory</span>
+              <span class="text-xs font-mono text-slate-400">ID: bio-origin</span>
             </div>
             <h4 class="font-title text-lg font-bold text-white mb-2 tracking-tight">Origins &amp; 8+ Year Journey (2018–2026)</h4>
             <p class="font-serif text-sm text-teal-100/90 leading-relaxed italic mb-3">"From exploratory creative coding to crafting resilient production systems and everyday utilities."</p>
             <p class="font-serif text-sm text-slate-300 leading-relaxed">Started in digital design and frontend engineering in 2018, exploring how code intersects with typography and human attention. Over 8+ years, has transitioned from client-facing digital showcases to building robust, self-sufficient tools and production web applications that simplify everyday routines.</p>
           </div>
           <div class="mt-5 pt-4 border-t border-teal-950/60 flex flex-wrap gap-1.5">
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Background</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Timeline</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Experience</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Background</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Timeline</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Experience</span>
           </div>
         </article>
 
@@ -535,17 +172,17 @@
         <article class="dossier-card rounded-2xl bg-[#0c1520] border border-teal-900/30 p-6 flex flex-col justify-between hover:border-teal-700/50 transition-all duration-200" data-category="philosophy" data-keywords="philosophy ethos unhurried design attention economy quiet ethics typography restraint whitespace">
           <div>
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="text-[11px] font-sans font-medium uppercase tracking-wider text-teal-400">Philosophy &amp; Ethos</span>
-              <span class="text-[10px] font-mono text-slate-500">ID: core-ethos</span>
+              <span class="text-xs font-sans font-medium uppercase tracking-wider text-teal-400">Philosophy &amp; Ethos</span>
+              <span class="text-xs font-mono text-slate-400">ID: core-ethos</span>
             </div>
             <h4 class="font-title text-lg font-bold text-white mb-2 tracking-tight">Unhurried Design &amp; Respect for Attention</h4>
             <p class="font-serif text-sm text-teal-100/90 leading-relaxed italic mb-3">"The digital realm is saturated with noise. Good software should be a quiet, dignified retreat."</p>
             <p class="font-serif text-sm text-slate-300 leading-relaxed">Software should respect cognitive limits. I design interfaces that do not fight for dopamine, employ intentional whitespace, prioritize high legibility with serif prose paired with modern geometric titles, and value lasting utility over speculative vanity metrics.</p>
           </div>
           <div class="mt-5 pt-4 border-t border-teal-950/60 flex flex-wrap gap-1.5">
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Philosophy</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#QuietDesign</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Attention</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Philosophy</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#QuietDesign</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Attention</span>
           </div>
         </article>
 
@@ -553,17 +190,17 @@
         <article class="dossier-card rounded-2xl bg-[#0c1520] border border-teal-900/30 p-6 flex flex-col justify-between hover:border-teal-700/50 transition-all duration-200" data-category="philosophy" data-keywords="utility simplicity focus values craft friction removal purpose daily practical">
           <div>
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="text-[11px] font-sans font-medium uppercase tracking-wider text-teal-400">Philosophy &amp; Ethos</span>
-              <span class="text-[10px] font-mono text-slate-500">ID: real-utility</span>
+              <span class="text-xs font-sans font-medium uppercase tracking-wider text-teal-400">Philosophy &amp; Ethos</span>
+              <span class="text-xs font-mono text-slate-400">ID: real-utility</span>
             </div>
             <h4 class="font-title text-lg font-bold text-white mb-2 tracking-tight">Utility-First Craftsmanship</h4>
             <p class="font-serif text-sm text-teal-100/90 leading-relaxed italic mb-3">"A tool should either remove palpable friction or bring authentic tranquility to a person's day."</p>
             <p class="font-serif text-sm text-slate-300 leading-relaxed">If an application doesn't solve a real everyday problem or ease a repetitive task, it should not be built. I favor clean, single-purpose software that executes one workflow flawlessly rather than convoluted all-in-one platforms.</p>
           </div>
           <div class="mt-5 pt-4 border-t border-teal-950/60 flex flex-wrap gap-1.5">
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Utility</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Simplicity</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Purpose</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Utility</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Simplicity</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Purpose</span>
           </div>
         </article>
 
@@ -571,17 +208,17 @@
         <article class="dossier-card rounded-2xl bg-[#0c1520] border border-teal-900/30 p-6 flex flex-col justify-between hover:border-teal-700/50 transition-all duration-200" data-category="tech" data-keywords="tech craft frontend architecture typescript react tailwind performance code standards web">
           <div>
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="text-[11px] font-sans font-medium uppercase tracking-wider text-teal-400">Tech &amp; Craft</span>
-              <span class="text-[10px] font-mono text-slate-500">ID: frontend-architecture</span>
+              <span class="text-xs font-sans font-medium uppercase tracking-wider text-teal-400">Tech &amp; Craft</span>
+              <span class="text-xs font-mono text-slate-400">ID: frontend-architecture</span>
             </div>
             <h4 class="font-title text-lg font-bold text-white mb-2 tracking-tight">Frontend Architecture &amp; Engineering Standards</h4>
             <p class="font-serif text-sm text-teal-100/90 leading-relaxed italic mb-3">"Production TypeScript, modern React, semantic HTML5, zero-bloat state patterns, and instant speeds."</p>
             <p class="font-serif text-sm text-slate-300 leading-relaxed">Specializing in clean component hierarchies, predictable uni-directional data flow, modular CSS with Tailwind, and rock-solid deployment configurations. All interfaces are responsive, keyboard-navigable, and accessible across mobile and desktop environments.</p>
           </div>
           <div class="mt-5 pt-4 border-t border-teal-950/60 flex flex-wrap gap-1.5">
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#TypeScript</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#React</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Tailwind</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#TypeScript</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#React</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Tailwind</span>
           </div>
         </article>
 
@@ -589,18 +226,18 @@
         <article class="dossier-card rounded-2xl bg-[#0c1520] border border-teal-900/30 p-6 flex flex-col justify-between hover:border-teal-700/50 transition-all duration-200" data-category="tech" data-keywords="everyday websites tools applications paroxetine taper typing pro easy doc high octane racing game utilities living help people">
           <div>
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="text-[11px] font-sans font-medium uppercase tracking-wider text-teal-400">Tech &amp; Craft</span>
-              <span class="text-[10px] font-mono text-slate-500">ID: everyday-tools</span>
+              <span class="text-xs font-sans font-medium uppercase tracking-wider text-teal-400">Tech &amp; Craft</span>
+              <span class="text-xs font-mono text-slate-400">ID: everyday-tools</span>
             </div>
             <h4 class="font-title text-lg font-bold text-white mb-2 tracking-tight">Everyday Tools &amp; Purposeful Websites</h4>
             <p class="font-serif text-sm text-teal-100/90 leading-relaxed italic mb-3">"Independent tools created for daily living — taper tracking, typing acceleration, easy documents, online racing."</p>
             <p class="font-serif text-sm text-slate-300 leading-relaxed">Created dedicated web apps to assist with daily living and interactive recreation: Paroxetine Taper Guide (a live tracker to help taper paroxetine safely), Typing Pro (speed trainer that helps a person type faster), Easy Doc (document generator made easy), and High Octane (an online racing video game). These are live, free to access, and open to all.</p>
           </div>
           <div class="mt-5 pt-4 border-t border-teal-950/60 flex flex-wrap gap-1.5">
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Websites</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#EverydayTools</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#PublicUtility</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Gaming</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Websites</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#EverydayTools</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#PublicUtility</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Gaming</span>
           </div>
         </article>
 
@@ -608,17 +245,17 @@
         <article class="dossier-card rounded-2xl bg-[#0c1520] border border-teal-900/30 p-6 flex flex-col justify-between hover:border-teal-700/50 transition-all duration-200" data-category="routine" data-keywords="routine cadence daily habits productivity coffee morning deep work reading walking offline">
           <div>
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="text-[11px] font-sans font-medium uppercase tracking-wider text-teal-400">Everyday Routine</span>
-              <span class="text-[10px] font-mono text-slate-500">ID: daily-routine</span>
+              <span class="text-xs font-sans font-medium uppercase tracking-wider text-teal-400">Everyday Routine</span>
+              <span class="text-xs font-mono text-slate-400">ID: daily-routine</span>
             </div>
             <h4 class="font-title text-lg font-bold text-white mb-2 tracking-tight">Daily Cadence &amp; Creative Rhythm</h4>
             <p class="font-serif text-sm text-teal-100/90 leading-relaxed italic mb-3">"Structure designed around deep morning work, tactile reading, and outdoor recalibration."</p>
             <p class="font-serif text-sm text-slate-300 leading-relaxed">Early mornings reserved for high-cognitive coding and system architecture before digital notifications begin. Afternoons dedicated to prototyping, interface refinement, and correspondence. Evenings protected for reading, physical notebooks, and time offline.</p>
           </div>
           <div class="mt-5 pt-4 border-t border-teal-950/60 flex flex-wrap gap-1.5">
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Routine</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Habits</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Cadence</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Routine</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Habits</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Cadence</span>
           </div>
         </article>
 
@@ -626,17 +263,17 @@
         <article class="dossier-card rounded-2xl bg-[#0c1520] border border-teal-900/30 p-6 flex flex-col justify-between hover:border-teal-700/50 transition-all duration-200" data-category="influences" data-keywords="influences reading books architecture dieter rams christopher alexander kenya hara printmaking typography">
           <div>
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="text-[11px] font-sans font-medium uppercase tracking-wider text-teal-400">Influences &amp; Reading</span>
-              <span class="text-[10px] font-mono text-slate-500">ID: influences-reading</span>
+              <span class="text-xs font-sans font-medium uppercase tracking-wider text-teal-400">Influences &amp; Reading</span>
+              <span class="text-xs font-mono text-slate-400">ID: influences-reading</span>
             </div>
             <h4 class="font-title text-lg font-bold text-white mb-2 tracking-tight">Intellectual &amp; Aesthetic Influences</h4>
             <p class="font-serif text-sm text-teal-100/90 leading-relaxed italic mb-3">"Influenced by timeless architectural thought, ecological restraint, and utilitarian industrial design."</p>
             <p class="font-serif text-sm text-slate-300 leading-relaxed">Drawn to Dieter Rams (the ten principles of good design), Christopher Alexander (The Timeless Way of Building), and Kenya Hara (Designing Design). Deeply inspired by Japanese printmaking, Nordic furniture craft, and tactile book typography.</p>
           </div>
           <div class="mt-5 pt-4 border-t border-teal-950/60 flex flex-wrap gap-1.5">
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Influences</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#DieterRams</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Books</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Influences</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#DieterRams</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Books</span>
           </div>
         </article>
 
@@ -644,17 +281,17 @@
         <article class="dossier-card rounded-2xl bg-[#0c1520] border border-teal-900/30 p-6 flex flex-col justify-between hover:border-teal-700/50 transition-all duration-200" data-category="faq" data-keywords="faq questions collaboration advisory consulting work hire inquiries project commissions">
           <div>
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="text-[11px] font-sans font-medium uppercase tracking-wider text-teal-400">Deep Inquiry &amp; FAQ</span>
-              <span class="text-[10px] font-mono text-slate-500">ID: faq-collaborations</span>
+              <span class="text-xs font-sans font-medium uppercase tracking-wider text-teal-400">Deep Inquiry &amp; FAQ</span>
+              <span class="text-xs font-mono text-slate-400">ID: faq-collaborations</span>
             </div>
             <h4 class="font-title text-lg font-bold text-white mb-2 tracking-tight">Are you open to collaborative projects or advisory roles?</h4>
             <p class="font-serif text-sm text-teal-100/90 leading-relaxed italic mb-3">"Yes, selectively open to purposeful commissions and technical systems advisory."</p>
             <p class="font-serif text-sm text-slate-300 leading-relaxed">I take on a limited number of collaborations each year, specifically focused on products with genuine human benefit, nonprofit utilities, and teams seeking uncompromising design clarity and performance.</p>
           </div>
           <div class="mt-5 pt-4 border-t border-teal-950/60 flex flex-wrap gap-1.5">
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#FAQ</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Consulting</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Contact</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#FAQ</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Consulting</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Contact</span>
           </div>
         </article>
 
@@ -662,17 +299,17 @@
         <article class="dossier-card rounded-2xl bg-[#0c1520] border border-teal-900/30 p-6 flex flex-col justify-between hover:border-teal-700/50 transition-all duration-200" data-category="faq" data-keywords="faq questions stack tools development tech environment vite react tailwind github">
           <div>
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="text-[11px] font-sans font-medium uppercase tracking-wider text-teal-400">Deep Inquiry &amp; FAQ</span>
-              <span class="text-[10px] font-mono text-slate-500">ID: faq-stack</span>
+              <span class="text-xs font-sans font-medium uppercase tracking-wider text-teal-400">Deep Inquiry &amp; FAQ</span>
+              <span class="text-xs font-mono text-slate-400">ID: faq-stack</span>
             </div>
             <h4 class="font-title text-lg font-bold text-white mb-2 tracking-tight">What is your preferred development environment &amp; stack?</h4>
             <p class="font-serif text-sm text-teal-100/90 leading-relaxed italic mb-3">"Lightweight, typed, standard-compliant technologies that run fast and maintain easily."</p>
             <p class="font-serif text-sm text-slate-300 leading-relaxed">TypeScript, React, Vite, Tailwind CSS, semantic HTML5, Git, and automated CI/CD. Preference for minimal dependency trees that eliminate security vulnerabilities and guarantee years of zero-maintenance uptime.</p>
           </div>
           <div class="mt-5 pt-4 border-t border-teal-950/60 flex flex-wrap gap-1.5">
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#FAQ</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Stack</span>
-            <span class="text-[11px] font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-400 border border-teal-900/30">#Tech</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#FAQ</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Stack</span>
+            <span class="text-xs font-sans px-2.5 py-0.5 rounded-md bg-[#080d12] text-slate-300 border border-teal-900/30">#Tech</span>
           </div>
         </article>
 
@@ -698,32 +335,32 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-xs font-sans">
           <div class="p-4 rounded-xl bg-[#080d12] border border-teal-900/40">
-            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-[10px]">Primary Focus</span>
+            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-xs">Primary Focus</span>
             <span class="text-white font-medium text-sm">Human-centric Web Tools &amp; Clean Frontend Systems</span>
           </div>
 
           <div class="p-4 rounded-xl bg-[#080d12] border border-teal-900/40">
-            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-[10px]">Active Era</span>
+            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-xs">Active Era</span>
             <span class="text-white font-medium text-sm">2018 &ndash; Present (8+ Years Craft)</span>
           </div>
 
           <div class="p-4 rounded-xl bg-[#080d12] border border-teal-900/40">
-            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-[10px]">Direct Correspondence</span>
+            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-xs">Direct Correspondence</span>
             <a href="mailto:Sofiadmm58@gmail.com" class="text-teal-300 hover:underline font-medium text-sm block">Sofiadmm58@gmail.com</a>
           </div>
 
           <div class="p-4 rounded-xl bg-[#080d12] border border-teal-900/40">
-            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-[10px]">Specialized Areas</span>
+            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-xs">Specialized Areas</span>
             <span class="text-white font-medium text-sm">Everyday Utilities, Accessibility, Typography Pairing</span>
           </div>
 
           <div class="p-4 rounded-xl bg-[#080d12] border border-teal-900/40">
-            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-[10px]">Project Archive</span>
+            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-xs">Project Archive</span>
             <span class="text-white font-medium text-sm">Public Showcase &amp; Production Deployments</span>
           </div>
 
           <div class="p-4 rounded-xl bg-[#080d12] border border-teal-900/40">
-            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-[10px]">Inquiries</span>
+            <span class="text-slate-400 block mb-1 uppercase tracking-wider text-xs">Inquiries</span>
             <span class="text-emerald-300 font-medium text-sm">Open to collaborative ideas &amp; inquiries</span>
           </div>
         </div>
@@ -734,7 +371,7 @@
           </p>
           <a
             href="contact.html"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all cursor-pointer"
           >
             <span>Send a Note</span>
             <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -746,160 +383,15 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer class="w-full bg-[#05080c] border-t border-teal-950/80 py-12 md:py-16 px-4 sm:px-6 lg:px-8 text-slate-400 mt-auto">
-      <div class="max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-8 pb-10 border-b border-teal-950/60">
-          <div class="space-y-2">
-            <div class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-teal-400"></span>
-              <span class="font-title text-xl font-bold tracking-tight text-white">Sofia</span>
-            </div>
-            <p class="font-serif text-slate-300 text-base italic max-w-md">
-              "Here are the things I've done over the years with websites and everyday tools. Browse through them, and thank you."
-            </p>
-          </div>
+    <!-- Unified Footer Mount -->
+    <footer id="site-footer" class="w-full bg-[#05080c] border-t border-teal-950/80 py-12 md:py-16 px-4 sm:px-6 lg:px-8 text-slate-400 mt-auto"></footer>
 
-          <nav class="flex flex-wrap items-center gap-6" aria-label="Footer Navigation">
-            <a href="index.html" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors">Home</a>
-            <a href="about.html" class="font-title text-sm text-teal-300 font-semibold transition-colors">About</a>
-            <div class="flex items-center gap-3">
-              <span class="font-title text-xs uppercase tracking-wider text-teal-400/80 font-semibold">Online Projects:</span>
-              <a href="website.html" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors">Websites</a>
-              <a href="ux-ui.html" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors">UX/UI</a>
-              <a href="youtube.html" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors">YouTube</a>
-              <a href="instagram.html" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors">Instagram</a>
-            </div>
-            <a href="contact.html" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors">Contact</a>
-          </nav>
-        </div>
+    <!-- Unified Layout & Navigation Script -->
+    <script type="module" src="/shared/layout.js"></script>
 
-        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-slate-500">
-          <div>
-            <span>&copy; <span id="copyright-year">2026</span> Sofia. All archives reserved.</span>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <button id="back-to-top-btn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0a1118] hover:bg-[#101b26] text-slate-300 hover:text-white border border-teal-900/40 transition-colors" aria-label="Back to top of page">
-              <span>Back to Top</span>
-              <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Scripts -->
+    <!-- Page-specific: Deeper Search & Knowledge Dossier Interactive Filter -->
     <script>
       (function() {
-        document.getElementById('copyright-year').textContent = new Date().getFullYear();
-
-        const hamburgerBtn = document.getElementById('hamburger-btn');
-        const drawerBackdrop = document.getElementById('drawer-backdrop');
-        const leftDrawer = document.getElementById('left-hamburger-drawer');
-        const drawerCloseBtn = document.getElementById('drawer-close-btn');
-
-        function openDrawer() {
-          leftDrawer.classList.remove('-translate-x-full');
-          leftDrawer.classList.add('translate-x-0');
-          drawerBackdrop.classList.remove('opacity-0', 'pointer-events-none');
-          drawerBackdrop.classList.add('opacity-100', 'pointer-events-auto');
-          document.body.style.overflow = 'hidden';
-          hamburgerBtn.setAttribute('aria-expanded', 'true');
-        }
-
-        function closeDrawer() {
-          leftDrawer.classList.remove('translate-x-0');
-          leftDrawer.classList.add('-translate-x-full');
-          drawerBackdrop.classList.remove('opacity-100', 'pointer-events-auto');
-          drawerBackdrop.classList.add('opacity-0', 'pointer-events-none');
-          document.body.style.overflow = '';
-          hamburgerBtn.setAttribute('aria-expanded', 'false');
-        }
-
-        if (hamburgerBtn) hamburgerBtn.addEventListener('click', openDrawer);
-        if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
-        if (drawerBackdrop) drawerBackdrop.addEventListener('click', closeDrawer);
-
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape') closeDrawer();
-        });
-
-        // Online Projects Desktop Dropdown (Hover & Click/Press)
-        const opDropdown = document.getElementById('online-projects-dropdown');
-        const opBtn = document.getElementById('online-projects-btn');
-        const opMenu = document.getElementById('online-projects-menu');
-        const opChevron = document.getElementById('online-projects-chevron');
-
-        if (opDropdown && opBtn && opMenu) {
-          let closeTimer = null;
-
-          function showMenu() {
-            if (closeTimer) clearTimeout(closeTimer);
-            opMenu.classList.remove('hidden');
-            opBtn.setAttribute('aria-expanded', 'true');
-            if (opChevron) opChevron.classList.add('rotate-180');
-          }
-
-          function hideMenu() {
-            closeTimer = setTimeout(function() {
-              opMenu.classList.add('hidden');
-              opBtn.setAttribute('aria-expanded', 'false');
-              if (opChevron) opChevron.classList.remove('rotate-180');
-            }, 180);
-          }
-
-          opDropdown.addEventListener('mouseenter', showMenu);
-          opDropdown.addEventListener('mouseleave', hideMenu);
-
-          opBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            if (opMenu.classList.contains('hidden')) {
-              showMenu();
-            } else {
-              opMenu.classList.add('hidden');
-              opBtn.setAttribute('aria-expanded', 'false');
-              if (opChevron) opChevron.classList.remove('rotate-180');
-            }
-          });
-
-          document.addEventListener('click', function(e) {
-            if (!opDropdown.contains(e.target)) {
-              opMenu.classList.add('hidden');
-              opBtn.setAttribute('aria-expanded', 'false');
-              if (opChevron) opChevron.classList.remove('rotate-180');
-            }
-          });
-        }
-
-        // Online Projects Drawer Accordion Toggle
-        const drawerAccBtn = document.getElementById('drawer-projects-accordion-btn');
-        const drawerSublist = document.getElementById('drawer-projects-sublist');
-        const drawerChevron = document.getElementById('drawer-projects-chevron');
-
-        if (drawerAccBtn && drawerSublist) {
-          drawerAccBtn.addEventListener('click', function() {
-            const isHidden = drawerSublist.classList.contains('hidden');
-            if (isHidden) {
-              drawerSublist.classList.remove('hidden');
-              if (drawerChevron) drawerChevron.classList.add('rotate-180');
-            } else {
-              drawerSublist.classList.add('hidden');
-              if (drawerChevron) drawerChevron.classList.remove('rotate-180');
-            }
-          });
-        }
-
-        const backToTop = document.getElementById('back-to-top-btn');
-        if (backToTop) {
-          backToTop.addEventListener('click', function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          });
-        }
-
-        // --- Deeper Search & Knowledge Dossier Interactive Filter ---
         const searchInput = document.getElementById('dossier-search-input');
         const clearBtn = document.getElementById('search-clear-btn');
         const categoryButtons = document.querySelectorAll('.category-btn');
@@ -910,7 +402,7 @@
         let currentCategory = 'all';
 
         function filterDossier() {
-          const query = searchInput.value.toLowerCase().trim();
+          const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
           let visibleCount = 0;
 
           if (clearBtn) {
