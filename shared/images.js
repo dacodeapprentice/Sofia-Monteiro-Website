@@ -4,9 +4,9 @@
  * ==============================================================================
  *
  * HOW TO CHANGE OR ADD AN IMAGE (FOR NON-CODERS):
- * 1. Open the file: "public/images.json"
- * 2. Find the page name (e.g., "websites", "home", "about", "youtube", "instagram").
- * 3. Find the image name you want to update (e.g., "card-1", "hero", "portrait").
+ * 1. Open the file: "public/images.json" (or "images.json" in root).
+ * 2. Find the page or section name (e.g., "home", "about", "drawer", "websites", "youtube", "instagram").
+ * 3. Find the image name you want to update (e.g., "avatar", "portrait", "hero", "card-1").
  * 4. Replace the "url" with your new image link (e.g., "https://iili.io/your-new-image.jpg").
  * 5. Update the "alt" descriptions in English ("en") and Portuguese ("pt") so visitors
  *    and screen readers understand what the picture shows.
@@ -98,7 +98,15 @@ export async function applyImages(targetLang) {
     const imageKey = parts.slice(1).join('.');
 
     const pageImages = imagesData && imagesData[pageKey];
-    const item = pageImages && pageImages[imageKey];
+    let item = pageImages && pageImages[imageKey];
+
+    // Smart fallback for navigation drawer avatar
+    if (!item && (dataKey === 'drawer.avatar' || dataKey === 'menu.avatar' || dataKey === 'nav.avatar')) {
+      item = (imagesData && imagesData.drawer && imagesData.drawer.avatar) ||
+             (imagesData && imagesData.menu && imagesData.menu.avatar) ||
+             (imagesData && imagesData.nav && imagesData.nav.avatar) ||
+             (imagesData && imagesData.home && imagesData.home.portrait);
+    }
 
     // 2. Handle missing image key in images.json
     if (!item || !item.url) {

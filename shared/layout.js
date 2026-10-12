@@ -403,8 +403,9 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-teal-700 to-emerald-500 p-[1.5px] shadow-sm overflow-hidden shrink-0">
               <img
-                src="https://iili.io/naGxr8u.jpg"
-                alt="Sofia"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' fill='%230b141e'%3E%3Crect width='1' height='1' fill='%230b141e'/%3E%3C/svg%3E"
+                data-image="drawer.avatar"
+                alt="Sofia Monteiro"
                 data-i18n-alt="home.portrait_alt"
                 referrerpolicy="no-referrer"
                 class="w-full h-full object-cover rounded-full"
@@ -1228,6 +1229,10 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
     // Bind language switchers and apply initial translations
     bindToggleEvents();
     applyTranslations();
+
+    if (typeof window !== 'undefined' && window.siteImages && typeof window.siteImages.apply === 'function') {
+      window.siteImages.apply();
+    }
 
     window.dispatchEvent(new CustomEvent('layout:mounted'));
   }

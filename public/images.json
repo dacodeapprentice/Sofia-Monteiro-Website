@@ -147,5 +147,27 @@
       "width": 1200,
       "height": 630
     }
+  },
+  "drawer": {
+    "avatar": {
+      "url": "https://iili.io/nVDa3XI.jpg",
+      "alt": {
+        "en": "Sofia Monteiro — Hamburger menu avatar",
+        "pt": "Sofia Monteiro — Avatar do menu hambúrguer"
+      },
+      "width": 80,
+      "height": 80
+    }
+  },
+  "menu": {
+    "avatar": {
+      "url": "https://iili.io/nVDa3XI.jpg",
+      "alt": {
+        "en": "Sofia Monteiro — Hamburger menu avatar",
+        "pt": "Sofia Monteiro — Avatar do menu hambúrguer"
+      },
+      "width": 80,
+      "height": 80
+    }
   }
 }

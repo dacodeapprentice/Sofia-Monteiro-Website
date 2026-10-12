@@ -21,8 +21,8 @@ All photos and thumbnails across the website are controlled from a single file: 
 
 ### To Change a Picture:
 1. Open **`public/images.json`**.
-2. Find the page (for example `"websites"`, `"home"`, `"about"`, `"youtube"`, or `"instagram"`).
-3. Find the image name you want to update (for example `"card-1"`, `"hero"`, `"portrait"`).
+2. Find the section or page (for example `"home"`, `"about"`, `"drawer"` for the hamburger menu, `"websites"`, `"youtube"`, or `"instagram"`).
+3. Find the image name you want to update (for example `"avatar"`, `"portrait"`, `"hero"`, `"card-1"`).
 4. Replace the `"url"` with your new image link (e.g. `https://iili.io/your-new-picture.jpg`).
 5. Update the `"alt"` text descriptions for English (`"en"`) and Portuguese (`"pt"`).
 6. Save the file. The website updates automatically!
