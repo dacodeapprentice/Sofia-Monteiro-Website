@@ -55,7 +55,8 @@ export async function loadImagesData() {
 
   loadPromise = (async () => {
     try {
-      const response = await fetch('/images.json');
+      // Use cache: 'no-cache' and timestamp query param so image updates are reflected immediately
+      const response = await fetch('/images.json?t=' + Date.now(), { cache: 'no-cache' });
       if (!response.ok) {
         throw new Error(`HTTP ${response.status} ${response.statusText}`);
       }
