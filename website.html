@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Websites — Sofia</title>
-    <meta name="description" content="Everyday websites and tools created by Sofia to help people in daily life." />
+    <title data-i18n="websites.meta_title">Websites — Sofia</title>
+    <meta name="description" data-i18n-meta="websites.meta_desc" content="Everyday websites and tools created by Sofia to help people in daily life." />
     <link rel="canonical" href="website.html" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Open Graph & Social Card Previews -->
-    <meta property="og:title" content="Websites — Sofia" />
-    <meta property="og:description" content="Everyday websites and tools created by Sofia to help people in daily life." />
+    <meta property="og:title" data-i18n-meta="websites.og_title" content="Websites — Sofia" />
+    <meta property="og:description" data-i18n-meta="websites.og_desc" content="Everyday websites and tools created by Sofia to help people in daily life." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="website.html" />
     <meta property="og:image" content="https://iili.io/naGx4yb.jpg" />
@@ -27,6 +27,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Anti-Flash Early Language Setter -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('sofia_portfolio_lang');
+          var lang = (saved === 'pt' || saved === 'en') ? saved : ((navigator.language || '').toLowerCase().startsWith('pt') ? 'pt' : 'en');
+          document.documentElement.lang = lang === 'pt' ? 'pt-PT' : 'en';
+          document.documentElement.setAttribute('data-lang', lang);
+        } catch(e) {}
+      })();
+    </script>
 
     <!-- Shared Tailwind CSS Stylesheet -->
     <link rel="stylesheet" href="/shared/style.css" />
@@ -48,12 +60,12 @@
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
           </svg>
-          <span>Online Projects · Section 01 / Websites</span>
+          <span data-i18n="websites.section_tag">Online Projects · Section 01 / Websites</span>
         </div>
-        <h1 class="font-title text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
+        <h1 class="font-title text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-3" data-i18n="websites.title">
           Websites
         </h1>
-        <p class="font-serif text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl">
+        <p class="font-serif text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl" data-i18n="websites.subtitle">
           Websites and interactive utilities I created to help people in their everyday lives — simple, thoughtful tools designed for daily clarity.
         </p>
       </div>
@@ -75,11 +87,12 @@
               <img
                 src="https://iili.io/naGx4yb.jpg"
                 alt="Paroxetine Taper Guide thumbnail"
+                data-i18n-alt="websites.p1_thumb_alt"
                 referrerpolicy="no-referrer"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-teal-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
+              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-teal-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50" data-i18n="websites.p1_badge">
                 Live Tracker
               </span>
             </a>
@@ -87,9 +100,9 @@
             <!-- Website Information & Redirect Action -->
             <div class="flex-1 space-y-3">
               <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-teal-400 font-semibold">Health &amp; Well-being</span>
+                <span class="text-teal-400 font-semibold" data-i18n="websites.p1_cat">Health &amp; Well-being</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-emerald-300 font-mono text-xs">Live Tracker</span>
+                <span class="text-emerald-300 font-mono text-xs" data-i18n="websites.p1_badge">Live Tracker</span>
               </div>
 
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
@@ -101,7 +114,7 @@
                 </a>
               </h2>
 
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p class="font-serif text-slate-300 text-base leading-relaxed" data-i18n="websites.p1_desc">
                 A live tracker and guidance tool to help individuals safely and gradually taper paroxetine. Features dosage reduction schedules, daily symptom monitoring, milestone tracking, and supportive resources to navigate discontinuation with confidence.
               </p>
 
@@ -112,7 +125,7 @@
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all cursor-pointer"
                 >
-                  <span>Visit Website</span>
+                  <span data-i18n="websites.btn_visit">Visit Website</span>
                   <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
@@ -137,11 +150,12 @@
               <img
                 src="https://iili.io/naGx4yb.jpg"
                 alt="Typing Pro thumbnail"
+                data-i18n-alt="websites.p2_thumb_alt"
                 referrerpolicy="no-referrer"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-emerald-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
+              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-emerald-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50" data-i18n="websites.p2_badge">
                 Speed Trainer
               </span>
             </a>
@@ -149,9 +163,9 @@
             <!-- Info & Redirect Action -->
             <div class="flex-1 space-y-3">
               <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-emerald-400 font-semibold">Productivity &amp; Skill Building</span>
+                <span class="text-emerald-400 font-semibold" data-i18n="websites.p2_cat">Productivity &amp; Skill Building</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-teal-300 font-mono text-xs">Speed Trainer</span>
+                <span class="text-teal-300 font-mono text-xs" data-i18n="websites.p2_badge">Speed Trainer</span>
               </div>
 
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
@@ -163,7 +177,7 @@
                 </a>
               </h2>
 
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p class="font-serif text-slate-300 text-base leading-relaxed" data-i18n="websites.p2_desc">
                 An interactive typing trainer designed to help anyone type faster and improve muscle memory with real-time WPM calculation, accuracy tracking, and focused practice drills.
               </p>
 
@@ -174,7 +188,7 @@
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all cursor-pointer"
                 >
-                  <span>Visit Website</span>
+                  <span data-i18n="websites.btn_visit">Visit Website</span>
                   <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
@@ -199,11 +213,12 @@
               <img
                 src="https://iili.io/naGx4yb.jpg"
                 alt="Easy Doc thumbnail"
+                data-i18n-alt="websites.p3_thumb_alt"
                 referrerpolicy="no-referrer"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-cyan-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
+              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-cyan-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50" data-i18n="websites.p3_badge">
                 Document Generator
               </span>
             </a>
@@ -211,9 +226,9 @@
             <!-- Info & Redirect Action -->
             <div class="flex-1 space-y-3">
               <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-cyan-400 font-semibold">Utility &amp; Documentation</span>
+                <span class="text-cyan-400 font-semibold" data-i18n="websites.p3_cat">Utility &amp; Documentation</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-teal-300 font-mono text-xs">Document Generator</span>
+                <span class="text-teal-300 font-mono text-xs" data-i18n="websites.p3_badge">Document Generator</span>
               </div>
 
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
@@ -225,7 +240,7 @@
                 </a>
               </h2>
 
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p class="font-serif text-slate-300 text-base leading-relaxed" data-i18n="websites.p3_desc">
                 Document generator made easy — create, format, customize, and export clean, structured documents effortlessly without complex software or formatting headaches.
               </p>
 
@@ -236,7 +251,7 @@
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all cursor-pointer"
                 >
-                  <span>Visit Website</span>
+                  <span data-i18n="websites.btn_visit">Visit Website</span>
                   <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
@@ -261,11 +276,12 @@
               <img
                 src="https://iili.io/naGx4yb.jpg"
                 alt="High Octane thumbnail"
+                data-i18n-alt="websites.p4_thumb_alt"
                 referrerpolicy="no-referrer"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-amber-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
+              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-amber-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50" data-i18n="websites.p4_badge">
                 Online Racing Game
               </span>
             </a>
@@ -273,9 +289,9 @@
             <!-- Info & Redirect Action -->
             <div class="flex-1 space-y-3">
               <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-amber-400 font-semibold">Gaming &amp; Interactive</span>
+                <span class="text-amber-400 font-semibold" data-i18n="websites.p4_cat">Gaming &amp; Interactive</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-teal-300 font-mono text-xs">Online Racing Game</span>
+                <span class="text-teal-300 font-mono text-xs" data-i18n="websites.p4_badge">Online Racing Game</span>
               </div>
 
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
@@ -287,7 +303,7 @@
                 </a>
               </h2>
 
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p class="font-serif text-slate-300 text-base leading-relaxed" data-i18n="websites.p4_desc">
                 An action-packed online racing video game featuring high-speed competition, challenging tracks, and responsive vehicle handling built for thrilling arcade racing directly in the browser.
               </p>
 
@@ -298,7 +314,7 @@
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all cursor-pointer"
                 >
-                  <span>Visit Website</span>
+                  <span data-i18n="websites.btn_visit">Visit Website</span>
                   <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
@@ -316,7 +332,9 @@
     <!-- Unified Footer Mount -->
     <footer id="site-footer" class="w-full bg-[#05080c] border-t border-teal-950/80 py-12 md:py-16 px-4 sm:px-6 lg:px-8 text-slate-400 mt-auto"></footer>
 
-    <!-- Unified Layout & Navigation Script -->
+    <!-- Unified i18n & Layout Scripts -->
+    <script type="module" src="/shared/i18n.js"></script>
     <script type="module" src="/shared/layout.js"></script>
+
   </body>
 </html>

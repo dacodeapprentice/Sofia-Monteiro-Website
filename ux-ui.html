@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UX/UI Design — Sofia</title>
-    <meta name="description" content="Product interfaces, design systems, and thoughtful UX case studies created by Sofia." />
+    <title data-i18n="uxui.meta_title">UX/UI Design — Sofia</title>
+    <meta name="description" data-i18n-meta="uxui.meta_desc" content="Product interfaces, design systems, and thoughtful UX case studies created by Sofia." />
     <link rel="canonical" href="ux-ui.html" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Open Graph & Social Card Previews -->
-    <meta property="og:title" content="UX/UI Design — Sofia" />
-    <meta property="og:description" content="Product interfaces, design systems, and thoughtful UX case studies created by Sofia." />
+    <meta property="og:title" data-i18n-meta="uxui.og_title" content="UX/UI Design — Sofia" />
+    <meta property="og:description" data-i18n-meta="uxui.og_desc" content="Product interfaces, design systems, and thoughtful UX case studies created by Sofia." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="ux-ui.html" />
     <meta property="og:image" content="https://iili.io/naGx4yb.jpg" />
@@ -27,6 +27,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Anti-Flash Early Language Setter -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('sofia_portfolio_lang');
+          var lang = (saved === 'pt' || saved === 'en') ? saved : ((navigator.language || '').toLowerCase().startsWith('pt') ? 'pt' : 'en');
+          document.documentElement.lang = lang === 'pt' ? 'pt-PT' : 'en';
+          document.documentElement.setAttribute('data-lang', lang);
+        } catch(e) {}
+      })();
+    </script>
 
     <!-- Shared Tailwind CSS Stylesheet -->
     <link rel="stylesheet" href="/shared/style.css" />
@@ -45,14 +57,14 @@
       <div class="mb-14">
         <div class="flex items-center gap-2 text-xs text-teal-400 font-sans tracking-wide uppercase mb-2.5">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
           </svg>
-          <span>Online Projects · Section 02 / UX &amp; UI</span>
+          <span data-i18n="uxui.section_tag">Online Projects · Section 02 / UX &amp; UI</span>
         </div>
-        <h1 class="font-title text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
+        <h1 class="font-title text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-3" data-i18n="uxui.title">
           UX / UI Design
         </h1>
-        <p class="font-serif text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl">
+        <p class="font-serif text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl" data-i18n="uxui.subtitle">
           Human-centered digital products, design systems, and thoughtful interface prototypes crafted for cognitive ease, accessibility, and enduring aesthetic clarity.
         </p>
       </div>
@@ -64,32 +76,32 @@
           <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
             <div class="space-y-3 flex-1">
               <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-teal-400 font-semibold">Design Systems &amp; Tokens</span>
+                <span class="text-teal-400 font-semibold" data-i18n="uxui.p1_cat">Design Systems &amp; Tokens</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-emerald-300 font-mono text-xs">2024 — Present</span>
+                <span class="text-emerald-300 font-mono text-xs" data-i18n="uxui.p1_era">2024 — Present</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-slate-300">Lead Product Designer</span>
+                <span class="text-slate-300" data-i18n="uxui.role_lead">Lead Product Designer</span>
               </div>
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
                 Aether Design System
               </h2>
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p class="font-serif text-slate-300 text-base leading-relaxed" data-i18n="uxui.p1_desc">
                 A token-driven design system engineered for cognitive calm and multi-brand scalability. Features WCAG AAA accessible contrast standards, fluid typography scales, and modular React/Tailwind component primitives.
               </p>
               <div class="pt-2">
-                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2">Key Architectural Decisions:</h4>
+                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2" data-i18n="uxui.key_decisions">Key Architectural Decisions:</h4>
                 <ul class="space-y-1.5 font-sans text-xs text-slate-300">
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>Comprehensive design token pipeline linking Figma styles directly to CSS variables</span>
+                    <span data-i18n="uxui.p1_d1">Comprehensive design token pipeline linking Figma styles directly to CSS variables</span>
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>80+ accessible component primitives with high-contrast keyboard navigation</span>
+                    <span data-i18n="uxui.p1_d2">80+ accessible component primitives with high-contrast keyboard navigation</span>
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>Light &amp; dark themes optimized for long-duration data density and low eye strain</span>
+                    <span data-i18n="uxui.p1_d3">Light &amp; dark themes optimized for long-duration data density and low eye strain</span>
                   </li>
                 </ul>
               </div>
@@ -105,8 +117,8 @@
                 </div>
               </div>
               <div class="pt-2 border-t border-teal-950/70 text-xs font-sans text-slate-400 flex items-center justify-between">
-                <span>Methodology</span>
-                <span class="text-teal-300 font-mono">User-Centered</span>
+                <span data-i18n="uxui.methodology_label">Methodology</span>
+                <span class="text-teal-300 font-mono" data-i18n="uxui.methodology_val">User-Centered</span>
               </div>
             </div>
           </div>
@@ -117,32 +129,32 @@
           <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
             <div class="space-y-3 flex-1">
               <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-teal-400 font-semibold">Fintech &amp; Behavioral UX</span>
+                <span class="text-teal-400 font-semibold" data-i18n="uxui.p2_cat">Fintech &amp; Behavioral UX</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-emerald-300 font-mono text-xs">2023 — 2024</span>
+                <span class="text-emerald-300 font-mono text-xs" data-i18n="uxui.p2_era">2023 — 2024</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-slate-300">UX Architect</span>
+                <span class="text-slate-300" data-i18n="uxui.role_architect">UX Architect</span>
               </div>
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
-                Pulse — Mindful Financial Ledger
+                <span data-i18n="uxui.p2_title">Pulse — Mindful Financial Ledger</span>
               </h2>
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p class="font-serif text-slate-300 text-base leading-relaxed" data-i18n="uxui.p2_desc">
                 A private, distraction-free interface for intentional spending and personal accounting. Eliminated numerical anxiety by replacing overwhelming financial charts with calm visual cadences and intuitive flow states.
               </p>
               <div class="pt-2">
-                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2">Key Architectural Decisions:</h4>
+                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2" data-i18n="uxui.key_decisions">Key Architectural Decisions:</h4>
                 <ul class="space-y-1.5 font-sans text-xs text-slate-300">
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>Conducted 18 user interviews exploring financial stress patterns in banking apps</span>
+                    <span data-i18n="uxui.p2_d1">Conducted 18 user interviews exploring financial stress patterns in banking apps</span>
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>Developed 1-tap micro-categorization interaction saving 65% interaction time</span>
+                    <span data-i18n="uxui.p2_d2">Developed 1-tap micro-categorization interaction saving 65% interaction time</span>
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>Offline-first architecture with local encrypted device storage</span>
+                    <span data-i18n="uxui.p2_d3">Offline-first architecture with local encrypted device storage</span>
                   </li>
                 </ul>
               </div>
@@ -157,8 +169,8 @@
                 </div>
               </div>
               <div class="pt-2 border-t border-teal-950/70 text-xs font-sans text-slate-400 flex items-center justify-between">
-                <span>Focus</span>
-                <span class="text-teal-300 font-mono">Calm Tech</span>
+                <span data-i18n="uxui.focus_label">Focus</span>
+                <span class="text-teal-300 font-mono" data-i18n="uxui.focus_val">Calm Tech</span>
               </div>
             </div>
           </div>
@@ -169,32 +181,32 @@
           <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
             <div class="space-y-3 flex-1">
               <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-teal-400 font-semibold">Content &amp; Editorial UX</span>
+                <span class="text-teal-400 font-semibold" data-i18n="uxui.p3_cat">Content &amp; Editorial UX</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-emerald-300 font-mono text-xs">2023</span>
+                <span class="text-emerald-300 font-mono text-xs" data-i18n="uxui.p3_era">2023</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-slate-300">Interface Designer</span>
+                <span class="text-slate-300" data-i18n="uxui.role_designer">Interface Designer</span>
               </div>
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
-                Monolith — Distraction-Free Longform Canvas
+                <span data-i18n="uxui.p3_title">Monolith — Distraction-Free Longform Canvas</span>
               </h2>
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p class="font-serif text-slate-300 text-base leading-relaxed" data-i18n="uxui.p3_desc">
                 An editorial reading workspace combining custom variable serif typography with ambient acoustic feedback. Tailored specifically for deep archival research, academic papers, and uninterrupted immersion.
               </p>
               <div class="pt-2">
-                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2">Key Architectural Decisions:</h4>
+                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2" data-i18n="uxui.key_decisions">Key Architectural Decisions:</h4>
                 <ul class="space-y-1.5 font-sans text-xs text-slate-300">
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>Dynamic line-length calculation respecting ergonomic 65-character golden ratios</span>
+                    <span data-i18n="uxui.p3_d1">Dynamic line-length calculation respecting ergonomic 65-character golden ratios</span>
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>Ambient soundscape interface dynamically adjusting textures based on reading pace</span>
+                    <span data-i18n="uxui.p3_d2">Ambient soundscape interface dynamically adjusting textures based on reading pace</span>
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>Zero-clutter margin annotation system keeping the focal text serene</span>
+                    <span data-i18n="uxui.p3_d3">Zero-clutter margin annotation system keeping the focal text serene</span>
                   </li>
                 </ul>
               </div>
@@ -209,8 +221,8 @@
                 </div>
               </div>
               <div class="pt-2 border-t border-teal-950/70 text-xs font-sans text-slate-400 flex items-center justify-between">
-                <span>Craft</span>
-                <span class="text-teal-300 font-mono">Editorial UX</span>
+                <span data-i18n="uxui.craft_label">Craft</span>
+                <span class="text-teal-300 font-mono" data-i18n="uxui.craft_val">Editorial UX</span>
               </div>
             </div>
           </div>
@@ -221,32 +233,32 @@
           <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
             <div class="space-y-3 flex-1">
               <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-teal-400 font-semibold">Public Utility &amp; Accessibility</span>
+                <span class="text-teal-400 font-semibold" data-i18n="uxui.p4_cat">Public Utility &amp; Accessibility</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-emerald-300 font-mono text-xs">2022 — 2023</span>
+                <span class="text-emerald-300 font-mono text-xs" data-i18n="uxui.p4_era">2022 — 2023</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
-                <span class="text-slate-300">Accessibility Specialist</span>
+                <span class="text-slate-300" data-i18n="uxui.role_specialist">Accessibility Specialist</span>
               </div>
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
-                Civic Mesh — Hyper-Accessible Community Directory
+                <span data-i18n="uxui.p4_title">Civic Mesh — Hyper-Accessible Community Directory</span>
               </h2>
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p class="font-serif text-slate-300 text-base leading-relaxed" data-i18n="uxui.p4_desc">
                 An ultra-accessible directory connecting municipal neighbors to essential health, food pantry, and shelter resources. Engineered for low-bandwidth devices, screen readers, and multilingual communities.
               </p>
               <div class="pt-2">
-                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2">Key Architectural Decisions:</h4>
+                <h4 class="text-xs font-sans uppercase tracking-wider text-slate-400 font-medium mb-2" data-i18n="uxui.key_decisions">Key Architectural Decisions:</h4>
                 <ul class="space-y-1.5 font-sans text-xs text-slate-300">
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>100% WCAG 2.2 AAA compliant with rigorous screen-reader verification</span>
+                    <span data-i18n="uxui.p4_d1">100% WCAG 2.2 AAA compliant with rigorous screen-reader verification</span>
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>Instant search and phone-dial actions usable on 2G mobile connections</span>
+                    <span data-i18n="uxui.p4_d2">Instant search and phone-dial actions usable on 2G mobile connections</span>
                   </li>
                   <li class="flex items-start gap-2">
                     <span class="text-teal-400 mt-0.5">✓</span>
-                    <span>Bilingual interface with plain-language readability scores under Grade 6</span>
+                    <span data-i18n="uxui.p4_d3">Bilingual interface with plain-language readability scores under Grade 6</span>
                   </li>
                 </ul>
               </div>
@@ -261,8 +273,8 @@
                 </div>
               </div>
               <div class="pt-2 border-t border-teal-950/70 text-xs font-sans text-slate-400 flex items-center justify-between">
-                <span>Standard</span>
-                <span class="text-teal-300 font-mono">Universal Design</span>
+                <span data-i18n="uxui.standard_label">Standard</span>
+                <span class="text-teal-300 font-mono" data-i18n="uxui.standard_val">Universal Design</span>
               </div>
             </div>
           </div>
@@ -273,7 +285,9 @@
     <!-- Unified Footer Mount -->
     <footer id="site-footer" class="w-full bg-[#05080c] border-t border-teal-950/80 py-12 md:py-16 px-4 sm:px-6 lg:px-8 text-slate-400 mt-auto"></footer>
 
-    <!-- Unified Layout & Navigation Script -->
+    <!-- Unified i18n & Layout Scripts -->
+    <script type="module" src="/shared/i18n.js"></script>
     <script type="module" src="/shared/layout.js"></script>
+
   </body>
 </html>

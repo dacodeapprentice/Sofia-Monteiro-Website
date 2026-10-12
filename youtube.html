@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YouTube Channels — Sofia</title>
-    <meta name="description" content="Explore Sofia's three YouTube channels: personal creative essays, gaming experiments, and archived footage." />
+    <title data-i18n="youtube.meta_title">YouTube Channels — Sofia</title>
+    <meta name="description" data-i18n-meta="youtube.meta_desc" content="Explore Sofia's three YouTube channels: personal creative essays, gaming experiments, and archived footage." />
     <link rel="canonical" href="youtube.html" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Open Graph & Social Card Previews -->
-    <meta property="og:title" content="YouTube Channels — Sofia" />
-    <meta property="og:description" content="Explore Sofia's three YouTube channels: personal creative essays, gaming experiments, and archived footage." />
+    <meta property="og:title" data-i18n-meta="youtube.og_title" content="YouTube Channels — Sofia" />
+    <meta property="og:description" data-i18n-meta="youtube.og_desc" content="Explore Sofia's three YouTube channels: personal creative essays, gaming experiments, and archived footage." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="youtube.html" />
     <meta property="og:image" content="https://iili.io/naGx4yb.jpg" />
@@ -18,8 +18,8 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="YouTube Channels — Sofia" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="YouTube Channels — Sofia" />
-    <meta name="twitter:description" content="Explore Sofia's three YouTube channels: personal creative essays, gaming experiments, and archived footage." />
+    <meta name="twitter:title" data-i18n-meta="youtube.og_title" content="YouTube Channels — Sofia" />
+    <meta name="twitter:description" data-i18n-meta="youtube.og_desc" content="Explore Sofia's three YouTube channels: personal creative essays, gaming experiments, and archived footage." />
     <meta name="twitter:image" content="https://iili.io/naGx4yb.jpg" />
     <meta name="theme-color" content="#080d12" />
 
@@ -27,6 +27,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Anti-Flash Early Language Setter -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('sofia_portfolio_lang');
+          var lang = (saved === 'pt' || saved === 'en') ? saved : ((navigator.language || navigator.userLanguage || '').toLowerCase().startsWith('pt') ? 'pt' : 'en');
+          document.documentElement.lang = lang;
+          document.documentElement.setAttribute('data-lang', lang);
+        } catch (e) {}
+      })();
+    </script>
 
     <!-- Shared Tailwind CSS Stylesheet -->
     <link rel="stylesheet" href="/shared/style.css" />
@@ -48,12 +60,12 @@
           <svg class="w-3.5 h-3.5 text-red-400" fill="currentColor" viewBox="0 0 24 24">
             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
           </svg>
-          <span>Online Projects · Social Media / YouTube</span>
+          <span data-i18n="youtube.section_tag">Online Projects · Social Media / YouTube</span>
         </div>
-        <h1 class="font-title text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
+        <h1 data-i18n="youtube.title" class="font-title text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
           YouTube
         </h1>
-        <p class="font-serif text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl">
+        <p data-i18n="youtube.subtitle" class="font-serif text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl">
           Three dedicated video channels created by Sofia — exploring creative thoughts, gaming experiments, and archived digital documentation.
         </p>
       </div>
@@ -73,18 +85,19 @@
               <img
                 src="https://iili.io/naGxr8u.jpg"
                 alt="Sofia Monteiro channel thumbnail"
+                data-i18n-alt="youtube.c1_thumb_alt"
                 referrerpolicy="no-referrer"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-teal-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
+              <span data-i18n="youtube.c1_badge" class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-teal-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
                 Personal Channel
               </span>
             </a>
 
             <div class="flex-1 space-y-3">
               <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-teal-400 font-semibold">Creative Essays &amp; Reflections</span>
+                <span data-i18n="youtube.c1_cat" class="text-teal-400 font-semibold">Creative Essays &amp; Reflections</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
                 <span class="text-emerald-300 font-mono text-xs">@SofiaMonteirocontent</span>
               </div>
@@ -98,7 +111,7 @@
                 </a>
               </h2>
 
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p data-i18n="youtube.c1_desc" class="font-serif text-slate-300 text-base leading-relaxed">
                 Video essays, personal creative thoughts, lifestyle documentation, and digital reflections by Sofia. A calm, candid space exploring design philosophy, everyday living rituals, and ongoing creative projects.
               </p>
 
@@ -109,7 +122,7 @@
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all cursor-pointer"
                 >
-                  <span>Visit Channel</span>
+                  <span data-i18n="youtube.btn_visit">Visit Channel</span>
                   <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
@@ -131,18 +144,19 @@
               <img
                 src="https://iili.io/naGx4yb.jpg"
                 alt="Secaski Games channel thumbnail"
+                data-i18n-alt="youtube.c2_thumb_alt"
                 referrerpolicy="no-referrer"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-teal-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
+              <span data-i18n="youtube.c2_badge" class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-teal-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
                 Gaming Channel
               </span>
             </a>
 
             <div class="flex-1 space-y-3">
               <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-teal-400 font-semibold">Gaming &amp; Interactive Media</span>
+                <span data-i18n="youtube.c2_cat" class="text-teal-400 font-semibold">Gaming &amp; Interactive Media</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
                 <span class="text-emerald-300 font-mono text-xs">@secaskigames</span>
               </div>
@@ -156,7 +170,7 @@
                 </a>
               </h2>
 
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p data-i18n="youtube.c2_desc" class="font-serif text-slate-300 text-base leading-relaxed">
                 High-energy racing experiments, gameplay highlights, walkthroughs, and interactive video game reviews. Featuring gameplay mechanics, racing simulations, and indie title explorations.
               </p>
 
@@ -167,7 +181,7 @@
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all cursor-pointer"
                 >
-                  <span>Visit Channel</span>
+                  <span data-i18n="youtube.btn_visit">Visit Channel</span>
                   <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
@@ -189,18 +203,19 @@
               <img
                 src="https://iili.io/naGx4yb.jpg"
                 alt="Monteiro Archive channel thumbnail"
+                data-i18n-alt="youtube.c3_thumb_alt"
                 referrerpolicy="no-referrer"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-teal-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
+              <span data-i18n="youtube.c3_badge" class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-teal-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
                 Digital Archive
               </span>
             </a>
 
             <div class="flex-1 space-y-3">
               <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-teal-400 font-semibold">Visual Archival &amp; Experiments</span>
+                <span data-i18n="youtube.c3_cat" class="text-teal-400 font-semibold">Visual Archival &amp; Experiments</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
                 <span class="text-emerald-300 font-mono text-xs">@monteiroarchive415</span>
               </div>
@@ -214,7 +229,7 @@
                 </a>
               </h2>
 
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p data-i18n="youtube.c3_desc" class="font-serif text-slate-300 text-base leading-relaxed">
                 Curated footage repository, documentation recordings, video experiments, and visual time-capsules. A digital archive cataloging creative milestones, research notes, and retrospective media.
               </p>
 
@@ -225,7 +240,7 @@
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all cursor-pointer"
                 >
-                  <span>Visit Channel</span>
+                  <span data-i18n="youtube.btn_visit">Visit Channel</span>
                   <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
@@ -241,7 +256,8 @@
     <!-- Unified Footer Mount -->
     <footer id="site-footer" class="w-full bg-[#05080c] border-t border-teal-950/80 py-12 md:py-16 px-4 sm:px-6 lg:px-8 text-slate-400 mt-auto"></footer>
 
-    <!-- Unified Layout & Navigation Script -->
+    <!-- Shared i18n & Layout Script -->
+    <script type="module" src="/shared/i18n.js"></script>
     <script type="module" src="/shared/layout.js"></script>
   </body>
 </html>

@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram — Sofia</title>
-    <meta name="description" content="Visual diary documenting creative inspiration, quiet moments, editorial experiments, and everyday snapshots by Sofia." />
+    <title data-i18n="instagram.meta_title">Instagram — Sofia</title>
+    <meta name="description" data-i18n-meta="instagram.meta_desc" content="Visual diary documenting creative inspiration, quiet moments, editorial experiments, and everyday snapshots by Sofia." />
     <link rel="canonical" href="instagram.html" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Open Graph & Social Card Previews -->
-    <meta property="og:title" content="Instagram — Sofia" />
-    <meta property="og:description" content="Visual diary documenting creative inspiration, quiet moments, editorial experiments, and everyday snapshots by Sofia." />
+    <meta property="og:title" data-i18n-meta="instagram.og_title" content="Instagram — Sofia" />
+    <meta property="og:description" data-i18n-meta="instagram.og_desc" content="Visual diary documenting creative inspiration, quiet moments, editorial experiments, and everyday snapshots by Sofia." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="instagram.html" />
     <meta property="og:image" content="https://iili.io/naGx4yb.jpg" />
@@ -18,8 +18,8 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Instagram — Sofia" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Instagram — Sofia" />
-    <meta name="twitter:description" content="Visual diary documenting creative inspiration, quiet moments, editorial experiments, and everyday snapshots by Sofia." />
+    <meta name="twitter:title" data-i18n-meta="instagram.og_title" content="Instagram — Sofia" />
+    <meta name="twitter:description" data-i18n-meta="instagram.og_desc" content="Visual diary documenting creative inspiration, quiet moments, editorial experiments, and everyday snapshots by Sofia." />
     <meta name="twitter:image" content="https://iili.io/naGx4yb.jpg" />
     <meta name="theme-color" content="#080d12" />
 
@@ -27,6 +27,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Anti-Flash Early Language Setter -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('sofia_portfolio_lang');
+          var lang = (saved === 'pt' || saved === 'en') ? saved : ((navigator.language || navigator.userLanguage || '').toLowerCase().startsWith('pt') ? 'pt' : 'en');
+          document.documentElement.lang = lang;
+          document.documentElement.setAttribute('data-lang', lang);
+        } catch (e) {}
+      })();
+    </script>
 
     <!-- Shared Tailwind CSS Stylesheet -->
     <link rel="stylesheet" href="/shared/style.css" />
@@ -48,12 +60,12 @@
           <svg class="w-3.5 h-3.5 text-pink-400" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
           </svg>
-          <span>Online Projects · Social Media / Instagram</span>
+          <span data-i18n="instagram.section_tag">Online Projects · Social Media / Instagram</span>
         </div>
-        <h1 class="font-title text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
+        <h1 data-i18n="instagram.title" class="font-title text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-3">
           Instagram
         </h1>
-        <p class="font-serif text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl">
+        <p data-i18n="instagram.subtitle" class="font-serif text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl">
           Visual diary documenting creative inspiration, quiet moments, editorial experiments, and everyday snapshots.
         </p>
       </div>
@@ -71,39 +83,40 @@
               <img
                 src="https://iili.io/naGxr8u.jpg"
                 alt="Sofia Monteiro Instagram Preview"
+                data-i18n-alt="instagram.card_preview_alt"
                 referrerpolicy="no-referrer"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter brightness-95"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#080d12]/80 via-transparent to-transparent"></div>
-              <span class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-teal-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
+              <span data-i18n="instagram.card_badge" class="absolute bottom-2.5 right-2.5 text-xs font-mono font-medium text-teal-300 bg-[#080d12]/90 backdrop-blur-md px-2.5 py-0.5 rounded border border-teal-900/50">
                 Visual Feed
               </span>
             </a>
 
             <div class="flex-1 space-y-3">
               <div class="flex items-center gap-2 text-xs text-slate-400 font-sans">
-                <span class="text-teal-400 font-semibold">Visual Photography &amp; Creative Direction</span>
+                <span data-i18n="instagram.card_cat" class="text-teal-400 font-semibold">Visual Photography &amp; Creative Direction</span>
                 <span aria-hidden="true" class="text-slate-600">·</span>
                 <span class="text-emerald-300 font-mono text-xs">@sofiamonteiro</span>
               </div>
 
               <h2 class="font-title text-2xl font-bold text-white tracking-tight group-hover:text-teal-300 transition-colors">
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-2">
-                  <span>Sofia Monteiro — Visual Journal</span>
+                  <span data-i18n="instagram.card_title">Sofia Monteiro — Visual Journal</span>
                   <svg class="w-4 h-4 text-teal-400 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
                   </svg>
                 </a>
               </h2>
 
-              <p class="font-serif text-slate-300 text-base leading-relaxed">
+              <p data-i18n="instagram.card_desc" class="font-serif text-slate-300 text-base leading-relaxed">
                 Curated visual observations, architectural snapshots, typography studies, and candid behind-the-scenes moments from daily creative work. Exploring balance, natural light, and modern minimal aesthetics.
               </p>
 
               <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs font-sans px-2.5 py-0.5 rounded-full bg-[#0a121a] text-slate-300 border border-teal-900/30">Visual Diary</span>
-                <span class="text-xs font-sans px-2.5 py-0.5 rounded-full bg-[#0a121a] text-slate-300 border border-teal-900/30">Design Aesthetics</span>
-                <span class="text-xs font-sans px-2.5 py-0.5 rounded-full bg-[#0a121a] text-slate-300 border border-teal-900/30">Daily Photography</span>
+                <span data-i18n="instagram.tag_diary" class="text-xs font-sans px-2.5 py-0.5 rounded-full bg-[#0a121a] text-slate-300 border border-teal-900/30">Visual Diary</span>
+                <span data-i18n="instagram.tag_aesthetics" class="text-xs font-sans px-2.5 py-0.5 rounded-full bg-[#0a121a] text-slate-300 border border-teal-900/30">Design Aesthetics</span>
+                <span data-i18n="instagram.tag_photo" class="text-xs font-sans px-2.5 py-0.5 rounded-full bg-[#0a121a] text-slate-300 border border-teal-900/30">Daily Photography</span>
               </div>
 
               <div class="pt-2">
@@ -113,7 +126,7 @@
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-title font-semibold bg-teal-950/60 hover:bg-teal-900/70 text-teal-300 border border-teal-800/50 transition-all cursor-pointer"
                 >
-                  <span>Open Instagram</span>
+                  <span data-i18n="instagram.btn_open">Open Instagram</span>
                   <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
@@ -130,9 +143,9 @@
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-              <span>Studio &amp; Workspaces</span>
+              <span data-i18n="instagram.h1_title">Studio &amp; Workspaces</span>
             </div>
-            <p class="text-xs text-slate-300 font-serif leading-relaxed">
+            <p data-i18n="instagram.h1_desc" class="text-xs text-slate-300 font-serif leading-relaxed">
               Workspace setups, desk architectures, ergonomic typography tests, and working documents.
             </p>
           </div>
@@ -143,9 +156,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span>Light &amp; Cityscapes</span>
+              <span data-i18n="instagram.h2_title">Light &amp; Cityscapes</span>
             </div>
-            <p class="text-xs text-slate-300 font-serif leading-relaxed">
+            <p data-i18n="instagram.h2_desc" class="text-xs text-slate-300 font-serif leading-relaxed">
               Quiet morning walks, urban geometry, architecture angles, and reflections during downtime.
             </p>
           </div>
@@ -155,9 +168,9 @@
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
               </svg>
-              <span>Creative Process</span>
+              <span data-i18n="instagram.h3_title">Creative Process</span>
             </div>
-            <p class="text-xs text-slate-300 font-serif leading-relaxed">
+            <p data-i18n="instagram.h3_desc" class="text-xs text-slate-300 font-serif leading-relaxed">
               Work-in-progress snapshots, color studies, and design system component experiments.
             </p>
           </div>
@@ -168,7 +181,8 @@
     <!-- Unified Footer Mount -->
     <footer id="site-footer" class="w-full bg-[#05080c] border-t border-teal-950/80 py-12 md:py-16 px-4 sm:px-6 lg:px-8 text-slate-400 mt-auto"></footer>
 
-    <!-- Unified Layout & Navigation Script -->
+    <!-- Shared i18n & Layout Script -->
+    <script type="module" src="/shared/i18n.js"></script>
     <script type="module" src="/shared/layout.js"></script>
   </body>
 </html>

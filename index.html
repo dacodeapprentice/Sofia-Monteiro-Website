@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sofia — Everyday Websites &amp; Digital Archive</title>
-    <meta name="description" content="Websites and digital tools created by Sofia to help people in everyday life." />
+    <title data-i18n="home.meta_title">Sofia — Everyday Websites &amp; Digital Archive</title>
+    <meta name="description" data-i18n-meta="home.meta_desc" content="Websites and digital tools created by Sofia to help people in everyday life." />
     <link rel="canonical" href="index.html" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Open Graph & Social Card Previews -->
-    <meta property="og:title" content="Sofia — Everyday Websites &amp; Digital Archive" />
-    <meta property="og:description" content="Websites and digital tools created by Sofia to help people in everyday life." />
+    <meta property="og:title" data-i18n-meta="home.og_title" content="Sofia — Everyday Websites &amp; Digital Archive" />
+    <meta property="og:description" data-i18n-meta="home.og_desc" content="Websites and digital tools created by Sofia to help people in everyday life." />
+
     <meta property="og:type" content="website" />
     <meta property="og:url" content="index.html" />
     <meta property="og:image" content="https://iili.io/naGx4yb.jpg" />
@@ -27,6 +28,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Anti-Flash Early Language Setter -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('sofia_portfolio_lang');
+          var lang = (saved === 'pt' || saved === 'en') ? saved : ((navigator.language || '').toLowerCase().startsWith('pt') ? 'pt' : 'en');
+          document.documentElement.lang = lang === 'pt' ? 'pt-PT' : 'en';
+          document.documentElement.setAttribute('data-lang', lang);
+        } catch(e) {}
+      })();
+    </script>
 
     <!-- Shared Tailwind CSS Stylesheet -->
     <link rel="stylesheet" href="/shared/style.css" />
@@ -63,47 +76,47 @@
             <!-- Unboxed Metadata -->
             <div class="flex items-center gap-2.5 text-xs text-slate-400 font-sans tracking-wide">
               <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span class="text-teal-300 font-medium">Portfolio &amp; Archive</span>
+              <span class="text-teal-300 font-medium" data-i18n="home.badge_portfolio">Portfolio &amp; Archive</span>
               <span aria-hidden="true" class="text-slate-600">·</span>
-              <span>Selected Works</span>
+              <span data-i18n="home.badge_selected">Selected Works</span>
               <span aria-hidden="true" class="text-slate-600">·</span>
-              <span>Digital Tools</span>
+              <span data-i18n="home.badge_tools">Digital Tools</span>
             </div>
 
             <!-- Non-serif Title -->
             <h1 class="font-title text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
-              Hello, I'm <span class="bg-gradient-to-r from-teal-300 via-emerald-300 to-cyan-300 bg-clip-text text-transparent">Sofia</span>.
+              <span data-i18n="home.greeting">Hello, I'm</span> <span class="bg-gradient-to-r from-teal-300 via-emerald-300 to-cyan-300 bg-clip-text text-transparent">Sofia</span>.
             </h1>
 
             <!-- Serif Reading Prose - Sofia's Core Statement -->
             <div class="relative pl-4 border-l-2 border-teal-500/40 py-1">
-              <p class="font-serif text-lg sm:text-xl text-slate-300 leading-relaxed italic">
+              <p class="font-serif text-lg sm:text-xl text-slate-300 leading-relaxed italic" data-i18n="home.quote">
                 "Here are the things I've done over the years with websites and everyday tools. Browse through them, and thank you."
               </p>
             </div>
 
-            <p class="font-serif text-base sm:text-lg text-slate-400 leading-relaxed max-w-xl">
+            <p class="font-serif text-base sm:text-lg text-slate-400 leading-relaxed max-w-xl" data-i18n="home.intro">
               Welcome to my digital home. Please feel free to explore the individual sections below to view about me, everyday websites, and reach out to connect.
             </p>
 
             <!-- Navigation Links to the Other Pages -->
             <div class="pt-2 flex flex-wrap items-center gap-3">
               <a href="about.html" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm">
-                <span>About Sofia</span>
+                <span data-i18n="home.btn_about">About Sofia</span>
                 <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </a>
 
               <a href="website.html" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm">
-                <span>Online Projects</span>
+                <span data-i18n="home.btn_online">Online Projects</span>
                 <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                 </svg>
               </a>
 
               <a href="contact.html" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-title text-sm font-medium bg-[#0e1722] hover:bg-[#142332] text-slate-200 hover:text-teal-200 border border-teal-900/40 hover:border-teal-700/60 transition-all shadow-sm">
-                <span>Contact</span>
+                <span data-i18n="home.btn_contact">Contact</span>
                 <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
@@ -122,6 +135,7 @@
                   <img
                     src="https://iili.io/naGxr8u.jpg"
                     alt="Sofia — Portrait"
+                    data-i18n-alt="home.portrait_alt"
                     referrerpolicy="no-referrer"
                     class="w-full h-full object-cover object-center transition-all duration-700 filter brightness-95 contrast-105"
                   />
@@ -129,13 +143,13 @@
 
                   <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-sans text-slate-300 bg-[#080d12]/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-teal-900/40">
                     <span class="font-medium text-teal-300">Sofia</span>
-                    <span class="text-slate-400 font-mono text-xs">Archive 2018–2026</span>
+                    <span class="text-slate-400 font-mono text-xs" data-i18n="home.card_archive">Archive 2018–2026</span>
                   </div>
                 </div>
 
                 <div class="pt-3 px-1 flex items-center justify-between text-xs text-slate-400 font-sans">
-                  <span>Digital Works &amp; Endeavors</span>
-                  <span class="text-emerald-400 font-medium">Active</span>
+                  <span data-i18n="home.card_endeavors">Digital Works &amp; Endeavors</span>
+                  <span class="text-emerald-400 font-medium" data-i18n="home.card_status">Active</span>
                 </div>
               </div>
             </div>
@@ -148,7 +162,9 @@
     <!-- Unified Footer Mount -->
     <footer id="site-footer" class="w-full bg-[#05080c] border-t border-teal-950/80 py-12 md:py-16 px-4 sm:px-6 lg:px-8 text-slate-400 mt-auto"></footer>
 
-    <!-- Unified Layout & Navigation Script -->
+    <!-- Unified i18n & Layout Scripts -->
+    <script type="module" src="/shared/i18n.js"></script>
     <script type="module" src="/shared/layout.js"></script>
+
   </body>
 </html>
