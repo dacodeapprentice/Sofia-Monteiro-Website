@@ -1,0 +1,151 @@
+{
+  "home": {
+    "hero": {
+      "url": "https://iili.io/naGx4yb.jpg",
+      "alt": {
+        "en": "Hero ambient luminous abstract backdrop",
+        "pt": "Fundo luminoso abstrato e acolhedor"
+      },
+      "width": 1200,
+      "height": 675
+    },
+    "portrait": {
+      "url": "https://iili.io/nVDaJbp.jpg",
+      "alt": {
+        "en": "Sofia — Portrait",
+        "pt": "Sofia — Retrato"
+      },
+      "width": 640,
+      "height": 640
+    },
+    "card-1": {
+      "url": "https://iili.io/nVDaJbp.jpg",
+      "alt": {
+        "en": "Habit tracker application preview",
+        "pt": "Pré-visualização da aplicação de rastreio de hábitos"
+      },
+      "width": 640,
+      "height": 400
+    }
+  },
+  "about": {
+    "portrait": {
+      "url": "https://iili.io/nVDaJbp.jpg",
+      "alt": {
+        "en": "Sofia working at studio desk",
+        "pt": "A Sofia a trabalhar na secretária do atelier"
+      },
+      "width": 800,
+      "height": 1000
+    }
+  },
+  "websites": {
+    "card-1": {
+      "url": "https://iili.io/naGx4yb.jpg",
+      "alt": {
+        "en": "Paroxetine Taper Guide thumbnail",
+        "pt": "Miniatura do Guia de Redução de Paroxetina"
+      },
+      "width": 800,
+      "height": 500
+    },
+    "card-2": {
+      "url": "https://iili.io/naGx4yb.jpg",
+      "alt": {
+        "en": "Typing Pro speed trainer thumbnail",
+        "pt": "Miniatura do Typing Pro treinador de digitação"
+      },
+      "width": 800,
+      "height": 500
+    },
+    "card-3": {
+      "url": "https://iili.io/naGx4yb.jpg",
+      "alt": {
+        "en": "Easy Doc document generator thumbnail",
+        "pt": "Miniatura do Easy Doc gerador de documentos"
+      },
+      "width": 800,
+      "height": 500
+    },
+    "card-4": {
+      "url": "https://iili.io/naGx4yb.jpg",
+      "alt": {
+        "en": "High Octane online racing game thumbnail",
+        "pt": "Miniatura do High Octane jogo de corridas online"
+      },
+      "width": 800,
+      "height": 500
+    }
+  },
+  "ux-ui": {
+    "hero": {
+      "url": "https://iili.io/naGx4yb.jpg",
+      "alt": {
+        "en": "UX/UI Design Systems and Case Studies Preview",
+        "pt": "Sistemas de Design UX/UI e Estudos de Caso"
+      },
+      "width": 1200,
+      "height": 675
+    },
+    "card-1": {
+      "url": "https://iili.io/naGx4yb.jpg",
+      "alt": {
+        "en": "Aether Design System Interface",
+        "pt": "Interface do Sistema de Design Aether"
+      },
+      "width": 800,
+      "height": 500
+    }
+  },
+  "youtube": {
+    "channel-1": {
+      "url": "https://iili.io/nVDaJbp.jpg",
+      "alt": {
+        "en": "Sofia Monteiro channel thumbnail",
+        "pt": "Miniatura do canal Sofia Monteiro"
+      },
+      "width": 640,
+      "height": 400
+    },
+    "channel-2": {
+      "url": "https://iili.io/naGx4yb.jpg",
+      "alt": {
+        "en": "Secaski Games channel thumbnail",
+        "pt": "Miniatura do canal Secaski Games"
+      },
+      "width": 640,
+      "height": 400
+    },
+    "channel-3": {
+      "url": "https://iili.io/naGx4yb.jpg",
+      "alt": {
+        "en": "Monteiro Archive channel thumbnail",
+        "pt": "Miniatura do canal Monteiro Archive"
+      },
+      "width": 640,
+      "height": 400
+    }
+  },
+  "instagram": {
+    "journal": {
+      "url": "https://iili.io/nVDaJbp.jpg",
+      "alt": {
+        "en": "Sofia Monteiro Instagram Preview",
+        "pt": "Pré-visualização do Instagram de Sofia Monteiro"
+      },
+      "width": 640,
+      "height": 400
+    }
+  },
+  "contact": {
+    "hero": {
+      "url": "https://iili.io/naGx4yb.jpg",
+      "alt": {
+        "en": "Contact Sofia — Direct correspondence banner",
+        "pt": "Contacto Sofia — Faixa de correspondência direta"
+      },
+      "width": 1200,
+      "height": 630
+    }
+  }
+}
