@@ -531,5 +531,112 @@
       "width": 4980,
       "height": 7013
     }
+  ],
+  "models": [
+    {
+      "id": "crystal-lantern",
+      "url": "/assets/models/lantern.jpg",
+      "alt": {
+        "en": "Stylized glowing crystalline lantern 3D model render with floating magic crystals",
+        "pt": "Modelo 3D de lanterna cristalina estilizada com cristais mágicos flutuantes"
+      },
+      "title": {
+        "en": "Luminous Crystal Lantern",
+        "pt": "Lanterna de Cristal Luminoso"
+      },
+      "description": {
+        "en": "Stylized fantasy prop featuring hand-painted emissive gemstone crystals and antique brass filigree. Optimized for real-time fantasy RPG engines.",
+        "pt": "Adereço de fantasia estilizado com cristais emissores pintados à mão e filigrana em latão antigo. Otimizado para motores de jogos RPG em tempo real."
+      },
+      "category": "props",
+      "polycount": "3,840 tris",
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "crystal-lantern-pack.zip"
+    },
+    {
+      "id": "scout-drone",
+      "url": "/assets/models/drone.jpg",
+      "alt": {
+        "en": "Sci-fi tactical scout drone 3D hard-surface model render",
+        "pt": "Modelo 3D de drone tático de reconhecimento sci-fi com superfícies mecânicas"
+      },
+      "title": {
+        "en": "Apex Tactical Scout Drone",
+        "pt": "Drone Tático de Reconhecimento Apex"
+      },
+      "description": {
+        "en": "Hard-surface cybernetic aerial unit with quad-thruster articulation, optic sensor array, and weathered alloy hull shaders.",
+        "pt": "Unidade aérea cibernética de superfícies duras com propulsores quádruplos articulados, matriz de sensores óticos e shaders de liga metálica desgastada."
+      },
+      "category": "hard-surface",
+      "polycount": "8,120 tris",
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "scout-drone-pack.zip"
+    },
+    {
+      "id": "ancient-relic-chest",
+      "url": "/assets/models/chest.jpg",
+      "alt": {
+        "en": "Fantasy carved oak and brass relic treasure chest 3D model render",
+        "pt": "Modelo 3D de arca de relíquias em carvalho esculpido e latão"
+      },
+      "title": {
+        "en": "Ancient Runed Relic Chest",
+        "pt": "Arca de Relíquias com Runas Antigas"
+      },
+      "description": {
+        "en": "Game-ready hero prop crafted with aged oak timber boards, heavy riveted bronze strapping, and cyan rune engravings on the padlock face.",
+        "pt": "Adereço principal pronto para jogos concebido com tábuas de carvalho envelhecido, cintas de bronze rebitadas e runas ciano gravadas na fechadura."
+      },
+      "category": "props",
+      "polycount": "4,960 tris",
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX",
+        "OBJ"
+      ],
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "relic-chest-pack.zip"
+    },
+    {
+      "id": "floating-shrine-island",
+      "url": "/assets/models/shrine.jpg",
+      "alt": {
+        "en": "Low-poly stylized floating shrine sanctuary island 3D diorama render",
+        "pt": "Diorama 3D estilizado em low-poly de santuário em ilha flutuante"
+      },
+      "title": {
+        "en": "Solitary Torii Sanctuary Isle",
+        "pt": "Santuário na Ilha Solitária"
+      },
+      "description": {
+        "en": "Low-poly atmospheric environment diorama featuring a floating moss cliff base, stone kasuga lantern, and weathered miniature bonsai pine.",
+        "pt": "Diorama de ambiente atmosférico em low-poly apresentando uma base de falésia com musgo, lanterna kasuga em pedra e bonsai em miniatura."
+      },
+      "category": "environment",
+      "polycount": "6,240 tris",
+      "formats": [
+        "BLEND",
+        "GLB",
+        "FBX"
+      ],
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "shrine-island-pack.zip"
+    }
   ]
 }

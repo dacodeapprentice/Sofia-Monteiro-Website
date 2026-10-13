@@ -72,6 +72,8 @@ export default defineConfig(() => {
           instagram: path.resolve(rootDir, 'instagram.html'),
           socialmedia: path.resolve(rootDir, 'social-media.html'),
           photography: path.resolve(rootDir, 'photography.html'),
+          models: path.resolve(rootDir, 'models.html'),
+          effects: path.resolve(rootDir, 'effects.html'),
         },
       },
     },

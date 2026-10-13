@@ -8,8 +8,9 @@
 import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n.js';
 
 (function () {
+  const path = typeof window !== 'undefined' ? window.location.pathname.split('/').pop().toLowerCase() : '';
+
   function getActivePageKey() {
-    const path = window.location.pathname.split('/').pop().toLowerCase();
     if (!path || path === '' || path === 'index.html') return 'home';
     if (path.includes('about')) return 'about';
     if (path.includes('website')) return 'website';
@@ -244,12 +245,12 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                     <div
                       id="assets-children-submenu"
                       role="menu"
-                      class="absolute left-full top-0 ml-1.5 w-40 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-50 hidden group-hover/dpassets:block focus-within:block"
+                      class="absolute left-full top-0 ml-1.5 w-44 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-50 hidden group-hover/dpassets:block focus-within:block"
                     >
                       <a
-                        href="#models"
+                        href="models.html"
                         role="menuitem"
-                        class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all"
+                        class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all ${path.includes('models') ? 'bg-[#121e2b] text-teal-300 font-medium' : ''}"
                       >
                         <svg class="w-4 h-4 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
@@ -258,9 +259,9 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                       </a>
 
                       <a
-                        href="#effects"
+                        href="effects.html"
                         role="menuitem"
-                        class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all"
+                        class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all ${path.includes('effects') ? 'bg-[#121e2b] text-pink-300 font-medium' : ''}"
                       >
                         <svg class="w-4 h-4 text-pink-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -619,14 +620,14 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                       </button>
 
                       <div id="drawer-assets-sublist" class="pl-6 pr-1 pt-1 space-y-1 hidden">
-                        <a href="#models" class="flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
+                        <a href="models.html" class="flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all ${path.includes('models') ? 'bg-[#0f1924] text-teal-300 font-medium' : ''}">
                           <svg class="w-4 h-4 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
                           </svg>
                           <span class="font-title text-sm tracking-tight" data-i18n="nav.models">Models</span>
                         </a>
 
-                        <a href="#effects" class="flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
+                        <a href="effects.html" class="flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all ${path.includes('effects') ? 'bg-[#0f1924] text-pink-300 font-medium' : ''}">
                           <svg class="w-4 h-4 text-pink-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                           </svg>
@@ -743,7 +744,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
             </div>
             <div class="flex items-center gap-3">
               <span class="font-title text-xs uppercase tracking-wider text-teal-400/80 font-semibold" data-i18n="footer.digital_label">Digital Projects:</span>
-              <span class="font-title text-sm text-slate-400"><span data-i18n="nav.3d">3D</span> (<span data-i18n="nav.assets">Assets</span>: <span data-i18n="nav.models">Models</span>, <span data-i18n="nav.effects">Effects</span>)</span>
+              <span class="font-title text-sm text-slate-400"><span data-i18n="nav.3d">3D</span> (<span data-i18n="nav.assets">Assets</span>: <a href="models.html" class="hover:text-teal-300 transition-colors ${path.includes('models') ? 'text-teal-300 font-medium' : ''}"><span data-i18n="nav.models">Models</span></a>, <a href="effects.html" class="hover:text-teal-300 transition-colors ${path.includes('effects') ? 'text-teal-300 font-medium' : ''}"><span data-i18n="nav.effects">Effects</span></a>)</span>
               <span class="text-slate-600">·</span>
               <span class="font-title text-sm text-slate-400" data-i18n="nav.video_editing">Video Editing</span>
               <span class="text-slate-600">·</span>
