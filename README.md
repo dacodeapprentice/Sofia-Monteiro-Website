@@ -27,6 +27,15 @@ All photos and thumbnails across the website are controlled from a single file: 
 5. Update the `"alt"` text descriptions for English (`"en"`) and Portuguese (`"pt"`).
 6. Save the file. The website updates automatically!
 
+### To Add or Change Photos in the Photography Gallery:
+1. Open **`public/images.json`** (or `images.json` in root).
+2. Scroll to the `"photography"` list (array of items).
+3. Each item has:
+   - `"url"`: The link to your image (e.g. `https://iili.io/your-photo.jpg`).
+   - `"alt"`: Description in English (`"en"`) and Portuguese (`"pt"`).
+   - `"category"`: (Optional) Set to `"analogic"` or `"digital"` to enable filtering.
+4. Photos appear in the gallery in the exact order they are listed. You can add, remove, or reorder them at any time!
+
 ### Key Details:
 - **Zero Broken Icons**: If an image link ever fails to load, a sleek dark placeholder tile appears instead, and a warning is logged in the console.
 - **Bilingual Alt Descriptions**: Image descriptions switch automatically between English and Portuguese when visitors click the `EN | PT` language switch.

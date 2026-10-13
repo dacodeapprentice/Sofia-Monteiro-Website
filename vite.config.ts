@@ -71,6 +71,7 @@ export default defineConfig(() => {
           youtube: path.resolve(rootDir, 'youtube.html'),
           instagram: path.resolve(rootDir, 'instagram.html'),
           socialmedia: path.resolve(rootDir, 'social-media.html'),
+          photography: path.resolve(rootDir, 'photography.html'),
         },
       },
     },

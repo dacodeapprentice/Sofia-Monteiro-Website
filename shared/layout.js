@@ -317,11 +317,23 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
             <div
               id="photography-projects-menu"
               role="menu"
-              class="absolute top-full left-0 mt-2 w-48 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-50 hidden"
+              class="absolute top-full left-0 mt-2 w-52 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-50 hidden"
             >
+              <!-- All Photography Gallery link -->
+              <a
+                href="photography.html"
+                role="menuitem"
+                class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all"
+              >
+                <svg class="w-4 h-4 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span class="font-title text-sm tracking-tight" data-i18n="nav.all_photography">Gallery (All)</span>
+              </a>
+
               <!-- Analogic Item -->
               <a
-                href="#analogic"
+                href="photography.html#analogic"
                 role="menuitem"
                 class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all"
               >
@@ -333,7 +345,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
 
               <!-- Digital Item -->
               <a
-                href="#digital"
+                href="photography.html#digital"
                 role="menuitem"
                 class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all"
               >
@@ -660,14 +672,21 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
               </button>
 
               <div id="drawer-photo-sublist" class="px-2 pb-2.5 pt-1 space-y-1 border-t border-teal-950/60 bg-[#060b10]/60 ${isPhotographyProjectActive ? '' : 'hidden'}">
-                <a href="#analogic" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
+                <a href="photography.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
+                  <svg class="w-4 h-4 text-teal-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  <span class="font-title text-sm tracking-tight" data-i18n="nav.all_photography">Gallery (All)</span>
+                </a>
+
+                <a href="photography.html#analogic" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
                   <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
                   </svg>
                   <span class="font-title text-sm tracking-tight" data-i18n="nav.analogic">Analogic</span>
                 </a>
 
-                <a href="#digital" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
+                <a href="photography.html#digital" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
                   <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -732,9 +751,11 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
             </div>
             <div class="flex items-center gap-3">
               <span class="font-title text-xs uppercase tracking-wider text-teal-400/80 font-semibold" data-i18n="footer.photo_label">Photography Projects:</span>
-              <a href="#analogic" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors" data-i18n="nav.analogic">Analogic</a>
+              <a href="photography.html" class="font-title text-sm ${activeKey === 'photography-projects' ? 'text-teal-300' : 'text-slate-400 hover:text-teal-300'} transition-colors" data-i18n="nav.all_photography">Gallery</a>
               <span class="text-slate-600">·</span>
-              <a href="#digital" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors" data-i18n="nav.digital">Digital</a>
+              <a href="photography.html#analogic" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors" data-i18n="nav.analogic">Analogic</a>
+              <span class="text-slate-600">·</span>
+              <a href="photography.html#digital" class="font-title text-sm text-slate-400 hover:text-teal-300 transition-colors" data-i18n="nav.digital">Digital</a>
             </div>
             <a href="contact.html" class="font-title text-sm ${activeKey === 'contact' ? 'text-teal-300' : 'text-slate-400 hover:text-teal-300'} transition-colors" data-i18n="nav.contact">Contact</a>
           </nav>

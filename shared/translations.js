@@ -311,7 +311,35 @@ export const translations = {
     'contact.error_unconfigured': 'The form service is waiting for a Formspree Form ID in contact.html. In the meantime, you can send your note directly via email:',
     'contact.error_mailto_prefix': 'Click here to email',
     'contact.error_mailto_suffix': 'directly',
-    'contact.bot_label': 'Leave this field blank'
+    'contact.bot_label': 'Leave this field blank',
+
+    // Photography Page (photography.html)
+    'photography.meta_title': 'Photography — Sofia',
+    'photography.meta_desc': 'Analog medium-format film frames, natural light portraits, and visual observations by Sofia.',
+    'photography.og_title': 'Photography — Sofia',
+    'photography.og_desc': 'Analog medium-format film frames, natural light portraits, and visual observations by Sofia.',
+    'photography.section_tag': 'Visual Archive · Light & Chemistry',
+    'photography.title': 'Photography Projects',
+    'photography.subtitle': 'Analog medium-format film frames, natural light portraits, and quiet everyday observations captured across seasons.',
+    'photography.quote': '"Capturing fleeting pauses, natural window light, and the gentle grain of time."',
+    'photography.intro': 'A collection of visual works spanning analog film studies and digital captures. Every photograph is presented in its original uncropped aspect ratio.',
+    'photography.filter_all': 'All Photos',
+    'photography.filter_analogic': 'Analogic',
+    'photography.filter_digital': 'Digital',
+    'photography.empty_title': 'No Photographs Available',
+    'photography.empty_desc': 'The photography list is currently being curated. Please check back shortly.',
+    'photography.click_to_view': 'Click to view photo in viewer',
+    'photography.count_items': 'photographs in archive',
+    'nav.all_photography': 'Gallery (All)',
+
+    // Lightbox Image Viewer (lightbox.js)
+    'lightbox.close': 'Close viewer (Esc)',
+    'lightbox.prev': 'Previous photo (Left arrow)',
+    'lightbox.next': 'Next photo (Right arrow)',
+    'lightbox.zoom_in': 'Zoom in (+)',
+    'lightbox.zoom_out': 'Zoom out (-)',
+    'lightbox.reset_zoom': 'Reset zoom to fit (1:1)',
+    'lightbox.counter_of': 'of'
   },
 
   pt: {
@@ -620,7 +648,35 @@ export const translations = {
     'contact.error_unconfigured': 'O serviço aguarda um ID de formulário do Formspree em contact.html. Entretanto, pode enviar a sua nota diretamente por email:',
     'contact.error_mailto_prefix': 'Clique aqui para enviar email para',
     'contact.error_mailto_suffix': 'diretamente',
-    'contact.bot_label': 'Deixe este campo em branco'
+    'contact.bot_label': 'Deixe este campo em branco',
+
+    // Photography Page (photography.html)
+    'photography.meta_title': 'Fotografia — Sofia',
+    'photography.meta_desc': 'Fotogramas em película analógica de médio formato, retratos com luz natural e observações visuais por Sofia.',
+    'photography.og_title': 'Fotografia — Sofia',
+    'photography.og_desc': 'Fotogramas em película analógica de médio formato, retratos com luz natural e observações visuais por Sofia.',
+    'photography.section_tag': 'Arquivo Visual · Luz e Química',
+    'photography.title': 'Projetos de Fotografia',
+    'photography.subtitle': 'Fotogramas em película analógica de médio formato, retratos com luz natural e observações serenas do quotidiano captadas ao longo das estações.',
+    'photography.quote': '"Captar pausas fugazes, a luz natural das janelas e o grão suave do tempo."',
+    'photography.intro': 'Uma coleção de trabalhos visuais que abrange estudos em película analógica e capturas digitais. Cada fotografia é apresentada na sua proporção original sem cortes.',
+    'photography.filter_all': 'Todas as Fotos',
+    'photography.filter_analogic': 'Analógica',
+    'photography.filter_digital': 'Digital',
+    'photography.empty_title': 'Nenhuma Fotografia Disponível',
+    'photography.empty_desc': 'A seleção de fotografias está atualmente a ser organizada. Por favor, volte a consultar em breve.',
+    'photography.click_to_view': 'Clique para abrir no visualizador',
+    'photography.count_items': 'fotografias no arquivo',
+    'nav.all_photography': 'Galeria (Todas)',
+
+    // Lightbox Image Viewer (lightbox.js)
+    'lightbox.close': 'Fechar visualizador (Esc)',
+    'lightbox.prev': 'Foto anterior (Seta esquerda)',
+    'lightbox.next': 'Foto seguinte (Seta direita)',
+    'lightbox.zoom_in': 'Aumentar zoom (+)',
+    'lightbox.zoom_out': 'Diminuir zoom (-)',
+    'lightbox.reset_zoom': 'Repor tamanho original (1:1)',
+    'lightbox.counter_of': 'de'
   }
 };
 
