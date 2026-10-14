@@ -247,9 +247,10 @@
             card.innerHTML = `
               <div class="relative w-full overflow-hidden bg-[#0b141e]">
                 <img
-                  src="${photo.url}"
+                  src="${photo.thumb || photo.url}"
                   alt="${altText}"
                   loading="${isFirstRow ? 'eager' : 'lazy'}"
+                  referrerpolicy="no-referrer"
                   ${photo.width ? `width="${photo.width}"` : ''}
                   ${photo.height ? `height="${photo.height}"` : ''}
                   class="w-full h-auto object-contain block transition-transform duration-500 ease-out group-hover:scale-[1.02] filter brightness-95 group-hover:brightness-105"

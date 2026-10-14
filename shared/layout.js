@@ -126,7 +126,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                   id="online-projects-social-trigger"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  class="flex items-center justify-between w-full px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] cursor-pointer transition-all ${isSocialActive ? 'bg-[#121e2b] text-emerald-300 font-medium' : ''}"
+                  class="flex items-center justify-between w-full px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] group-hover/sub:bg-[#121e2b] group-hover/sub:text-white group-hover/sub:rounded-r-none group-hover/sub:-mr-1.5 group-hover/sub:pr-3 cursor-pointer transition-all ${isSocialActive ? 'bg-[#121e2b] text-emerald-300 font-medium' : ''}"
                 >
                   <div class="flex items-center gap-2.5">
                     <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -143,7 +143,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                 <div
                   id="social-media-submenu"
                   role="menu"
-                  class="absolute left-full top-0 ml-1.5 w-44 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-50 hidden group-hover/sub:block focus-within:block"
+                  class="absolute left-full top-0 ml-0 w-44 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-50 hidden group-hover/sub:block focus-within:block before:absolute before:-left-3 before:top-0 before:bottom-0 before:w-3 before:content-['']"
                 >
                   <a
                     href="youtube.html"
@@ -200,7 +200,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                   id="digital-projects-3d-trigger"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  class="flex items-center justify-between w-full px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] cursor-pointer transition-all"
+                  class="flex items-center justify-between w-full px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] group-hover/dp3d:bg-[#121e2b] group-hover/dp3d:text-white group-hover/dp3d:rounded-r-none group-hover/dp3d:-mr-1.5 group-hover/dp3d:pr-3 cursor-pointer transition-all"
                 >
                   <div class="flex items-center gap-2.5">
                     <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -218,7 +218,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                 <div
                   id="assets-submenu"
                   role="menu"
-                  class="absolute left-full top-0 ml-1.5 w-44 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-50 hidden group-hover/dp3d:block focus-within:block"
+                  class="absolute left-full top-0 ml-0 w-44 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-[51] hidden group-hover/dp3d:block focus-within:block before:absolute before:-left-3 before:top-0 before:bottom-0 before:w-3 before:content-['']"
                 >
                   <!-- Assets Item (Name only, with submenus models & effects opening to the right) -->
                   <div class="relative group/dpassets" id="digital-projects-sub-assets">
@@ -228,7 +228,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                       id="digital-projects-assets-trigger"
                       aria-haspopup="true"
                       aria-expanded="false"
-                      class="flex items-center justify-between w-full px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] cursor-pointer transition-all"
+                      class="flex items-center justify-between w-full px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] group-hover/dpassets:bg-[#121e2b] group-hover/dpassets:text-white group-hover/dpassets:rounded-r-none group-hover/dpassets:-mr-1.5 group-hover/dpassets:pr-3 cursor-pointer transition-all"
                     >
                       <div class="flex items-center gap-2.5">
                         <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -245,7 +245,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                     <div
                       id="assets-children-submenu"
                       role="menu"
-                      class="absolute left-full top-0 ml-1.5 w-44 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-50 hidden group-hover/dpassets:block focus-within:block"
+                      class="absolute left-full top-0 ml-0 w-44 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-[52] hidden group-hover/dpassets:block focus-within:block before:absolute before:-left-3 before:top-0 before:bottom-0 before:w-3 before:content-['']"
                     >
                       <a
                         href="models.html"
@@ -880,6 +880,42 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
     const socialSubmenu = document.getElementById('social-media-submenu');
 
     let closeTimer = null;
+    let socialCloseTimer = null;
+
+    function activateSocial() {
+      if (closeTimer) {
+        clearTimeout(closeTimer);
+        closeTimer = null;
+      }
+      if (socialCloseTimer) {
+        clearTimeout(socialCloseTimer);
+        socialCloseTimer = null;
+      }
+      if (socialSubmenu) socialSubmenu.classList.remove('hidden');
+      if (socialSubTrigger) {
+        socialSubTrigger.setAttribute('aria-expanded', 'true');
+        socialSubTrigger.classList.add('bg-[#121e2b]', 'text-white', 'rounded-r-none', '-mr-1.5', 'pr-3', 'ring-1', 'ring-emerald-500/30');
+      }
+    }
+
+    function deactivateSocial() {
+      if (socialCloseTimer) {
+        clearTimeout(socialCloseTimer);
+        socialCloseTimer = null;
+      }
+      if (socialSubmenu) socialSubmenu.classList.add('hidden');
+      if (socialSubTrigger) {
+        socialSubTrigger.setAttribute('aria-expanded', 'false');
+        socialSubTrigger.classList.remove('bg-[#121e2b]', 'text-white', 'rounded-r-none', '-mr-1.5', 'pr-3', 'ring-1', 'ring-emerald-500/30');
+      }
+    }
+
+    function scheduleDeactivateSocial() {
+      if (socialCloseTimer) clearTimeout(socialCloseTimer);
+      socialCloseTimer = setTimeout(() => {
+        deactivateSocial();
+      }, 250);
+    }
 
     function openMenu() {
       if (closeTimer) clearTimeout(closeTimer);
@@ -888,13 +924,17 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
       if (chevron) chevron.classList.add('rotate-180', 'text-teal-400');
     }
 
+    function closeMenu() {
+      if (closeTimer) clearTimeout(closeTimer);
+      if (menu) menu.classList.add('hidden');
+      deactivateSocial();
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+      if (chevron) chevron.classList.remove('rotate-180', 'text-teal-400');
+    }
+
     function scheduleClose() {
       closeTimer = setTimeout(() => {
-        if (menu) menu.classList.add('hidden');
-        if (socialSubmenu) socialSubmenu.classList.add('hidden');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-        if (chevron) chevron.classList.remove('rotate-180', 'text-teal-400');
-        if (socialSubTrigger) socialSubTrigger.setAttribute('aria-expanded', 'false');
+        closeMenu();
       }, 200);
     }
 
@@ -916,10 +956,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
 
       dropdown.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') {
-          if (menu) menu.classList.add('hidden');
-          if (socialSubmenu) socialSubmenu.classList.add('hidden');
-          if (btn) btn.setAttribute('aria-expanded', 'false');
-          if (chevron) chevron.classList.remove('rotate-180', 'text-teal-400');
+          closeMenu();
           btn.focus();
         }
       });
@@ -929,20 +966,17 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
       socialSubTrigger.addEventListener('click', function (e) {
         e.stopPropagation();
         const isHidden = socialSubmenu.classList.contains('hidden');
-        socialSubmenu.classList.toggle('hidden');
-        socialSubTrigger.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+        if (isHidden) {
+          activateSocial();
+        } else {
+          deactivateSocial();
+        }
       });
 
       const socialSubWrapper = document.getElementById('online-projects-sub-social');
       if (socialSubWrapper) {
-        socialSubWrapper.addEventListener('mouseenter', function () {
-          socialSubmenu.classList.remove('hidden');
-          socialSubTrigger.setAttribute('aria-expanded', 'true');
-        });
-        socialSubWrapper.addEventListener('mouseleave', function () {
-          socialSubmenu.classList.add('hidden');
-          socialSubTrigger.setAttribute('aria-expanded', 'false');
-        });
+        socialSubWrapper.addEventListener('mouseenter', activateSocial);
+        socialSubWrapper.addEventListener('mouseleave', scheduleDeactivateSocial);
       }
     }
 
@@ -957,6 +991,77 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
     const dpAssetsChildrenSubmenu = document.getElementById('assets-children-submenu');
 
     let dpCloseTimer = null;
+    let dp3dCloseTimer = null;
+    let dpAssetsCloseTimer = null;
+
+    function activate3D() {
+      if (dpCloseTimer) {
+        clearTimeout(dpCloseTimer);
+        dpCloseTimer = null;
+      }
+      if (dp3dCloseTimer) {
+        clearTimeout(dp3dCloseTimer);
+        dp3dCloseTimer = null;
+      }
+      if (dpAssetsSubmenu) dpAssetsSubmenu.classList.remove('hidden');
+      if (dp3dTrigger) {
+        dp3dTrigger.setAttribute('aria-expanded', 'true');
+        dp3dTrigger.classList.add('bg-[#121e2b]', 'text-white', 'rounded-r-none', '-mr-1.5', 'pr-3', 'ring-1', 'ring-cyan-500/30');
+      }
+    }
+
+    function deactivate3D() {
+      if (dp3dCloseTimer) {
+        clearTimeout(dp3dCloseTimer);
+        dp3dCloseTimer = null;
+      }
+      if (dpAssetsSubmenu) dpAssetsSubmenu.classList.add('hidden');
+      if (dpAssetsChildrenSubmenu) dpAssetsChildrenSubmenu.classList.add('hidden');
+      if (dp3dTrigger) {
+        dp3dTrigger.setAttribute('aria-expanded', 'false');
+        dp3dTrigger.classList.remove('bg-[#121e2b]', 'text-white', 'rounded-r-none', '-mr-1.5', 'pr-3', 'ring-1', 'ring-cyan-500/30');
+      }
+      deactivateAssets();
+    }
+
+    function scheduleDeactivate3D() {
+      if (dp3dCloseTimer) clearTimeout(dp3dCloseTimer);
+      dp3dCloseTimer = setTimeout(() => {
+        deactivate3D();
+      }, 250);
+    }
+
+    function activateAssets() {
+      activate3D();
+      if (dpAssetsCloseTimer) {
+        clearTimeout(dpAssetsCloseTimer);
+        dpAssetsCloseTimer = null;
+      }
+      if (dpAssetsChildrenSubmenu) dpAssetsChildrenSubmenu.classList.remove('hidden');
+      if (dpAssetsTrigger) {
+        dpAssetsTrigger.setAttribute('aria-expanded', 'true');
+        dpAssetsTrigger.classList.add('bg-[#121e2b]', 'text-white', 'rounded-r-none', '-mr-1.5', 'pr-3', 'ring-1', 'ring-emerald-500/30');
+      }
+    }
+
+    function deactivateAssets() {
+      if (dpAssetsCloseTimer) {
+        clearTimeout(dpAssetsCloseTimer);
+        dpAssetsCloseTimer = null;
+      }
+      if (dpAssetsChildrenSubmenu) dpAssetsChildrenSubmenu.classList.add('hidden');
+      if (dpAssetsTrigger) {
+        dpAssetsTrigger.setAttribute('aria-expanded', 'false');
+        dpAssetsTrigger.classList.remove('bg-[#121e2b]', 'text-white', 'rounded-r-none', '-mr-1.5', 'pr-3', 'ring-1', 'ring-emerald-500/30');
+      }
+    }
+
+    function scheduleDeactivateAssets() {
+      if (dpAssetsCloseTimer) clearTimeout(dpAssetsCloseTimer);
+      dpAssetsCloseTimer = setTimeout(() => {
+        deactivateAssets();
+      }, 250);
+    }
 
     function openDigitalProjects() {
       if (dpCloseTimer) clearTimeout(dpCloseTimer);
@@ -966,13 +1071,13 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
     }
 
     function closeDigitalProjects() {
+      if (dpCloseTimer) clearTimeout(dpCloseTimer);
+      if (dp3dCloseTimer) clearTimeout(dp3dCloseTimer);
+      if (dpAssetsCloseTimer) clearTimeout(dpAssetsCloseTimer);
       if (dpMenu) dpMenu.classList.add('hidden');
-      if (dpAssetsSubmenu) dpAssetsSubmenu.classList.add('hidden');
-      if (dpAssetsChildrenSubmenu) dpAssetsChildrenSubmenu.classList.add('hidden');
+      deactivate3D();
       if (dpBtn) dpBtn.setAttribute('aria-expanded', 'false');
       if (dpChevron) dpChevron.classList.remove('rotate-180', 'text-teal-400');
-      if (dp3dTrigger) dp3dTrigger.setAttribute('aria-expanded', 'false');
-      if (dpAssetsTrigger) dpAssetsTrigger.setAttribute('aria-expanded', 'false');
     }
 
     function scheduleCloseDigitalProjects() {
@@ -986,7 +1091,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
         e.stopPropagation();
         const isHidden = dpMenu.classList.contains('hidden');
         if (isHidden) {
-          if (menu) menu.classList.add('hidden');
+          closeMenu();
           closePhotoProjects();
           openDigitalProjects();
         } else {
@@ -1009,21 +1114,17 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
       dp3dTrigger.addEventListener('click', function (e) {
         e.stopPropagation();
         const isHidden = dpAssetsSubmenu.classList.contains('hidden');
-        dpAssetsSubmenu.classList.toggle('hidden');
-        dp3dTrigger.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+        if (isHidden) {
+          activate3D();
+        } else {
+          deactivate3D();
+        }
       });
 
       const dp3dWrapper = document.getElementById('digital-projects-sub-3d');
       if (dp3dWrapper) {
-        dp3dWrapper.addEventListener('mouseenter', function () {
-          dpAssetsSubmenu.classList.remove('hidden');
-          dp3dTrigger.setAttribute('aria-expanded', 'true');
-        });
-        dp3dWrapper.addEventListener('mouseleave', function () {
-          dpAssetsSubmenu.classList.add('hidden');
-          if (dpAssetsChildrenSubmenu) dpAssetsChildrenSubmenu.classList.add('hidden');
-          dp3dTrigger.setAttribute('aria-expanded', 'false');
-        });
+        dp3dWrapper.addEventListener('mouseenter', activate3D);
+        dp3dWrapper.addEventListener('mouseleave', scheduleDeactivate3D);
       }
     }
 
@@ -1031,20 +1132,17 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
       dpAssetsTrigger.addEventListener('click', function (e) {
         e.stopPropagation();
         const isHidden = dpAssetsChildrenSubmenu.classList.contains('hidden');
-        dpAssetsChildrenSubmenu.classList.toggle('hidden');
-        dpAssetsTrigger.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+        if (isHidden) {
+          activateAssets();
+        } else {
+          deactivateAssets();
+        }
       });
 
       const dpAssetsWrapper = document.getElementById('digital-projects-sub-assets');
       if (dpAssetsWrapper) {
-        dpAssetsWrapper.addEventListener('mouseenter', function () {
-          dpAssetsChildrenSubmenu.classList.remove('hidden');
-          dpAssetsTrigger.setAttribute('aria-expanded', 'true');
-        });
-        dpAssetsWrapper.addEventListener('mouseleave', function () {
-          dpAssetsChildrenSubmenu.classList.add('hidden');
-          dpAssetsTrigger.setAttribute('aria-expanded', 'false');
-        });
+        dpAssetsWrapper.addEventListener('mouseenter', activateAssets);
+        dpAssetsWrapper.addEventListener('mouseleave', scheduleDeactivateAssets);
       }
     }
 
@@ -1080,7 +1178,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
         e.stopPropagation();
         const isHidden = photoMenu.classList.contains('hidden');
         if (isHidden) {
-          if (menu) menu.classList.add('hidden');
+          closeMenu();
           closeDigitalProjects();
           openPhotoProjects();
         } else {
@@ -1102,10 +1200,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
     // Outside click listener
     document.addEventListener('click', function (e) {
       if (dropdown && !dropdown.contains(e.target)) {
-        if (menu) menu.classList.add('hidden');
-        if (socialSubmenu) socialSubmenu.classList.add('hidden');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-        if (chevron) chevron.classList.remove('rotate-180', 'text-teal-400');
+        closeMenu();
       }
       if (dpDropdown && !dpDropdown.contains(e.target)) {
         closeDigitalProjects();

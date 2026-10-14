@@ -190,6 +190,7 @@ class LightboxViewer {
             id="lightbox-image"
             src=""
             alt=""
+            referrerpolicy="no-referrer"
             class="max-w-[88vw] max-h-[76vh] object-contain rounded-xl shadow-2xl transition-transform duration-150 ease-out will-change-transform"
             draggable="false"
           />
@@ -491,6 +492,7 @@ class LightboxViewer {
       const item = this.items[idx];
       if (item && item.url) {
         const img = new Image();
+        img.referrerPolicy = 'no-referrer';
         img.src = item.url;
       }
     });
@@ -505,6 +507,7 @@ class LightboxViewer {
     this.updateCaption();
 
     const { image } = this.dom;
+    image.referrerPolicy = 'no-referrer';
     image.src = item.url;
     image.alt = this.getAltText(item);
 
