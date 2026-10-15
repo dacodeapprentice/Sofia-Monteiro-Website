@@ -2081,12 +2081,10 @@
         "pt": "Adereço de fantasia estilizado com cristais emissores pintados à mão e filigrana em latão antigo. Otimizado para motores de jogos RPG em tempo real."
       },
       "category": "props",
+      "license": "CC0 1.0 Universal",
       "polycount": "3,840 tris",
-      "formats": [
-        "BLEND",
-        "GLB",
-        "FBX"
-      ],
+      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
+      "mesh_type": "lantern",
       "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
       "download_url": "/assets/models/sofia-3d-sample-package.zip",
       "download_file": "crystal-lantern-pack.zip"
@@ -2107,12 +2105,10 @@
         "pt": "Unidade aérea cibernética de superfícies duras com propulsores quádruplos articulados, matriz de sensores óticos e shaders de liga metálica desgastada."
       },
       "category": "hard-surface",
+      "license": "CC0 1.0 Universal",
       "polycount": "8,120 tris",
-      "formats": [
-        "BLEND",
-        "GLB",
-        "FBX"
-      ],
+      "formats": ["BLEND", "GLB", "FBX"],
+      "mesh_type": "drone",
       "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
       "download_url": "/assets/models/sofia-3d-sample-package.zip",
       "download_file": "scout-drone-pack.zip"
@@ -2133,13 +2129,10 @@
         "pt": "Adereço principal pronto para jogos concebido com tábuas de carvalho envelhecido, cintas de bronze rebitadas e runas ciano gravadas na fechadura."
       },
       "category": "props",
+      "license": "CC0 1.0 Universal",
       "polycount": "4,960 tris",
-      "formats": [
-        "BLEND",
-        "GLB",
-        "FBX",
-        "OBJ"
-      ],
+      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
+      "mesh_type": "chest",
       "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
       "download_url": "/assets/models/sofia-3d-sample-package.zip",
       "download_file": "relic-chest-pack.zip"
@@ -2160,15 +2153,253 @@
         "pt": "Diorama de ambiente atmosférico em low-poly apresentando uma base de falésia com musgo, lanterna kasuga em pedra e bonsai em miniatura."
       },
       "category": "environment",
+      "license": "CC0 1.0 Universal",
       "polycount": "6,240 tris",
-      "formats": [
-        "BLEND",
-        "GLB",
-        "FBX"
-      ],
+      "formats": ["BLEND", "GLB", "FBX"],
+      "mesh_type": "shrine",
       "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
       "download_url": "/assets/models/sofia-3d-sample-package.zip",
       "download_file": "shrine-island-pack.zip"
+    },
+    {
+      "id": "cyber-terminal",
+      "url": "/assets/models/drone.jpg",
+      "alt": {
+        "en": "Cyberpunk tactical computer terminal 3D asset model render",
+        "pt": "Modelo 3D de terminal de computador tático cyberpunk"
+      },
+      "title": {
+        "en": "Cyberpunk Data Terminal",
+        "pt": "Terminal de Dados Cyberpunk"
+      },
+      "description": {
+        "en": "Futuristic workstation terminal with angled display arrays, backlit tactical key deck, and modular cooling vents.",
+        "pt": "Terminal de trabalho futurista com monitores angulados, teclado tático retroiluminado e grelhas de ventilação modulares."
+      },
+      "category": "hard-surface",
+      "license": "CC0 1.0 Universal",
+      "polycount": "5,180 tris",
+      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
+      "mesh_type": "terminal",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "cyber-terminal-pack.zip"
+    },
+    {
+      "id": "stone-gargoyle-pillar",
+      "url": "/assets/models/shrine.jpg",
+      "alt": {
+        "en": "Gothic weathered stone masonry pillar architectural 3D model",
+        "pt": "Modelo 3D arquitetónico de pilar em pedra gótica desgastada"
+      },
+      "title": {
+        "en": "Gothic Stone Pillar",
+        "pt": "Pilar de Pedra Gótico"
+      },
+      "description": {
+        "en": "Weathered architectural stone pillar featuring an octagonal column shaft, stepped plinth, and carved masonry capital.",
+        "pt": "Pilar arquitetónico de pedra desgastada com fuste octogonal, plinto escalonado e capitel de alvenaria esculpido."
+      },
+      "category": "environment",
+      "license": "CC0 1.0 Universal",
+      "polycount": "3,420 tris",
+      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
+      "mesh_type": "pillar",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "stone-pillar-pack.zip"
+    },
+    {
+      "id": "crystal-shard-cluster",
+      "url": "/assets/models/lantern.jpg",
+      "alt": {
+        "en": "Radiant geometric arcane gemstone crystal cluster 3D model",
+        "pt": "Modelo 3D de aglomerado de cristais geométricos arcanos"
+      },
+      "title": {
+        "en": "Arcane Crystal Shard Cluster",
+        "pt": "Aglomerado de Cristais Arcanos"
+      },
+      "description": {
+        "en": "Radiant geometric mineral crystal cluster with faceted geometric prism faces and bright interior luminescence.",
+        "pt": "Aglomerado de cristais minerais geométricos radiantes com faces de prisma multifacetadas e luminescência interior."
+      },
+      "category": "props",
+      "license": "CC0 1.0 Universal",
+      "polycount": "2,650 tris",
+      "formats": ["BLEND", "GLB", "FBX"],
+      "mesh_type": "crystal",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "crystal-cluster-pack.zip"
+    },
+    {
+      "id": "medieval-iron-anvil",
+      "url": "/assets/models/chest.jpg",
+      "alt": {
+        "en": "Blacksmith forged steel anvil on timber base 3D model",
+        "pt": "Modelo 3D de bigorna de aço forjado sobre base de madeira"
+      },
+      "title": {
+        "en": "Blacksmith Forged Iron Anvil",
+        "pt": "Bigorna de Ferro de Ferreiro"
+      },
+      "description": {
+        "en": "Heavy forged steel blacksmith anvil mounted on a banded timber log base, featuring a classic horn, hardy hole, and table.",
+        "pt": "Bigorna de ferreiro em aço forjado pesado sobre base de tronco com cintas metálicas, com corno cónico e furo quadrado."
+      },
+      "category": "props",
+      "license": "CC0 1.0 Universal",
+      "polycount": "2,190 tris",
+      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
+      "mesh_type": "anvil",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "iron-anvil-pack.zip"
+    },
+    {
+      "id": "elixir-health-vial",
+      "url": "/assets/models/lantern.jpg",
+      "alt": {
+        "en": "Alchemist glass spherical health potion vial 3D model",
+        "pt": "Modelo 3D de frasco de poção de vida esférico em vidro"
+      },
+      "title": {
+        "en": "Alchemist Health Elixir Vial",
+        "pt": "Frasco de Elixir de Alquimista"
+      },
+      "description": {
+        "en": "Hand-blown glass spherical potion flask sealed with carved cork and bound in leather straps, containing swirling magical essence.",
+        "pt": "Frasco de poção esférico em vidro soprado selado com rolha de cortiça e tiras de couro, contendo essência mágica."
+      },
+      "category": "props",
+      "license": "CC0 1.0 Universal",
+      "polycount": "1,870 tris",
+      "formats": ["BLEND", "GLB", "FBX"],
+      "mesh_type": "vial",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "health-vial-pack.zip"
+    },
+    {
+      "id": "sci-fi-security-door",
+      "url": "/assets/models/drone.jpg",
+      "alt": {
+        "en": "Sci-fi bunker bulkhead pressurized blast door 3D model",
+        "pt": "Modelo 3D de porta blindada pressurizada de abrigo sci-fi"
+      },
+      "title": {
+        "en": "Reinforced Bulkhead Door",
+        "pt": "Porta de Segurança Blindada"
+      },
+      "description": {
+        "en": "Pressurized bunker bulkhead blast door featuring hydraulic locking pistons, hazard warning stripes, and reinforced steel frame.",
+        "pt": "Porta blindada de abrigo pressurizada com pistões hidráulicos de bloqueio, listras de aviso e estrutura de aço reforçado."
+      },
+      "category": "hard-surface",
+      "license": "CC0 1.0 Universal",
+      "polycount": "6,800 tris",
+      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
+      "mesh_type": "door",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "bulkhead-door-pack.zip"
+    },
+    {
+      "id": "whispering-pine-tree",
+      "url": "/assets/models/shrine.jpg",
+      "alt": {
+        "en": "Stylized low-poly alpine pine tree 3D environment foliage asset",
+        "pt": "Modelo 3D de pinheiro alpino low-poly estilizado para cenários"
+      },
+      "title": {
+        "en": "Low-Poly Alpine Pine Tree",
+        "pt": "Pinheiro Alpino Low-Poly"
+      },
+      "description": {
+        "en": "Stylized alpine coniferous evergreen tree featuring faceted needle canopy tiers and a twisted bark trunk.",
+        "pt": "Árvore conífera perene alpina estilizada com camadas facetadas de agulhas e tronco com textura de casca retorcida."
+      },
+      "category": "environment",
+      "license": "CC0 1.0 Universal",
+      "polycount": "1,940 tris",
+      "formats": ["BLEND", "GLB", "FBX"],
+      "mesh_type": "tree",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "pine-tree-pack.zip"
+    },
+    {
+      "id": "runic-broadsword",
+      "url": "/assets/models/chest.jpg",
+      "alt": {
+        "en": "Double-edged knight runic broadsword weapon 3D model",
+        "pt": "Modelo 3D de espada larga rúnica de cavaleiro com gume duplo"
+      },
+      "title": {
+        "en": "Knight Runic Broadsword",
+        "pt": "Espada Larga Rúnica de Cavaleiro"
+      },
+      "description": {
+        "en": "Double-edged high fantasy broadsword with etched glowing runes, winged crossguard, wrapped leather grip, and round pommel.",
+        "pt": "Espada larga de alta fantasia com gume duplo, runas luminosas gravadas, guarda alada, punho de couro e pomo circular."
+      },
+      "category": "props",
+      "license": "CC0 1.0 Universal",
+      "polycount": "2,760 tris",
+      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
+      "mesh_type": "sword",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "runic-sword-pack.zip"
+    },
+    {
+      "id": "weathered-wood-barrel",
+      "url": "/assets/models/chest.jpg",
+      "alt": {
+        "en": "Medieval weathered timber oak barrel prop 3D model",
+        "pt": "Modelo 3D de barril de carvalho medieval desgastado"
+      },
+      "title": {
+        "en": "Vintage Oak Storage Barrel",
+        "pt": "Barris de Armazenamento em Carvalho"
+      },
+      "description": {
+        "en": "Bulged timber stave barrel bound with four oxidized iron bands and tap bung, textured with authentic grain knots.",
+        "pt": "Barril de aduelas de madeira abauladas cintado com quatro aros de ferro oxidado e batoque, texturado com veios de madeira."
+      },
+      "category": "props",
+      "license": "CC0 1.0 Universal",
+      "polycount": "2,380 tris",
+      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
+      "mesh_type": "barrel",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "vintage-barrel-pack.zip"
+    },
+    {
+      "id": "hover-recon-speeder",
+      "url": "/assets/models/drone.jpg",
+      "alt": {
+        "en": "Aerodynamic futuristic hover recon speeder bike 3D vehicle model",
+        "pt": "Modelo 3D de veículo planador hover speeder de reconhecimento"
+      },
+      "title": {
+        "en": "Aero Recon Speeder",
+        "pt": "Speeder Aéreo de Reconhecimento"
+      },
+      "description": {
+        "en": "Low-altitude aerodynamic hover vehicle chassis with twin repulsor pods, tinted canopy, and dual rear thruster nacelles.",
+        "pt": "Chassi de veículo planador aerodinâmico de baixa altitude com cápsulas propulsoras duplas e naceles de escape traseiras."
+      },
+      "category": "hard-surface",
+      "license": "CC0 1.0 Universal",
+      "polycount": "7,450 tris",
+      "formats": ["BLEND", "GLB", "FBX"],
+      "mesh_type": "speeder",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "recon-speeder-pack.zip"
     }
   ]
 }
