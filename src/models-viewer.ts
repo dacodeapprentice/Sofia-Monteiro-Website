@@ -619,8 +619,10 @@ export function generateMeshThumbnail(meshType: string, width = 280, height = 21
 }
 
 export function getMeshThumbnailUrl(meshType: string, staticUrl?: string): string {
-  // Use official photographic renders when specifically matched
+  // Use official photographic/hosted renders when externally hosted or specifically matched
   if (staticUrl && (
+    staticUrl.startsWith('https://') ||
+    staticUrl.startsWith('http://') ||
     (staticUrl.includes('lantern.jpg') && meshType === 'lantern') ||
     (staticUrl.includes('drone.jpg') && meshType === 'drone') ||
     (staticUrl.includes('chest.jpg') && meshType === 'chest') ||

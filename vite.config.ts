@@ -74,6 +74,8 @@ export default defineConfig(() => {
           photography: path.resolve(rootDir, 'photography.html'),
           models: path.resolve(rootDir, 'models.html'),
           effects: path.resolve(rootDir, 'effects.html'),
+          videoediting: path.resolve(rootDir, 'video-editing.html'),
+          imageediting: path.resolve(rootDir, 'image-editing.html'),
         },
       },
     },

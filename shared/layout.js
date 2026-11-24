@@ -275,9 +275,9 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
 
               <!-- Video Editing Item -->
               <a
-                href="#video-editing"
+                href="video-editing.html"
                 role="menuitem"
-                class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all"
+                class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all ${path.includes('video-editing') ? 'bg-[#121e2b] text-amber-300 font-medium' : ''}"
               >
                 <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -287,9 +287,9 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
 
               <!-- Image Editing Item -->
               <a
-                href="#image-editing"
+                href="image-editing.html"
                 role="menuitem"
-                class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all"
+                class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all ${path.includes('image-editing') ? 'bg-[#121e2b] text-emerald-300 font-medium' : ''}"
               >
                 <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -639,7 +639,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                 </div>
 
                 <!-- Video Editing -->
-                <a href="#video-editing" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
+                <a href="video-editing.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all ${path.includes('video-editing') ? 'bg-[#0f1924] text-amber-300 font-medium' : ''}">
                   <svg class="w-4 h-4 text-amber-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                   </svg>
@@ -647,7 +647,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                 </a>
 
                 <!-- Image Editing -->
-                <a href="#image-editing" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all">
+                <a href="image-editing.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all ${path.includes('image-editing') ? 'bg-[#0f1924] text-emerald-300 font-medium' : ''}">
                   <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
@@ -746,9 +746,9 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
               <span class="font-title text-xs uppercase tracking-wider text-teal-400/80 font-semibold" data-i18n="footer.digital_label">Digital Projects:</span>
               <span class="font-title text-sm text-slate-400"><span data-i18n="nav.3d">3D</span> (<span data-i18n="nav.assets">Assets</span>: <a href="models.html" class="hover:text-teal-300 transition-colors ${path.includes('models') ? 'text-teal-300 font-medium' : ''}"><span data-i18n="nav.models">Models</span></a>, <a href="effects.html" class="hover:text-teal-300 transition-colors ${path.includes('effects') ? 'text-teal-300 font-medium' : ''}"><span data-i18n="nav.effects">Effects</span></a>)</span>
               <span class="text-slate-600">·</span>
-              <span class="font-title text-sm text-slate-400" data-i18n="nav.video_editing">Video Editing</span>
+              <a href="video-editing.html" class="font-title text-sm ${path.includes('video-editing') ? 'text-teal-300 font-medium' : 'text-slate-400 hover:text-teal-300'} transition-colors" data-i18n="nav.video_editing">Video Editing</a>
               <span class="text-slate-600">·</span>
-              <span class="font-title text-sm text-slate-400" data-i18n="nav.image_editing">Image Editing</span>
+              <a href="image-editing.html" class="font-title text-sm ${path.includes('image-editing') ? 'text-teal-300 font-medium' : 'text-slate-400 hover:text-teal-300'} transition-colors" data-i18n="nav.image_editing">Image Editing</a>
             </div>
             <div class="flex items-center gap-3">
               <span class="font-title text-xs uppercase tracking-wider text-teal-400/80 font-semibold" data-i18n="footer.photo_label">Photography Projects:</span>
@@ -1337,10 +1337,111 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
     }
   }
 
+  const UNDER_CONSTRUCTION_HTML = `
+    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      <div class="w-full max-w-xs sm:max-w-sm md:w-[360px] shrink-0 flex items-center justify-center">
+        <svg viewBox="0 0 420 320" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-xl" role="img" aria-label="Cute character building a webpage under construction">
+          <path d="M52 192C36 130 74 62 142 46C212 30 296 48 344 102C392 156 382 238 318 268C254 298 158 294 104 264C68 244 62 230 52 192Z" fill="#0f2332"/>
+          <ellipse cx="210" cy="276" rx="145" ry="12" fill="#071018"/>
+          <rect x="136" y="54" width="210" height="148" rx="14" fill="#0a1622" stroke="#1e4959" stroke-width="2.5"/>
+          <path d="M136 68C136 60.268 142.268 54 150 54H332C339.732 54 346 60.268 346 68V82H136V68Z" fill="#112838"/>
+          <circle cx="154" cy="68" r="4" fill="#f472b6"/>
+          <circle cx="168" cy="68" r="4" fill="#fbbf24"/>
+          <circle cx="182" cy="68" r="4" fill="#34d399"/>
+          <rect x="154" y="98" width="94" height="54" rx="8" fill="#134e4a" fill-opacity="0.55" stroke="#2dd4bf" stroke-width="1.8" stroke-dasharray="5 4"/>
+          <rect x="260" y="98" width="68" height="14" rx="5" fill="#1e3a4c"/>
+          <rect x="260" y="120" width="52" height="10" rx="4" fill="#172d3c"/>
+          <rect x="260" y="138" width="60" height="10" rx="4" fill="#172d3c"/>
+          <rect x="154" y="164" width="174" height="22" rx="6" fill="#0f2938"/>
+          <rect x="164" y="171" width="64" height="8" rx="4" fill="#2dd4bf" fill-opacity="0.7"/>
+          <g transform="translate(274 134)">
+            <rect width="92" height="62" rx="10" fill="#122738" stroke="#34d399" stroke-width="2"/>
+            <circle cx="22" cy="24" r="9" fill="#34d399" fill-opacity="0.25" stroke="#34d399" stroke-width="1.8"/>
+            <rect x="38" y="18" width="38" height="6" rx="3" fill="#99f6e4"/>
+            <rect x="38" y="29" width="26" height="5" rx="2.5" fill="#475569"/>
+            <rect x="14" y="42" width="64" height="8" rx="4" fill="#14b8a6" fill-opacity="0.5"/>
+          </g>
+          <g transform="translate(88 76)" opacity="0.9">
+            <circle cx="18" cy="18" r="10" stroke="#2dd4bf" stroke-width="3" stroke-dasharray="4 3"/>
+            <circle cx="18" cy="18" r="4" fill="#0f2332" stroke="#2dd4bf" stroke-width="2"/>
+          </g>
+          <path d="M358 58L361 66L369 69L361 72L358 80L355 72L347 69L355 66L358 58Z" fill="#fde68a"/>
+          <path d="M74 146L76 151L81 153L76 155L74 160L72 155L67 153L72 151L74 146Z" fill="#5eead4"/>
+          <circle cx="384" cy="116" r="3.5" fill="#f472b6"/>
+          <circle cx="132" cy="110" r="11" fill="#1e293b"/>
+          <circle cx="116" cy="128" r="20" fill="#1e293b"/>
+          <path d="M106 226L98 268" stroke="#1e293b" stroke-width="11" stroke-linecap="round"/>
+          <path d="M126 226L134 268" stroke="#1e293b" stroke-width="11" stroke-linecap="round"/>
+          <ellipse cx="94" cy="272" rx="11" ry="5.5" fill="#14b8a6"/>
+          <ellipse cx="138" cy="272" rx="11" ry="5.5" fill="#14b8a6"/>
+          <path d="M94 176C94 162 104 152 118 152C132 152 142 162 142 176L146 228H90L94 176Z" fill="#0d9488"/>
+          <path d="M98 164L138 164" stroke="#5eead4" stroke-width="2" stroke-opacity="0.35" stroke-linecap="round"/>
+          <rect x="112" y="141" width="12" height="14" rx="5" fill="#f5cba7"/>
+          <circle cx="118" cy="130" r="16" fill="#f5cba7"/>
+          <path d="M102 128C103 117 112 112 122 113C131 114 135 122 134 128C128 122 112 122 102 128Z" fill="#1e293b"/>
+          <circle cx="114" cy="131" r="4.5" stroke="#0f172a" stroke-width="1.6" fill="#e0f2fe" fill-opacity="0.25"/>
+          <circle cx="126" cy="131" r="4.5" stroke="#0f172a" stroke-width="1.6" fill="#e0f2fe" fill-opacity="0.25"/>
+          <line x1="118.5" y1="131" x2="121.5" y2="131" stroke="#0f172a" stroke-width="1.6"/>
+          <path d="M116 139C118 141 122 141 124 139" stroke="#7c2d12" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="109" cy="136" r="2.2" fill="#fda4af" fill-opacity="0.65"/>
+          <circle cx="131" cy="136" r="2.2" fill="#fda4af" fill-opacity="0.65"/>
+          <path d="M137 167L168 150" stroke="#0d9488" stroke-width="11" stroke-linecap="round"/>
+          <circle cx="170" cy="149" r="5.5" fill="#f5cba7"/>
+          <path d="M167 152L187 132" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+          <path d="M187 132L192 127" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+          <path d="M97 168L82 198" stroke="#0d9488" stroke-width="11" stroke-linecap="round"/>
+          <circle cx="81" cy="200" r="5.5" fill="#f5cba7"/>
+          <g transform="translate(212 224)">
+            <rect x="2" y="42" width="48" height="8" rx="4" fill="#b45309"/>
+            <path d="M12 42L21 8C22 5 24 4 26 4C28 4 30 5 31 8L40 42H12Z" fill="#f59e0b"/>
+            <path d="M17 24H35L37 31H15L17 24Z" fill="#fef3c7"/>
+            <path d="M19.5 14H32.5L34 20H18L19.5 14Z" fill="#fef3c7"/>
+          </g>
+        </svg>
+      </div>
+      <div class="flex-1 text-center md:text-left space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-amber-950/60 border border-amber-700/50 text-amber-300 text-xs font-mono">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          <span data-i18n="construction.badge">Under Construction</span>
+        </div>
+        <h2 class="font-title text-2xl sm:text-3xl font-bold text-white tracking-tight" data-i18n="construction.title">
+          This part of the website is still under construction.
+        </h2>
+        <p class="font-serif text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl" data-i18n="construction.desc">
+          I am currently crafting and organizing the content for this section. Thank you for your patience — please check back soon!
+        </p>
+        <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-3">
+          <a href="index.html" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-title font-semibold bg-teal-950/70 hover:bg-teal-900/80 text-teal-300 border border-teal-800/50 transition-all cursor-pointer">
+            <span data-i18n="construction.btn_home">Back to Home</span>
+            <svg class="w-3.5 h-3.5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a href="contact.html" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-title font-medium bg-[#080d12] hover:bg-[#101c28] text-slate-300 hover:text-white border border-teal-900/40 transition-all cursor-pointer">
+            <span data-i18n="construction.btn_contact">Get in Touch</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+
+  function renderUnderConstructionNotices() {
+    const targets = document.querySelectorAll('[data-under-construction]');
+    targets.forEach((el) => {
+      if (!el.classList.contains('rounded-2xl')) {
+        el.className = 'rounded-2xl bg-[#0c1520] border border-teal-900/30 p-6 sm:p-10 md:p-12 shadow-xl';
+      }
+      if (el.children.length === 0) {
+        el.innerHTML = UNDER_CONSTRUCTION_HTML;
+      }
+    });
+  }
+
   function initLayout() {
     renderHeader(document.getElementById('site-header'));
     renderDrawer(document.getElementById('site-drawer'));
     renderFooter(document.getElementById('site-footer'));
+    renderUnderConstructionNotices();
     initInteractions();
 
     // Bind language switchers and apply initial translations

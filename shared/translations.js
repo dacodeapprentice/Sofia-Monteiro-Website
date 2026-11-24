@@ -164,6 +164,10 @@ export const translations = {
     'websites.p4_badge': 'Online Racing Game',
     'websites.p4_cat': 'Gaming & Interactive',
     'websites.p4_desc': 'An action-packed online racing video game featuring high-speed competition, challenging tracks, and responsive vehicle handling built for thrilling arcade racing directly in the browser.',
+    'websites.p5_thumb_alt': 'Folio — Essay Writing & Revision Studio thumbnail',
+    'websites.p5_badge': 'Writing Studio',
+    'websites.p5_cat': 'Writing & Editorial',
+    'websites.p5_desc': 'An editorial workspace for drafting essays, creating side-by-side revisions from scratch or copies, tracking changes across iterations, and exporting to PDF or DOCX.',
 
     // UX / UI Page (ux-ui.html)
     'uxui.meta_title': 'UX/UI Design — Sofia',
@@ -213,6 +217,11 @@ export const translations = {
     'uxui.p4_d1': '100% WCAG 2.2 AAA compliant with rigorous screen-reader verification',
     'uxui.p4_d2': 'Instant search and phone-dial actions usable on 2G mobile connections',
     'uxui.p4_d3': 'Bilingual interface with plain-language readability scores under Grade 6',
+    'construction.badge': 'Under Construction',
+    'construction.title': 'This part of the website is still under construction.',
+    'construction.desc': 'I am currently crafting and organizing the content for this section. Thank you for your patience — please check back soon!',
+    'construction.btn_home': 'Back to Home',
+    'construction.btn_contact': 'Get in Touch',
 
     // Social Media Hub (social-media.html)
     'social.meta_title': 'Social Media — Sofia',
@@ -431,7 +440,50 @@ export const translations = {
     'effects.title': 'Visual Effects & Shaders',
     'effects.subtitle': 'Real-time compute shaders, stylized particle effects, and procedural geometry nodes designed for game engines and interactive web scenes.',
     'effects.quote': '"Crafting reactive particle systems, dynamic shaders, and real-time visual atmosphere."',
-    'effects.badge_count': 'effects & assets in archive'
+    'effects.badge_count': 'effects & shaders in archive',
+    'effects.search_placeholder': 'Search shader & VFX names...',
+    'effects.search_clear': 'Clear search',
+    'effects.cc0_badge': 'CC0 Public Domain',
+    'effects.cc0_banner_title': 'All Effects & Shaders Available Under CC0 1.0 Universal',
+    'effects.cc0_banner_desc': 'Dedicated to the public domain. Free for commercial and personal projects — video games, VFX, animation, interactive installations, and educational use without restriction.',
+    'effects.filter_all': 'All Effects',
+    'effects.filter_shaders': 'Shaders',
+    'effects.filter_particles': 'Particles & VFX',
+    'effects.filter_procedural': 'Procedural',
+    'effects.viewer_title': '3D Effect & Shader Viewer',
+    'effects.viewer_hint': 'Left-click + drag to rotate · Scroll to zoom',
+    'effects.btn_wireframe': 'Wireframe',
+    'effects.btn_reset_cam': 'Reset',
+    'effects.btn_auto_rotate': 'Auto-Rotate',
+    'effects.btn_download': 'Download Effect (.zip)',
+    'effects.btn_sketchfab': 'View on Sketchfab',
+    'effects.btn_prev': 'Previous Effect',
+    'effects.btn_next': 'Next Effect',
+    'effects.btn_close': 'Close Viewer (Esc)',
+    'effects.specs_title': 'Effect Specifications',
+    'effects.specs_target': 'Complexity / Target',
+    'effects.specs_formats': 'Export Formats',
+    'effects.specs_pipeline': 'Rendering Pipeline',
+    'effects.specs_license': 'License',
+    'effects.empty_filter': 'No effects match your search or filter.',
+
+    // Video Editing Page (video-editing.html)
+    'videoediting.meta_title': 'Video Editing — Sofia',
+    'videoediting.meta_desc': 'Video editing, color grading, pacing studies, and visual storytelling projects by Sofia.',
+    'videoediting.og_title': 'Video Editing — Sofia',
+    'videoediting.og_desc': 'Video editing, color grading, pacing studies, and visual storytelling projects by Sofia.',
+    'videoediting.section_tag': 'Digital Projects · Video Editing',
+    'videoediting.title': 'Video Editing',
+    'videoediting.subtitle': 'Motion narratives, pacing studies, color grading, and visual storytelling crafted with editorial precision.',
+
+    // Image Editing Page (image-editing.html)
+    'imageediting.meta_title': 'Image Editing — Sofia',
+    'imageediting.meta_desc': 'Photo retouching, color manipulation, compositing, and visual post-production studies by Sofia.',
+    'imageediting.og_title': 'Image Editing — Sofia',
+    'imageediting.og_desc': 'Photo retouching, color manipulation, compositing, and visual post-production studies by Sofia.',
+    'imageediting.section_tag': 'Digital Projects · Image Editing',
+    'imageediting.title': 'Image Editing',
+    'imageediting.subtitle': 'Photo retouching, color manipulation, compositing, and expressive visual post-production studies.'
   },
 
   pt: {
@@ -593,6 +645,10 @@ export const translations = {
     'websites.p4_badge': 'Jogo de Corridas Online',
     'websites.p4_cat': 'Jogos e Interatividade',
     'websites.p4_desc': 'Um jogo de corridas online repleto de ação, com competição em alta velocidade, pistas desafiantes e condução ágil, concebido para uma experiência arcade vibrante diretamente no navegador.',
+    'websites.p5_thumb_alt': 'Miniatura do Folio — Estúdio de Escrita e Revisão de Ensaios',
+    'websites.p5_badge': 'Estúdio de Escrita',
+    'websites.p5_cat': 'Escrita e Edição',
+    'websites.p5_desc': 'Um espaço editorial para redigir ensaios, criar revisões lado a lado a partir do zero ou de cópias, acompanhar alterações entre versões e exportar para PDF ou DOCX.',
 
     // UX / UI Page (ux-ui.html)
     'uxui.meta_title': 'Design UX/UI — Sofia',
@@ -642,6 +698,11 @@ export const translations = {
     'uxui.p4_d1': 'Conformidade a 100% com a norma WCAG 2.2 AAA, com testes rigorosos em leitores de ecrã',
     'uxui.p4_d2': 'Pesquisa instantânea e atalhos de chamada utilizáveis mesmo em redes móveis 2G',
     'uxui.p4_d3': 'Interface bilingue redigida em linguagem clara e acessível a todos os níveis de escolaridade',
+    'construction.badge': 'Em Construção',
+    'construction.title': 'Esta parte do website ainda está em construção.',
+    'construction.desc': 'Estou de momento a preparar e a organizar os conteúdos desta secção. Obrigada pela paciência — volte em breve!',
+    'construction.btn_home': 'Voltar ao Início',
+    'construction.btn_contact': 'Entrar em Contacto',
 
     // Social Media Hub (social-media.html)
     'social.meta_title': 'Redes Sociais — Sofia',
@@ -860,7 +921,50 @@ export const translations = {
     'effects.title': 'Efeitos Visuais e Shaders',
     'effects.subtitle': 'Shaders de computação em tempo real, partículas estilizadas e nós de geometria procedimentais criados para motores de jogos e cenas web interativas.',
     'effects.quote': '"Criar sistemas dinâmicos de partículas, shaders reativos e atmosferas visuais em tempo real."',
-    'effects.badge_count': 'efeitos e recursos no arquivo'
+    'effects.badge_count': 'efeitos e shaders no arquivo',
+    'effects.search_placeholder': 'Pesquisar nomes de shaders e efeitos...',
+    'effects.search_clear': 'Limpar pesquisa',
+    'effects.cc0_badge': 'CC0 Domínio Público',
+    'effects.cc0_banner_title': 'Todos os Efeitos Disponíveis sob Licença CC0 1.0 Universal',
+    'effects.cc0_banner_desc': 'Dedicado ao domínio público. Gratuito para projetos comerciais e pessoais — videojogos, VFX, animação, instalações interativas e uso educativo sem restrições.',
+    'effects.filter_all': 'Todos os Efeitos',
+    'effects.filter_shaders': 'Shaders',
+    'effects.filter_particles': 'Partículas e VFX',
+    'effects.filter_procedural': 'Procedimental',
+    'effects.viewer_title': 'Visualizador 3D de Efeitos e Shaders',
+    'effects.viewer_hint': 'Clique esquerdo + arrastar para rodar · Roda do rato para zoom',
+    'effects.btn_wireframe': 'Wireframe',
+    'effects.btn_reset_cam': 'Repor Vista',
+    'effects.btn_auto_rotate': 'Auto-Rotação',
+    'effects.btn_download': 'Descarregar Efeito (.zip)',
+    'effects.btn_sketchfab': 'Ver no Sketchfab',
+    'effects.btn_prev': 'Efeito Anterior',
+    'effects.btn_next': 'Próximo Efeito',
+    'effects.btn_close': 'Fechar Visualizador (Esc)',
+    'effects.specs_title': 'Especificações do Efeito',
+    'effects.specs_target': 'Complexidade / Alvo',
+    'effects.specs_formats': 'Formatos',
+    'effects.specs_pipeline': 'Pipeline Gráfico',
+    'effects.specs_license': 'Licença',
+    'effects.empty_filter': 'Nenhum efeito corresponde à sua pesquisa ou filtro.',
+
+    // Video Editing Page (video-editing.html)
+    'videoediting.meta_title': 'Edição de Vídeo — Sofia',
+    'videoediting.meta_desc': 'Edição de vídeo, correção de cor, estudos de ritmo e narrativa visual por Sofia.',
+    'videoediting.og_title': 'Edição de Vídeo — Sofia',
+    'videoediting.og_desc': 'Edição de vídeo, correção de cor, estudos de ritmo e narrativa visual por Sofia.',
+    'videoediting.section_tag': 'Projetos Digitais · Edição de Vídeo',
+    'videoediting.title': 'Edição de Vídeo',
+    'videoediting.subtitle': 'Narrativas em movimento, estudos de ritmo, correção de cor e narrativa visual construídos com precisão editorial.',
+
+    // Image Editing Page (image-editing.html)
+    'imageediting.meta_title': 'Edição de Imagem — Sofia',
+    'imageediting.meta_desc': 'Retoque fotográfico, manipulação de cor, composição e estudos de pós-produção visual por Sofia.',
+    'imageediting.og_title': 'Edição de Imagem — Sofia',
+    'imageediting.og_desc': 'Retoque fotográfico, manipulação de cor, composição e estudos de pós-produção visual por Sofia.',
+    'imageediting.section_tag': 'Projetos Digitais · Edição de Imagem',
+    'imageediting.title': 'Edição de Imagem',
+    'imageediting.subtitle': 'Retoque fotográfico, manipulação de cor, composição e estudos expressivos de pós-produção visual.'
   }
 };
 

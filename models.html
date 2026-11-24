@@ -73,26 +73,6 @@
               Low-poly game assets, textured props, procedural diorama environments, and real-time models crafted for interactive experiences.
             </p>
           </div>
-
-          <!-- Direct Sketchfab Profile Redirect Badge -->
-          <div class="shrink-0 flex items-center gap-3">
-            <a
-              href="https://sketchfab.com/sofias3dcontent/models"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-[#0c1824] hover:bg-[#122334] text-cyan-300 hover:text-white border border-cyan-800/50 hover:border-cyan-600 transition-all duration-200 shadow-lg group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
-              title="Visit Sofia's Sketchfab 3D Models Profile"
-            >
-              <!-- Sketchfab Icon Cube -->
-              <svg class="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.003 0L2.124 5.705v11.411L12.003 22.82l9.873-5.704V5.705L12.003 0zm0 2.274l7.925 4.577-7.925 4.577-7.925-4.577 7.925-4.577zm-8.32 6.002l7.747 4.475v8.948L3.683 17.22V8.276zm16.634 0v8.944l-7.747 4.475V12.75l7.747-4.474z"/>
-              </svg>
-              <span class="font-title text-xs sm:text-sm font-semibold tracking-tight" data-i18n="3d.sketchfab_profile_btn">View Profile on Sketchfab</span>
-              <svg class="w-3.5 h-3.5 text-cyan-400/80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          </div>
         </div>
 
         <!-- Visible CC0 Public Domain Callout Banner -->
@@ -118,7 +98,7 @@
 
           <div class="flex items-center gap-3 shrink-0 self-start sm:self-auto text-xs font-mono text-cyan-400">
             <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-            <span id="models-count-badge">14 <span data-i18n="models.badge_count">3D models in archive</span></span>
+            <span id="models-count-badge">12 <span data-i18n="models.badge_count">3D models in archive</span></span>
           </div>
         </div>
       </div>
@@ -226,42 +206,6 @@
         </div>
       </section>
 
-      <!-- Sketchfab Callout Banner -->
-      <section class="mb-12">
-        <div class="rounded-2xl bg-gradient-to-br from-[#0c1b28] via-[#091522] to-[#07101a] border border-cyan-900/50 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden">
-          <div class="absolute -right-12 -bottom-12 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
-          <div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-            <div class="space-y-2 max-w-2xl">
-              <div class="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-wider">
-                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12.003 0L2.124 5.705v11.411L12.003 22.82l9.873-5.704V5.705L12.003 0zm0 2.274l7.925 4.577-7.925 4.577-7.925-4.577 7.925-4.577zm-8.32 6.002l7.747 4.475v8.948L3.683 17.22V8.276zm16.634 0v8.944l-7.747 4.475V12.75l7.747-4.474z"/>
-                </svg>
-                <span>Sketchfab 3D Web Viewer</span>
-              </div>
-              <h3 class="text-xl sm:text-2xl font-bold font-title text-white tracking-tight" data-i18n="3d.sketchfab_callout_title">
-                Explore the Complete 3D Library on Sketchfab
-              </h3>
-              <p class="font-serif italic text-slate-300 text-sm sm:text-base leading-relaxed" data-i18n="3d.sketchfab_callout_desc">
-                Inspect wireframes, rotate real-time PBR lighting, and explore all 3D assets directly inside the Sketchfab interactive 3D viewer.
-              </p>
-            </div>
-
-            <a
-              href="https://sketchfab.com/sofias3dcontent/models"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="shrink-0 inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-title font-semibold text-sm transition-all duration-200 shadow-xl hover:shadow-cyan-500/25 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
-            >
-              <span data-i18n="3d.sketchfab_open_library">Open Sofia's Sketchfab Library</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
     </main>
 
     <!-- Interactive 3D Model Inspection Window (Modal) -->
@@ -345,8 +289,25 @@
             <!-- Three.js Canvas Mount Container -->
             <div id="three-canvas-container" class="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing"></div>
 
+            <!-- Sketchfab Interactive 3D Embed Container -->
+            <div id="sketchfab-viewer-container" class="hidden absolute inset-0 w-full h-full bg-[#060b11] z-20">
+              <iframe
+                id="sketchfab-viewer-iframe"
+                title="Interactive 3D Model Viewer"
+                class="w-full h-full border-0"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                xr-spatial-tracking="true"
+                execution-while-out-of-viewport="true"
+                execution-while-not-rendered="true"
+                web-share="true"
+              ></iframe>
+            </div>
+
             <!-- Top Left Viewport Overlay Badges -->
-            <div class="relative z-10 p-3.5 flex items-center justify-between pointer-events-none">
+            <div id="viewer-top-badges" class="relative z-10 p-3.5 flex items-center justify-between pointer-events-none">
               <div class="flex items-center gap-2">
                 <span id="modal-category-badge" class="px-2.5 py-1 rounded-md text-[11px] font-mono uppercase tracking-wider bg-[#080f17]/90 text-cyan-300 border border-cyan-800/40 backdrop-blur-md"></span>
                 <span id="modal-polycount-badge" class="px-2.5 py-1 rounded-md text-[11px] font-mono bg-[#080f17]/90 text-teal-300 border border-teal-800/40 backdrop-blur-md"></span>
@@ -354,7 +315,7 @@
             </div>
 
             <!-- Bottom Floating Toolbar & Hint -->
-            <div class="relative z-10 p-3.5 flex flex-col sm:flex-row items-center justify-between gap-2.5 pointer-events-none">
+            <div id="viewer-bottom-toolbar" class="relative z-10 p-3.5 flex flex-col sm:flex-row items-center justify-between gap-2.5 pointer-events-none">
               
               <!-- Interaction Hint -->
               <div class="px-3 py-1.5 rounded-lg bg-[#071018]/90 border border-cyan-950/70 text-[11px] font-sans text-slate-300 backdrop-blur-md shadow flex items-center gap-1.5">
@@ -417,22 +378,22 @@
                 <p id="modal-mesh-category-sub" class="text-xs font-mono text-cyan-400 uppercase tracking-wider mt-1"></p>
               </div>
 
-              <!-- VISIBLE NOTE OF CC (Creative Commons Zero / CC0) -->
-              <div class="p-4 rounded-xl bg-gradient-to-br from-emerald-950/60 to-[#07131e] border border-emerald-800/60 shadow space-y-2">
+              <!-- VISIBLE NOTE OF LICENSE (CC0 / Showcase) -->
+              <div id="modal-license-card" class="p-4 rounded-xl bg-gradient-to-br from-emerald-950/60 to-[#07131e] border border-emerald-800/60 shadow space-y-2">
                 <div class="flex items-center justify-between">
                   <div class="flex items-center gap-2">
-                    <span class="w-6 h-6 rounded-md bg-emerald-900/80 border border-emerald-600/50 flex items-center justify-center font-mono font-bold text-[11px] text-emerald-300">
+                    <span id="modal-license-code" class="w-6 h-6 rounded-md bg-emerald-900/80 border border-emerald-600/50 flex items-center justify-center font-mono font-bold text-[11px] text-emerald-300">
                       CC0
                     </span>
-                    <span class="font-title text-xs font-bold text-emerald-300 tracking-wide uppercase">
+                    <span id="modal-license-title" class="font-title text-xs font-bold text-emerald-300 tracking-wide uppercase">
                       Creative Commons Zero
                     </span>
                   </div>
-                  <span class="text-[10px] font-mono text-emerald-400/90 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-900">
+                  <span id="modal-license-version" class="text-[10px] font-mono text-emerald-400/90 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-900">
                     1.0 Universal
                   </span>
                 </div>
-                <p class="font-sans text-xs text-slate-300 leading-relaxed">
+                <p id="modal-license-desc" class="font-sans text-xs text-slate-300 leading-relaxed">
                   Dedicated to the Public Domain. Free for commercial and personal projects — video games, VFX, animation, architecture, and educational use without restriction.
                 </p>
               </div>
@@ -459,11 +420,11 @@
                   </div>
                   <div class="flex justify-between items-center text-slate-400">
                     <span data-i18n="models.specs_textures">PBR Textures:</span>
-                    <span class="text-slate-300 font-semibold">2K / 4K Metallic Roughness</span>
+                    <span id="modal-specs-textures" class="text-slate-300 font-semibold">2K / 4K Metallic Roughness</span>
                   </div>
                   <div class="flex justify-between items-center text-slate-400">
                     <span data-i18n="models.specs_license">License:</span>
-                    <span class="text-emerald-400 font-semibold">CC0 (Public Domain)</span>
+                    <span id="modal-specs-license" class="text-emerald-400 font-semibold">CC0 (Public Domain)</span>
                   </div>
                 </div>
               </div>
@@ -483,7 +444,7 @@
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
-                <span data-i18n="models.btn_download">Download Asset (.zip)</span>
+                <span id="modal-download-label" data-i18n="models.btn_download">Download Asset (.zip)</span>
               </a>
 
               <!-- Redirection to Sketchfab -->
@@ -544,7 +505,15 @@
         const modalMeshDesc = document.getElementById('modal-mesh-desc');
         const modalSpecsPolycount = document.getElementById('modal-specs-polycount');
         const modalSpecsFormats = document.getElementById('modal-specs-formats');
+        const modalSpecsTextures = document.getElementById('modal-specs-textures');
+        const modalSpecsLicense = document.getElementById('modal-specs-license');
+        const modalLicenseCard = document.getElementById('modal-license-card');
+        const modalLicenseCode = document.getElementById('modal-license-code');
+        const modalLicenseTitle = document.getElementById('modal-license-title');
+        const modalLicenseVersion = document.getElementById('modal-license-version');
+        const modalLicenseDesc = document.getElementById('modal-license-desc');
         const modalDownloadBtn = document.getElementById('modal-download-btn');
+        const modalDownloadLabel = document.getElementById('modal-download-label');
         const modalSketchfabBtn = document.getElementById('modal-sketchfab-btn');
         const modalItemCounter = document.getElementById('modal-item-counter');
         const modalCloseBtn = document.getElementById('modal-close-window-btn');
@@ -553,6 +522,10 @@
 
         // Viewer Buttons
         const canvasContainer = document.getElementById('three-canvas-container');
+        const sketchfabContainer = document.getElementById('sketchfab-viewer-container');
+        const sketchfabIframe = document.getElementById('sketchfab-viewer-iframe');
+        const viewerTopBadges = document.getElementById('viewer-top-badges');
+        const viewerBottomToolbar = document.getElementById('viewer-bottom-toolbar');
         const wireframeBtn = document.getElementById('viewer-wireframe-btn');
         const resetBtn = document.getElementById('viewer-reset-btn');
         const autorotateBtn = document.getElementById('viewer-autorotate-btn');
@@ -619,9 +592,11 @@
           const isPt = lang === 'pt';
           const title = getLocalized(model.title);
           const desc = getLocalized(model.description);
-          const categoryLabel = model.category === 'props' ? (isPt ? 'Adereço' : 'Prop')
-            : model.category === 'hard-surface' ? (isPt ? 'Superfície Rígida' : 'Hard Surface')
-            : (isPt ? 'Ambiente' : 'Environment');
+          const categoryLabel = model.category_label
+            ? getLocalized(model.category_label)
+            : (model.category === 'props' ? (isPt ? 'Adereço' : 'Prop')
+              : model.category === 'hard-surface' ? (isPt ? 'Superfície Rígida' : 'Hard Surface')
+              : (isPt ? 'Ambiente' : 'Environment'));
 
           modalMeshTitle.textContent = title;
           modalMeshCategorySub.textContent = `${categoryLabel} · ${model.polycount || 'Real-time optimized'}`;
@@ -630,11 +605,74 @@
           modalMeshDesc.textContent = desc;
           modalSpecsPolycount.textContent = model.polycount || 'Real-time optimized';
           modalSpecsFormats.textContent = Array.isArray(model.formats) ? model.formats.join(', ') : 'BLEND, GLB, FBX, OBJ';
+          if (modalSpecsTextures) {
+            modalSpecsTextures.textContent = model.textures ? getLocalized(model.textures) : '2K / 4K Metallic Roughness';
+          }
           modalItemCounter.textContent = `${activeModelIndex + 1} / ${filteredModels.length}`;
 
+          // License & Download Handling
+          const isDownloadable = model.downloadable !== false && Boolean(model.download_url || model.downloadUrl);
+          const isCC0 = !model.license || String(model.license).toUpperCase().includes('CC0');
+
+          if (modalLicenseCard && modalLicenseCode && modalLicenseTitle && modalLicenseVersion && modalLicenseDesc) {
+            if (isCC0) {
+              modalLicenseCard.className = 'p-4 rounded-xl bg-gradient-to-br from-emerald-950/60 to-[#07131e] border border-emerald-800/60 shadow space-y-2';
+              modalLicenseCode.className = 'w-6 h-6 rounded-md bg-emerald-900/80 border border-emerald-600/50 flex items-center justify-center font-mono font-bold text-[11px] text-emerald-300';
+              modalLicenseCode.textContent = 'CC0';
+              modalLicenseTitle.className = 'font-title text-xs font-bold text-emerald-300 tracking-wide uppercase';
+              modalLicenseTitle.textContent = 'Creative Commons Zero';
+              modalLicenseVersion.className = 'text-[10px] font-mono text-emerald-400/90 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-900';
+              modalLicenseVersion.textContent = '1.0 Universal';
+              modalLicenseDesc.textContent = isPt
+                ? 'Dedicado ao Domínio Público. Gratuito para projetos comerciais e pessoais — videojogos, VFX, animação, arquitetura e uso educativo sem restrições.'
+                : 'Dedicated to the Public Domain. Free for commercial and personal projects — video games, VFX, animation, architecture, and educational use without restriction.';
+            } else {
+              modalLicenseCard.className = 'p-4 rounded-xl bg-gradient-to-br from-cyan-950/50 to-[#07131e] border border-cyan-800/50 shadow space-y-2';
+              modalLicenseCode.className = 'w-6 h-6 rounded-md bg-cyan-900/80 border border-cyan-600/50 flex items-center justify-center font-mono font-bold text-[11px] text-cyan-300';
+              modalLicenseCode.textContent = '3D';
+              modalLicenseTitle.className = 'font-title text-xs font-bold text-cyan-300 tracking-wide uppercase';
+              modalLicenseTitle.textContent = isPt ? 'Mostra 3D Interativa' : 'Interactive 3D Showcase';
+              modalLicenseVersion.className = 'text-[10px] font-mono text-cyan-300/90 bg-cyan-950 px-2 py-0.5 rounded border border-cyan-900';
+              modalLicenseVersion.textContent = isPt ? 'Apenas Visualização' : 'View Only';
+              modalLicenseDesc.textContent = isPt
+                ? 'Modelo de portfólio alojado no Sketchfab para inspeção interativa em tempo real no visualizador 3D.'
+                : 'Portfolio showcase model hosted on Sketchfab for real-time interactive inspection inside the 3D viewer.';
+            }
+          }
+
+          if (modalSpecsLicense) {
+            if (isCC0) {
+              modalSpecsLicense.className = 'text-emerald-400 font-semibold';
+              modalSpecsLicense.textContent = isPt ? 'CC0 (Domínio Público)' : 'CC0 (Public Domain)';
+            } else {
+              modalSpecsLicense.className = 'text-cyan-300 font-semibold';
+              modalSpecsLicense.textContent = isPt ? 'Mostra (Visualização)' : 'Showcase (View Only)';
+            }
+          }
+
           // Download Link
-          modalDownloadBtn.href = model.download_url || model.downloadUrl || '/assets/models/sofia-3d-sample-package.zip';
-          modalDownloadBtn.setAttribute('download', model.download_file || (model.id + '-pack.zip'));
+          const downloadUrl = model.download_url || model.downloadUrl || '';
+          if (isDownloadable && downloadUrl) {
+            modalDownloadBtn.classList.remove('hidden');
+            modalDownloadBtn.href = downloadUrl;
+            if (downloadUrl.startsWith('http://') || downloadUrl.startsWith('https://')) {
+              modalDownloadBtn.removeAttribute('download');
+              modalDownloadBtn.setAttribute('target', '_blank');
+              modalDownloadBtn.setAttribute('rel', 'noopener noreferrer');
+            } else {
+              modalDownloadBtn.setAttribute('download', model.download_file || (model.id + '-pack.zip'));
+              modalDownloadBtn.removeAttribute('target');
+              modalDownloadBtn.removeAttribute('rel');
+            }
+            if (modalDownloadLabel) {
+              modalDownloadLabel.textContent = model.download_label
+                ? getLocalized(model.download_label)
+                : (isPt ? 'Descarregar Recurso (.zip)' : 'Download Asset (.zip)');
+            }
+          } else {
+            modalDownloadBtn.classList.add('hidden');
+            modalDownloadBtn.removeAttribute('href');
+          }
 
           // Sketchfab Link
           modalSketchfabBtn.href = model.sketchfab_url || model.sketchfabUrl || 'https://sketchfab.com/sofias3dcontent/models';
@@ -645,12 +683,40 @@
           modalWindow.classList.add('scale-100');
           document.body.style.overflow = 'hidden';
 
-          // Initialize / Load 3D model into Three.js canvas
-          const viewer = ensureViewer();
-          if (viewer) {
-            const meshType = model.mesh_type || model.meshType || model.category || 'lantern';
-            viewer.loadModel(meshType, model.id);
-            setTimeout(() => viewer.resize(), 50);
+          // Mount either Sketchfab 3D Embed or Three.js procedural viewer
+          const rawEmbedUrl = model.sketchfab_embed_url || model.sketchfabEmbedUrl || '';
+          let embedUrl = rawEmbedUrl;
+          if (rawEmbedUrl) {
+            try {
+              const u = new URL(rawEmbedUrl);
+              u.searchParams.set('autostart', '1');
+              u.searchParams.set('preload', '1');
+              embedUrl = u.toString();
+            } catch (_) {}
+          }
+          if (embedUrl && sketchfabContainer && sketchfabIframe) {
+            if (canvasContainer) canvasContainer.classList.add('hidden');
+            if (viewerTopBadges) viewerTopBadges.classList.add('hidden');
+            if (viewerBottomToolbar) viewerBottomToolbar.classList.add('hidden');
+            sketchfabContainer.classList.remove('hidden');
+            if (sketchfabIframe.getAttribute('src') !== embedUrl) {
+              sketchfabIframe.setAttribute('src', embedUrl);
+            }
+          } else {
+            if (sketchfabContainer) sketchfabContainer.classList.add('hidden');
+            if (sketchfabIframe && sketchfabIframe.getAttribute('src')) {
+              sketchfabIframe.setAttribute('src', 'about:blank');
+            }
+            if (canvasContainer) canvasContainer.classList.remove('hidden');
+            if (viewerTopBadges) viewerTopBadges.classList.remove('hidden');
+            if (viewerBottomToolbar) viewerBottomToolbar.classList.remove('hidden');
+
+            const viewer = ensureViewer();
+            if (viewer) {
+              const meshType = model.mesh_type || model.meshType || model.category || 'lantern';
+              viewer.loadModel(meshType, model.id);
+              setTimeout(() => viewer.resize(), 50);
+            }
           }
         }
 
@@ -659,6 +725,9 @@
           modalWindow.classList.add('scale-95');
           modal.classList.add('opacity-0', 'pointer-events-none');
           document.body.style.overflow = '';
+          if (sketchfabIframe && sketchfabIframe.getAttribute('src')) {
+            sketchfabIframe.setAttribute('src', 'about:blank');
+          }
         }
 
         function filterAndRender() {
@@ -705,13 +774,28 @@
             const title = getLocalized(model.title);
             const desc = getLocalized(model.description);
             const alt = getLocalized(model.alt) || title;
-            const categoryLabel = model.category === 'props' ? (isPt ? 'Adereço' : 'Prop')
-              : model.category === 'hard-surface' ? (isPt ? 'Superfície Rígida' : 'Hard Surface')
-              : (isPt ? 'Ambiente' : 'Environment');
+            const categoryLabel = model.category_label
+              ? getLocalized(model.category_label)
+              : (model.category === 'props' ? (isPt ? 'Adereço' : 'Prop')
+                : model.category === 'hard-surface' ? (isPt ? 'Superfície Rígida' : 'Hard Surface')
+                : (isPt ? 'Ambiente' : 'Environment'));
 
             const meshType = model.mesh_type || model.meshType || model.category || 'lantern';
             const thumbUrl = getMeshThumbnailUrl(meshType, model.url);
-            const formats = Array.isArray(model.formats) ? model.formats : ['BLEND', 'GLB', 'FBX'];
+            const formats = Array.isArray(model.formats) ? model.formats : ['GLTF / GLB', 'USDZ'];
+            const isRowCC0 = !model.license || String(model.license).toUpperCase().includes('CC0');
+            const badgeMarkup = isRowCC0
+              ? `<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-[11px] font-mono text-emerald-300 bg-emerald-950/70 border border-emerald-800/40 shrink-0">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <span>${isPt ? 'CC0 Domínio Público' : 'CC0 Public Domain'}</span>
+                  </span>`
+              : `<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-[11px] font-mono text-cyan-300 bg-cyan-950/70 border border-cyan-800/40 shrink-0">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                    <span>${isPt ? 'Mostra 3D' : '3D Showcase'}</span>
+                  </span>`;
+            const mobileLicenseLabel = isRowCC0
+              ? `<span class="sm:hidden text-xs font-mono text-emerald-400">${isPt ? 'Licença CC0' : 'CC0 License'}</span>`
+              : `<span class="sm:hidden text-xs font-mono text-cyan-400">${isPt ? 'Visualização 3D' : '3D View Only'}</span>`;
 
             const row = document.createElement('article');
             row.className = 'group rounded-2xl bg-[#0a141f]/90 hover:bg-[#102030] border border-teal-950/70 hover:border-cyan-500/50 p-3 sm:p-4 transition-all duration-200 cursor-pointer shadow-md hover:shadow-cyan-950/30 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400';
@@ -754,10 +838,7 @@
                   <h3 class="font-title text-base sm:text-lg md:text-xl font-bold text-white group-hover:text-cyan-300 transition-colors tracking-tight truncate">
                     ${title}
                   </h3>
-                  <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-[11px] font-mono text-emerald-300 bg-emerald-950/70 border border-emerald-800/40 shrink-0">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                    <span>CC0 Public Domain</span>
-                  </span>
+                  ${badgeMarkup}
                 </div>
 
                 <p class="font-sans text-xs sm:text-sm text-slate-300 line-clamp-2 leading-relaxed">
@@ -775,7 +856,7 @@
 
               <!-- Right: Inspect 3D Action Button -->
               <div class="shrink-0 flex items-center justify-between sm:justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-teal-950/60">
-                <span class="sm:hidden text-xs font-mono text-emerald-400">CC0 License</span>
+                ${mobileLicenseLabel}
                 <span class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-950/80 group-hover:bg-cyan-500 text-cyan-300 group-hover:text-slate-950 border border-cyan-800/50 group-hover:border-cyan-400 font-title text-xs font-semibold transition-all duration-200 shadow-sm">
                   <span>${isPt ? 'Inspecionar 3D' : 'Inspect 3D'}</span>
                   <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">

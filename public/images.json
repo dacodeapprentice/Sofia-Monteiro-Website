@@ -75,6 +75,15 @@
       },
       "width": 800,
       "height": 500
+    },
+    "card-5": {
+      "url": "https://iili.io/naGx4yb.jpg",
+      "alt": {
+        "en": "Folio — Essay Writing & Revision Studio thumbnail",
+        "pt": "Miniatura do Folio — Estúdio de Escrita e Revisão de Ensaios"
+      },
+      "width": 800,
+      "height": 500
     }
   },
   "ux-ui": {
@@ -2066,340 +2075,642 @@
   ],
   "models": [
     {
-      "id": "crystal-lantern",
-      "url": "/assets/models/lantern.jpg",
+      "id": "dragon-cc0-medium-level",
+      "url": "https://media.sketchfab.com/models/c6ef42a77d04444fbf7fa81e5108e571/thumbnails/bfd6e3dd7f354f42858ce0a64c894f67/d4ea0b94fdb94c80b1b3aab93a89611c.jpeg",
       "alt": {
-        "en": "Stylized glowing crystalline lantern 3D model render with floating magic crystals",
-        "pt": "Modelo 3D de lanterna cristalina estilizada com cristais mágicos flutuantes"
+        "en": "Dragon CC0 (Medium level) 3D creature model preview",
+        "pt": "Pré-visualização do modelo 3D Dragon CC0 (Medium level)"
       },
       "title": {
-        "en": "Luminous Crystal Lantern",
-        "pt": "Lanterna de Cristal Luminoso"
+        "en": "Dragon CC0 (Medium level)",
+        "pt": "Dragon CC0 (Medium level)"
       },
       "description": {
-        "en": "Stylized fantasy prop featuring hand-painted emissive gemstone crystals and antique brass filigree. Optimized for real-time fantasy RPG engines.",
-        "pt": "Adereço de fantasia estilizado com cristais emissores pintados à mão e filigrana em latão antigo. Otimizado para motores de jogos RPG em tempo real."
+        "en": "A mesh of a dragon with a CC0 license for you to use and have fun. Includes an optimized topology mesh, a rig with inverse kinematics, and a diffuse texture.",
+        "pt": "Malha 3D de um dragão com licença CC0 para usar e explorar livremente. Inclui malha com topologia otimizada, rig com cinemática inversa (IK) e textura difusa."
       },
       "category": "props",
+      "category_label": {
+        "en": "Characters & Creatures",
+        "pt": "Personagens e Criaturas"
+      },
       "license": "CC0 1.0 Universal",
-      "polycount": "3,840 tris",
-      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
-      "mesh_type": "lantern",
-      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
-      "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "crystal-lantern-pack.zip"
+      "downloadable": true,
+      "polycount": "73,282 tris",
+      "textures": {
+        "en": "Diffuse texture · IK Rigged",
+        "pt": "Textura difusa · Rig IK"
+      },
+      "formats": ["GLTF / GLB", "USDZ", "Source"],
+      "mesh_type": "dragon",
+      "sketchfab_url": "https://sketchfab.com/3d-models/dragon-cc0-medium-level-c6ef42a77d04444fbf7fa81e5108e571",
+      "sketchfab_embed_url": "https://sketchfab.com/models/c6ef42a77d04444fbf7fa81e5108e571/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": "https://sketchfab.com/3d-models/dragon-cc0-medium-level-c6ef42a77d04444fbf7fa81e5108e571#download",
+      "download_label": {
+        "en": "Download 3D Model (Sketchfab)",
+        "pt": "Descarregar Modelo 3D (Sketchfab)"
+      }
     },
     {
-      "id": "scout-drone",
-      "url": "/assets/models/drone.jpg",
+      "id": "girl-cc0-medium-level",
+      "url": "https://media.sketchfab.com/models/343ae2fbed4c4c22bab6fdf05677697a/thumbnails/609d378da6e241a98501dcf22fa9ccb2/7fe49a5dd6cb4f29861c22e261899080.jpeg",
       "alt": {
-        "en": "Sci-fi tactical scout drone 3D hard-surface model render",
-        "pt": "Modelo 3D de drone tático de reconhecimento sci-fi com superfícies mecânicas"
+        "en": "Girl CC0 (Medium level) 3D character model preview",
+        "pt": "Pré-visualização do modelo 3D Girl CC0 (Medium level)"
       },
       "title": {
-        "en": "Apex Tactical Scout Drone",
-        "pt": "Drone Tático de Reconhecimento Apex"
+        "en": "Girl CC0 (Medium level)",
+        "pt": "Girl CC0 (Medium level)"
       },
       "description": {
-        "en": "Hard-surface cybernetic aerial unit with quad-thruster articulation, optic sensor array, and weathered alloy hull shaders.",
-        "pt": "Unidade aérea cibernética de superfícies duras com propulsores quádruplos articulados, matriz de sensores óticos e shaders de liga metálica desgastada."
+        "en": "A mesh of a girl with a CC0 license for you to use and have fun. Includes an optimized topology mesh, a rig with inverse kinematics (IK), and a diffuse texture.",
+        "pt": "Malha 3D de uma rapariga com licença CC0 para usar e explorar livremente. Inclui malha com topologia otimizada, rig com cinemática inversa (IK) e textura difusa."
+      },
+      "category": "props",
+      "category_label": {
+        "en": "Characters & Creatures",
+        "pt": "Personagens e Criaturas"
+      },
+      "license": "CC0 1.0 Universal",
+      "downloadable": true,
+      "polycount": "19,064 tris",
+      "textures": {
+        "en": "Diffuse texture · IK Rigged",
+        "pt": "Textura difusa · Rig IK"
+      },
+      "formats": ["GLTF / GLB", "USDZ", "Source"],
+      "mesh_type": "character",
+      "sketchfab_url": "https://sketchfab.com/3d-models/girl-cc0-medium-level-343ae2fbed4c4c22bab6fdf05677697a",
+      "sketchfab_embed_url": "https://sketchfab.com/models/343ae2fbed4c4c22bab6fdf05677697a/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": "https://sketchfab.com/3d-models/girl-cc0-medium-level-343ae2fbed4c4c22bab6fdf05677697a#download",
+      "download_label": {
+        "en": "Download 3D Model (Sketchfab)",
+        "pt": "Descarregar Modelo 3D (Sketchfab)"
+      }
+    },
+    {
+      "id": "basic-dragon-mesh-cc0",
+      "url": "https://media.sketchfab.com/models/d217b98aaed84aae99eb0e5d70bd3bd2/thumbnails/c0512158158e4f39b7fc615d7c177c42/fb2eb9444e3c4bb799762376b798ccde.jpeg",
+      "alt": {
+        "en": "Basic dragon mesh (CC0) 3D creature model preview",
+        "pt": "Pré-visualização do modelo 3D Basic dragon mesh (CC0)"
+      },
+      "title": {
+        "en": "Basic dragon mesh (CC0)",
+        "pt": "Basic dragon mesh (CC0)"
+      },
+      "description": {
+        "en": "A mesh of a dragon mid air with a CC0 license for you to use and have fun. Sculpted winged creature mesh ready to explore and customize.",
+        "pt": "Malha 3D de um dragão em pleno voo com licença CC0 para usar e explorar livremente. Criatura alada pronta para inspeção e personalização."
+      },
+      "category": "props",
+      "category_label": {
+        "en": "Characters & Creatures",
+        "pt": "Personagens e Criaturas"
+      },
+      "license": "CC0 1.0 Universal",
+      "downloadable": true,
+      "polycount": "95,686 tris",
+      "textures": {
+        "en": "Base Sculpt Mesh",
+        "pt": "Malha Base Esculpida"
+      },
+      "formats": ["GLTF / GLB", "USDZ", "Source"],
+      "mesh_type": "dragon",
+      "sketchfab_url": "https://sketchfab.com/3d-models/basic-dragon-mesh-cc0-d217b98aaed84aae99eb0e5d70bd3bd2",
+      "sketchfab_embed_url": "https://sketchfab.com/models/d217b98aaed84aae99eb0e5d70bd3bd2/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": "https://sketchfab.com/3d-models/basic-dragon-mesh-cc0-d217b98aaed84aae99eb0e5d70bd3bd2#download",
+      "download_label": {
+        "en": "Download 3D Model (Sketchfab)",
+        "pt": "Descarregar Modelo 3D (Sketchfab)"
+      }
+    },
+    {
+      "id": "human-tech-sorcerer-cc0",
+      "url": "https://media.sketchfab.com/models/6562d7f56d87451589b28386cb6c0093/thumbnails/4c8d63bbef8d4bbdadcab186fe05150a/6e8ee2c285ac44edbc0dde19ad409460.jpeg",
+      "alt": {
+        "en": "Human Tech Sorcerer (CC0) 3D character model preview",
+        "pt": "Pré-visualização do modelo 3D Human Tech Sorcerer (CC0)"
+      },
+      "title": {
+        "en": "Human Tech Sorcerer (CC0)",
+        "pt": "Human Tech Sorcerer (CC0)"
+      },
+      "description": {
+        "en": "Creative human tech sorcerer character with a CC0 license for you to use and have fun. Stylized sci-fi fantasy character ready for real-time scenes.",
+        "pt": "Personagem criativa de feiticeiro tecnológico com licença CC0 para usar e explorar livremente. Modelo estilizado de fantasia sci-fi pronto para cenas em tempo real."
+      },
+      "category": "props",
+      "category_label": {
+        "en": "Characters & Creatures",
+        "pt": "Personagens e Criaturas"
+      },
+      "license": "CC0 1.0 Universal",
+      "downloadable": true,
+      "polycount": "15,436 tris",
+      "textures": {
+        "en": "Character Materials & Textures",
+        "pt": "Materiais e Texturas de Personagem"
+      },
+      "formats": ["GLTF / GLB", "USDZ", "Source"],
+      "mesh_type": "sorcerer",
+      "sketchfab_url": "https://sketchfab.com/3d-models/human-tech-sorcerer-cc0-6562d7f56d87451589b28386cb6c0093",
+      "sketchfab_embed_url": "https://sketchfab.com/models/6562d7f56d87451589b28386cb6c0093/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": "https://sketchfab.com/3d-models/human-tech-sorcerer-cc0-6562d7f56d87451589b28386cb6c0093#download",
+      "download_label": {
+        "en": "Download 3D Model (Sketchfab)",
+        "pt": "Descarregar Modelo 3D (Sketchfab)"
+      }
+    },
+    {
+      "id": "human-tech-soldier-cc0",
+      "url": "https://media.sketchfab.com/models/60ea5e7837eb4adbb471e09759345eb2/thumbnails/ad18faf31c314e9eaf00cfabe53163c3/7cedcfaa9bce4a00bf6534782ae9e024.jpeg",
+      "alt": {
+        "en": "Human Tech Soldier (CC0) 3D character model preview",
+        "pt": "Pré-visualização do modelo 3D Human Tech Soldier (CC0)"
+      },
+      "title": {
+        "en": "Human Tech Soldier (CC0)",
+        "pt": "Human Tech Soldier (CC0)"
+      },
+      "description": {
+        "en": "Creative human character tech soldier with a CC0 license for you to use and have fun. Armored futuristic unit optimized for real-time projects.",
+        "pt": "Personagem criativa de soldado tecnológico com licença CC0 para usar e explorar livremente. Unidade futurista com armadura otimizada para projetos em tempo real."
       },
       "category": "hard-surface",
+      "category_label": {
+        "en": "Characters & Creatures",
+        "pt": "Personagens e Criaturas"
+      },
       "license": "CC0 1.0 Universal",
-      "polycount": "8,120 tris",
-      "formats": ["BLEND", "GLB", "FBX"],
-      "mesh_type": "drone",
-      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
-      "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "scout-drone-pack.zip"
+      "downloadable": true,
+      "polycount": "14,888 tris",
+      "textures": {
+        "en": "Character Armor & Materials",
+        "pt": "Armadura e Materiais de Personagem"
+      },
+      "formats": ["GLTF / GLB", "USDZ", "Source"],
+      "mesh_type": "soldier",
+      "sketchfab_url": "https://sketchfab.com/3d-models/human-tech-soldier-cc0-60ea5e7837eb4adbb471e09759345eb2",
+      "sketchfab_embed_url": "https://sketchfab.com/models/60ea5e7837eb4adbb471e09759345eb2/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": "https://sketchfab.com/3d-models/human-tech-soldier-cc0-60ea5e7837eb4adbb471e09759345eb2#download",
+      "download_label": {
+        "en": "Download 3D Model (Sketchfab)",
+        "pt": "Descarregar Modelo 3D (Sketchfab)"
+      }
     },
     {
-      "id": "ancient-relic-chest",
-      "url": "/assets/models/chest.jpg",
+      "id": "basic-cute-robot-character-cc0",
+      "url": "https://media.sketchfab.com/models/449492af9248414f94cd5350b4197fd3/thumbnails/6fc470370f9f4a05bddbf6b1ba18dff6/d1edd9f4fc5b4a95b81b12997983d631.jpeg",
       "alt": {
-        "en": "Fantasy carved oak and brass relic treasure chest 3D model render",
-        "pt": "Modelo 3D de arca de relíquias em carvalho esculpido e latão"
+        "en": "Basic cute robot character (CC0) 3D model preview",
+        "pt": "Pré-visualização do modelo 3D Basic cute robot character (CC0)"
       },
       "title": {
-        "en": "Ancient Runed Relic Chest",
-        "pt": "Arca de Relíquias com Runas Antigas"
+        "en": "Basic cute robot character (CC0)",
+        "pt": "Basic cute robot character (CC0)"
       },
       "description": {
-        "en": "Game-ready hero prop crafted with aged oak timber boards, heavy riveted bronze strapping, and cyan rune engravings on the padlock face.",
-        "pt": "Adereço principal pronto para jogos concebido com tábuas de carvalho envelhecido, cintas de bronze rebitadas e runas ciano gravadas na fechadura."
-      },
-      "category": "props",
-      "license": "CC0 1.0 Universal",
-      "polycount": "4,960 tris",
-      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
-      "mesh_type": "chest",
-      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
-      "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "relic-chest-pack.zip"
-    },
-    {
-      "id": "floating-shrine-island",
-      "url": "/assets/models/shrine.jpg",
-      "alt": {
-        "en": "Low-poly stylized floating shrine sanctuary island 3D diorama render",
-        "pt": "Diorama 3D estilizado em low-poly de santuário em ilha flutuante"
-      },
-      "title": {
-        "en": "Solitary Torii Sanctuary Isle",
-        "pt": "Santuário na Ilha Solitária"
-      },
-      "description": {
-        "en": "Low-poly atmospheric environment diorama featuring a floating moss cliff base, stone kasuga lantern, and weathered miniature bonsai pine.",
-        "pt": "Diorama de ambiente atmosférico em low-poly apresentando uma base de falésia com musgo, lanterna kasuga em pedra e bonsai em miniatura."
-      },
-      "category": "environment",
-      "license": "CC0 1.0 Universal",
-      "polycount": "6,240 tris",
-      "formats": ["BLEND", "GLB", "FBX"],
-      "mesh_type": "shrine",
-      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
-      "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "shrine-island-pack.zip"
-    },
-    {
-      "id": "cyber-terminal",
-      "url": "/assets/models/drone.jpg",
-      "alt": {
-        "en": "Cyberpunk tactical computer terminal 3D asset model render",
-        "pt": "Modelo 3D de terminal de computador tático cyberpunk"
-      },
-      "title": {
-        "en": "Cyberpunk Data Terminal",
-        "pt": "Terminal de Dados Cyberpunk"
-      },
-      "description": {
-        "en": "Futuristic workstation terminal with angled display arrays, backlit tactical key deck, and modular cooling vents.",
-        "pt": "Terminal de trabalho futurista com monitores angulados, teclado tático retroiluminado e grelhas de ventilação modulares."
+        "en": "A basic cute robot character mesh with a CC0 license for you to use and have fun. Friendly hard-surface companion character model.",
+        "pt": "Malha básica de personagem robô simpática com licença CC0 para usar e explorar livremente. Modelo amigável de superfície rígida."
       },
       "category": "hard-surface",
+      "category_label": {
+        "en": "Characters & Creatures",
+        "pt": "Personagens e Criaturas"
+      },
       "license": "CC0 1.0 Universal",
-      "polycount": "5,180 tris",
-      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
-      "mesh_type": "terminal",
-      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
-      "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "cyber-terminal-pack.zip"
+      "downloadable": true,
+      "polycount": "26,246 tris",
+      "textures": {
+        "en": "Stylized Robot Materials",
+        "pt": "Materiais Estilizados de Robô"
+      },
+      "formats": ["GLTF / GLB", "USDZ", "Source"],
+      "mesh_type": "robot",
+      "sketchfab_url": "https://sketchfab.com/3d-models/basic-cute-robot-character-cc0-449492af9248414f94cd5350b4197fd3",
+      "sketchfab_embed_url": "https://sketchfab.com/models/449492af9248414f94cd5350b4197fd3/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": "https://sketchfab.com/3d-models/basic-cute-robot-character-cc0-449492af9248414f94cd5350b4197fd3#download",
+      "download_label": {
+        "en": "Download 3D Model (Sketchfab)",
+        "pt": "Descarregar Modelo 3D (Sketchfab)"
+      }
     },
     {
-      "id": "stone-gargoyle-pillar",
-      "url": "/assets/models/shrine.jpg",
+      "id": "basic-cute-chubby-character-cc0",
+      "url": "https://media.sketchfab.com/models/226f85d7674f4c7e857d5879c32e914c/thumbnails/5668e0ac16354e0484ee6015d12824bd/9b79056e88dd480e81e714470357713d.jpeg",
       "alt": {
-        "en": "Gothic weathered stone masonry pillar architectural 3D model",
-        "pt": "Modelo 3D arquitetónico de pilar em pedra gótica desgastada"
+        "en": "Basic cute chubby character (CC0) 3D model preview",
+        "pt": "Pré-visualização do modelo 3D Basic cute chubby character (CC0)"
       },
       "title": {
-        "en": "Gothic Stone Pillar",
-        "pt": "Pilar de Pedra Gótico"
+        "en": "Basic cute chubby character (CC0)",
+        "pt": "Basic cute chubby character (CC0)"
       },
       "description": {
-        "en": "Weathered architectural stone pillar featuring an octagonal column shaft, stepped plinth, and carved masonry capital.",
-        "pt": "Pilar arquitetónico de pedra desgastada com fuste octogonal, plinto escalonado e capitel de alvenaria esculpido."
-      },
-      "category": "environment",
-      "license": "CC0 1.0 Universal",
-      "polycount": "3,420 tris",
-      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
-      "mesh_type": "pillar",
-      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
-      "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "stone-pillar-pack.zip"
-    },
-    {
-      "id": "crystal-shard-cluster",
-      "url": "/assets/models/lantern.jpg",
-      "alt": {
-        "en": "Radiant geometric arcane gemstone crystal cluster 3D model",
-        "pt": "Modelo 3D de aglomerado de cristais geométricos arcanos"
-      },
-      "title": {
-        "en": "Arcane Crystal Shard Cluster",
-        "pt": "Aglomerado de Cristais Arcanos"
-      },
-      "description": {
-        "en": "Radiant geometric mineral crystal cluster with faceted geometric prism faces and bright interior luminescence.",
-        "pt": "Aglomerado de cristais minerais geométricos radiantes com faces de prisma multifacetadas e luminescência interior."
+        "en": "Basic cute chubby character with a CC0 license for you to use and have fun. Lightweight low-poly stylized character mesh.",
+        "pt": "Personagem estilizada leve com licença CC0 para usar e explorar livremente. Malha low-poly pronta para projetos interativos."
       },
       "category": "props",
+      "category_label": {
+        "en": "Characters & Creatures",
+        "pt": "Personagens e Criaturas"
+      },
       "license": "CC0 1.0 Universal",
-      "polycount": "2,650 tris",
-      "formats": ["BLEND", "GLB", "FBX"],
+      "downloadable": true,
+      "polycount": "5,962 tris",
+      "textures": {
+        "en": "Base Low-Poly Materials",
+        "pt": "Materiais Base Low-Poly"
+      },
+      "formats": ["GLTF / GLB", "USDZ", "Source"],
+      "mesh_type": "character",
+      "sketchfab_url": "https://sketchfab.com/3d-models/basic-cute-chubby-character-cc0-226f85d7674f4c7e857d5879c32e914c",
+      "sketchfab_embed_url": "https://sketchfab.com/models/226f85d7674f4c7e857d5879c32e914c/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": "https://sketchfab.com/3d-models/basic-cute-chubby-character-cc0-226f85d7674f4c7e857d5879c32e914c#download",
+      "download_label": {
+        "en": "Download 3D Model (Sketchfab)",
+        "pt": "Descarregar Modelo 3D (Sketchfab)"
+      }
+    },
+    {
+      "id": "basic-villager-cc0",
+      "url": "https://media.sketchfab.com/models/f48e2b4ac39942e387a030b0dba60676/thumbnails/8e7d934b6bfb41ccb0b16dfdb5751499/722b2167595146efa16526cde22c63f5.jpeg",
+      "alt": {
+        "en": "Basic Villager (CC0) 3D character model preview",
+        "pt": "Pré-visualização do modelo 3D Basic Villager (CC0)"
+      },
+      "title": {
+        "en": "Basic Villager (CC0)",
+        "pt": "Basic Villager (CC0)"
+      },
+      "description": {
+        "en": "A basic Villager model mesh with a CC0 license for you to use and have fun. Stylized townsperson NPC model suitable for adventure games.",
+        "pt": "Malha básica de aldeão com licença CC0 para usar e explorar livremente. Modelo estilizado de personagem NPC adequado para jogos de aventura."
+      },
+      "category": "props",
+      "category_label": {
+        "en": "Characters & Creatures",
+        "pt": "Personagens e Criaturas"
+      },
+      "license": "CC0 1.0 Universal",
+      "downloadable": true,
+      "polycount": "15,282 tris",
+      "textures": {
+        "en": "Character Materials & Mesh",
+        "pt": "Materiais e Malha de Personagem"
+      },
+      "formats": ["GLTF / GLB", "USDZ", "Source"],
+      "mesh_type": "villager",
+      "sketchfab_url": "https://sketchfab.com/3d-models/basic-villager-cc0-f48e2b4ac39942e387a030b0dba60676",
+      "sketchfab_embed_url": "https://sketchfab.com/models/f48e2b4ac39942e387a030b0dba60676/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": "https://sketchfab.com/3d-models/basic-villager-cc0-f48e2b4ac39942e387a030b0dba60676#download",
+      "download_label": {
+        "en": "Download 3D Model (Sketchfab)",
+        "pt": "Descarregar Modelo 3D (Sketchfab)"
+      }
+    },
+    {
+      "id": "basic-female-cartoon-cc0",
+      "url": "https://media.sketchfab.com/models/8cc83c972db04437ad93283be3373adc/thumbnails/d0d669bdb1f545a894904764f39e75cc/3f7832d2533f43108e2cffe200cfa8dd.jpeg",
+      "alt": {
+        "en": "Basic female cartoon (CC0) 3D character model preview",
+        "pt": "Pré-visualização do modelo 3D Basic female cartoon (CC0)"
+      },
+      "title": {
+        "en": "Basic female cartoon (CC0)",
+        "pt": "Basic female cartoon (CC0)"
+      },
+      "description": {
+        "en": "Young adult female character with summer clothing under a CC0 license for you to use and have fun. Clean stylized proportions ready for prototyping.",
+        "pt": "Personagem feminina jovem adulta com roupa de verão sob licença CC0 para usar e explorar livremente. Proporções estilizadas prontas para prototipagem."
+      },
+      "category": "props",
+      "category_label": {
+        "en": "Characters & Creatures",
+        "pt": "Personagens e Criaturas"
+      },
+      "license": "CC0 1.0 Universal",
+      "downloadable": true,
+      "polycount": "15,688 tris",
+      "textures": {
+        "en": "Stylized Clothing & Skin Materials",
+        "pt": "Materiais Estilizados de Roupa e Pele"
+      },
+      "formats": ["GLTF / GLB", "USDZ", "Source"],
+      "mesh_type": "character",
+      "sketchfab_url": "https://sketchfab.com/3d-models/basic-female-cartoon-cc0-8cc83c972db04437ad93283be3373adc",
+      "sketchfab_embed_url": "https://sketchfab.com/models/8cc83c972db04437ad93283be3373adc/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": "https://sketchfab.com/3d-models/basic-female-cartoon-cc0-8cc83c972db04437ad93283be3373adc#download",
+      "download_label": {
+        "en": "Download 3D Model (Sketchfab)",
+        "pt": "Descarregar Modelo 3D (Sketchfab)"
+      }
+    },
+    {
+      "id": "basic-gaming-pad-cc0",
+      "url": "https://media.sketchfab.com/models/b38b5b7d72d4433c972fa071bbdf6abb/thumbnails/81e768d561da476c9502d8ef25b18100/9e70fb1b4d2740a5b62454d69e95f7cc.jpeg",
+      "alt": {
+        "en": "Basic Gaming Pad (CC0) 3D controller model preview",
+        "pt": "Pré-visualização do modelo 3D Basic Gaming Pad (CC0)"
+      },
+      "title": {
+        "en": "Basic Gaming Pad (CC0)",
+        "pt": "Basic Gaming Pad (CC0)"
+      },
+      "description": {
+        "en": "A basic gaming pad controller model with a CC0 license for you to use and have fun. Ergonomic hard-surface prop with thumbsticks, D-pad, and action buttons.",
+        "pt": "Modelo básico de comando de videojogos com licença CC0 para usar e explorar livremente. Adereço ergonómico de superfície rígida com analógicos, D-pad e botões."
+      },
+      "category": "hard-surface",
+      "category_label": {
+        "en": "Electronics & Gadgets",
+        "pt": "Eletrónica e Gadgets"
+      },
+      "license": "CC0 1.0 Universal",
+      "downloadable": true,
+      "polycount": "10,768 tris",
+      "textures": {
+        "en": "Controller Shell & Button Materials",
+        "pt": "Materiais de Estrutura e Botões"
+      },
+      "formats": ["GLTF / GLB", "USDZ", "Source"],
+      "mesh_type": "gamepad",
+      "sketchfab_url": "https://sketchfab.com/3d-models/basic-gaming-pad-cc0-b38b5b7d72d4433c972fa071bbdf6abb",
+      "sketchfab_embed_url": "https://sketchfab.com/models/b38b5b7d72d4433c972fa071bbdf6abb/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": "https://sketchfab.com/3d-models/basic-gaming-pad-cc0-b38b5b7d72d4433c972fa071bbdf6abb#download",
+      "download_label": {
+        "en": "Download 3D Model (Sketchfab)",
+        "pt": "Descarregar Modelo 3D (Sketchfab)"
+      }
+    },
+    {
+      "id": "cristal",
+      "url": "https://media.sketchfab.com/models/bf6979b268ea45088c3d39fe649d77da/thumbnails/84f4989b123f4b0492d9e1a03e25a253/fefef395245c41d4a261689b02f7ad0b.jpeg",
+      "alt": {
+        "en": "Cristal 3D stylized mineral crystal model preview",
+        "pt": "Pré-visualização do modelo 3D Cristal"
+      },
+      "title": {
+        "en": "Cristal",
+        "pt": "Cristal"
+      },
+      "description": {
+        "en": "A crystal developed for an upcoming short animation project. Stylized faceted mineral geometry showcased in real-time 3D.",
+        "pt": "Um cristal desenvolvido para um projeto de curta-metragem de animação. Geometria mineral facetada e estilizada apresentada em 3D em tempo real."
+      },
+      "category": "environment",
+      "category_label": {
+        "en": "Nature & Plants",
+        "pt": "Natureza e Plantas"
+      },
+      "license": "Showcase (View Only)",
+      "downloadable": false,
+      "polycount": "4,894 tris",
+      "textures": {
+        "en": "Crystal Shaders & Surface Finish",
+        "pt": "Shaders Cristalinos e Acabamento"
+      },
+      "formats": ["Sketchfab 3D Embed"],
       "mesh_type": "crystal",
-      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
-      "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "crystal-cluster-pack.zip"
+      "sketchfab_url": "https://sketchfab.com/3d-models/cristal-bf6979b268ea45088c3d39fe649d77da",
+      "sketchfab_embed_url": "https://sketchfab.com/models/bf6979b268ea45088c3d39fe649d77da/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": ""
     },
     {
-      "id": "medieval-iron-anvil",
-      "url": "/assets/models/chest.jpg",
+      "id": "alien",
+      "url": "https://media.sketchfab.com/models/1056a912eab643efbb06cac6c7e8cafc/thumbnails/f82c7382405c44c595a9c602435492a0/7f21358fe9b441628fa3fe90b2f95dcf.jpeg",
       "alt": {
-        "en": "Blacksmith forged steel anvil on timber base 3D model",
-        "pt": "Modelo 3D de bigorna de aço forjado sobre base de madeira"
+        "en": "Alien 3D game character model preview",
+        "pt": "Pré-visualização do modelo 3D Alien"
       },
       "title": {
-        "en": "Blacksmith Forged Iron Anvil",
-        "pt": "Bigorna de Ferro de Ferreiro"
+        "en": "Alien",
+        "pt": "Alien"
       },
       "description": {
-        "en": "Heavy forged steel blacksmith anvil mounted on a banded timber log base, featuring a classic horn, hardy hole, and table.",
-        "pt": "Bigorna de ferreiro em aço forjado pesado sobre base de tronco com cintas metálicas, com corno cónico e furo quadrado."
-      },
-      "category": "props",
-      "license": "CC0 1.0 Universal",
-      "polycount": "2,190 tris",
-      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
-      "mesh_type": "anvil",
-      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
-      "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "iron-anvil-pack.zip"
-    },
-    {
-      "id": "elixir-health-vial",
-      "url": "/assets/models/lantern.jpg",
-      "alt": {
-        "en": "Alchemist glass spherical health potion vial 3D model",
-        "pt": "Modelo 3D de frasco de poção de vida esférico em vidro"
-      },
-      "title": {
-        "en": "Alchemist Health Elixir Vial",
-        "pt": "Frasco de Elixir de Alquimista"
-      },
-      "description": {
-        "en": "Hand-blown glass spherical potion flask sealed with carved cork and bound in leather straps, containing swirling magical essence.",
-        "pt": "Frasco de poção esférico em vidro soprado selado com rolha de cortiça e tiras de couro, contendo essência mágica."
-      },
-      "category": "props",
-      "license": "CC0 1.0 Universal",
-      "polycount": "1,870 tris",
-      "formats": ["BLEND", "GLB", "FBX"],
-      "mesh_type": "vial",
-      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
-      "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "health-vial-pack.zip"
-    },
-    {
-      "id": "sci-fi-security-door",
-      "url": "/assets/models/drone.jpg",
-      "alt": {
-        "en": "Sci-fi bunker bulkhead pressurized blast door 3D model",
-        "pt": "Modelo 3D de porta blindada pressurizada de abrigo sci-fi"
-      },
-      "title": {
-        "en": "Reinforced Bulkhead Door",
-        "pt": "Porta de Segurança Blindada"
-      },
-      "description": {
-        "en": "Pressurized bunker bulkhead blast door featuring hydraulic locking pistons, hazard warning stripes, and reinforced steel frame.",
-        "pt": "Porta blindada de abrigo pressurizada com pistões hidráulicos de bloqueio, listras de aviso e estrutura de aço reforçado."
+        "en": "A game character designed for the DJCO school project and 3D Modeling and Animation class, telling the story of a kidnapped alien trying to return home.",
+        "pt": "Personagem de videojogo concebida para o projeto académico DJCO da disciplina de Modelação e Animação 3D, sobre um extraterrestre raptado que tenta regressar a casa."
       },
       "category": "hard-surface",
-      "license": "CC0 1.0 Universal",
-      "polycount": "6,800 tris",
-      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
-      "mesh_type": "door",
-      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
-      "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "bulkhead-door-pack.zip"
-    },
+      "category_label": {
+        "en": "Characters & Creatures",
+        "pt": "Personagens e Criaturas"
+      },
+      "license": "Showcase (View Only)",
+      "downloadable": false,
+      "polycount": "189,696 tris",
+      "textures": {
+        "en": "PBR Character Textures",
+        "pt": "Texturas PBR de Personagem"
+      },
+      "formats": ["Sketchfab 3D Embed"],
+      "mesh_type": "alien",
+      "sketchfab_url": "https://sketchfab.com/3d-models/alien-1056a912eab643efbb06cac6c7e8cafc",
+      "sketchfab_embed_url": "https://sketchfab.com/models/1056a912eab643efbb06cac6c7e8cafc/embed?autostart=1&preload=1&ui_theme=dark&dnt=1&ui_infos=0",
+      "download_url": ""
+    }
+  ],
+  "effects": [
     {
-      "id": "whispering-pine-tree",
+      "id": "stylized-water-shader",
       "url": "/assets/models/shrine.jpg",
       "alt": {
-        "en": "Stylized low-poly alpine pine tree 3D environment foliage asset",
-        "pt": "Modelo 3D de pinheiro alpino low-poly estilizado para cenários"
+        "en": "Stylized water & foam shader real-time WebGL preview with animated wave displacement and caustics",
+        "pt": "Pré-visualização em tempo real do shader de água estilizada e espuma com ondas e cáusticas animadas"
       },
       "title": {
-        "en": "Low-Poly Alpine Pine Tree",
-        "pt": "Pinheiro Alpino Low-Poly"
+        "en": "Stylized Water & Foam Shader",
+        "pt": "Shader de Água Estilizada e Espuma"
       },
       "description": {
-        "en": "Stylized alpine coniferous evergreen tree featuring faceted needle canopy tiers and a twisted bark trunk.",
-        "pt": "Árvore conífera perene alpina estilizada com camadas facetadas de agulhas e tronco com textura de casca retorcida."
+        "en": "Depth-based caustic refraction, shore foam masks, and Gerstner-inspired vertex wave displacement for real-time stylized bodies of water.",
+        "pt": "Refração cáustica baseada em profundidade, máscaras de espuma costeira e deslocamento de vértices estilo Gerstner para superfícies aquáticas em tempo real."
       },
-      "category": "environment",
+      "category": "shaders",
       "license": "CC0 1.0 Universal",
-      "polycount": "1,940 tris",
-      "formats": ["BLEND", "GLB", "FBX"],
-      "mesh_type": "tree",
+      "specs": "GLSL / URP · 48 instr",
+      "pipeline": "Custom Shader / Real-Time WebGL",
+      "formats": ["SHADER", "GLSL", "UNITYPACKAGE"],
+      "effect_type": "water",
       "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
       "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "pine-tree-pack.zip"
+      "download_file": "stylized-water-shader-pack.zip"
     },
     {
-      "id": "runic-broadsword",
+      "id": "subsurface-spark-particles",
+      "url": "/assets/models/lantern.jpg",
+      "alt": {
+        "en": "Subsurface emissive spark particle system orbiting an illuminated arcane crystal core",
+        "pt": "Sistema de partículas e faíscas emissoras a orbitar um núcleo cristalino iluminado"
+      },
+      "title": {
+        "en": "Subsurface Emissive Spark Particles",
+        "pt": "Partículas e Faíscas Emissoras"
+      },
+      "description": {
+        "en": "GPU-simulated floating ambient motes and magical crystal spark particles with Fresnel subsurface glow reacting to dynamic lighting vectors.",
+        "pt": "Partículas mágicas de cristais e poeiras atmosféricas simuladas em GPU com brilho subsuperficial Fresnel reativo à luz."
+      },
+      "category": "particles",
+      "license": "CC0 1.0 Universal",
+      "specs": "GPU Points · 230 motes",
+      "pipeline": "Additive Particle System",
+      "formats": ["VFX", "GLSL", "BLEND"],
+      "effect_type": "sparks",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "subsurface-spark-particles-pack.zip"
+    },
+    {
+      "id": "procedural-edge-wear",
       "url": "/assets/models/chest.jpg",
       "alt": {
-        "en": "Double-edged knight runic broadsword weapon 3D model",
-        "pt": "Modelo 3D de espada larga rúnica de cavaleiro com gume duplo"
+        "en": "Procedural weathering and edge wear shader showing metallic scratches and crevice grime",
+        "pt": "Shader procedimental de desgaste de arestas com riscos metálicos e sujidade nas cavidades"
       },
       "title": {
-        "en": "Knight Runic Broadsword",
-        "pt": "Espada Larga Rúnica de Cavaleiro"
+        "en": "Procedural Weathering & Edge Wear Node",
+        "pt": "Nó Procedimental de Desgaste de Arestas"
       },
       "description": {
-        "en": "Double-edged high fantasy broadsword with etched glowing runes, winged crossguard, wrapped leather grip, and round pommel.",
-        "pt": "Espada larga de alta fantasia com gume duplo, runas luminosas gravadas, guarda alada, punho de couro e pomo circular."
+        "en": "Curvature-driven edge erosion, 3D procedural noise masking, and cavity grime shading built for game-ready hard-surface props.",
+        "pt": "Erosão de arestas orientada por curvatura, ruído procedimental 3D e oclusão de sujidade para adereços de superfícies duras."
       },
-      "category": "props",
+      "category": "procedural",
       "license": "CC0 1.0 Universal",
-      "polycount": "2,760 tris",
-      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
-      "mesh_type": "sword",
+      "specs": "3D Noise · 64 instr",
+      "pipeline": "Procedural Node / GLSL",
+      "formats": ["SBSAR", "BLEND", "GLSL"],
+      "effect_type": "edgewear",
       "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
       "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "runic-sword-pack.zip"
+      "download_file": "procedural-edge-wear-pack.zip"
     },
     {
-      "id": "weathered-wood-barrel",
-      "url": "/assets/models/chest.jpg",
-      "alt": {
-        "en": "Medieval weathered timber oak barrel prop 3D model",
-        "pt": "Modelo 3D de barril de carvalho medieval desgastado"
-      },
-      "title": {
-        "en": "Vintage Oak Storage Barrel",
-        "pt": "Barris de Armazenamento em Carvalho"
-      },
-      "description": {
-        "en": "Bulged timber stave barrel bound with four oxidized iron bands and tap bung, textured with authentic grain knots.",
-        "pt": "Barril de aduelas de madeira abauladas cintado com quatro aros de ferro oxidado e batoque, texturado com veios de madeira."
-      },
-      "category": "props",
-      "license": "CC0 1.0 Universal",
-      "polycount": "2,380 tris",
-      "formats": ["BLEND", "GLB", "FBX", "OBJ"],
-      "mesh_type": "barrel",
-      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
-      "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "vintage-barrel-pack.zip"
-    },
-    {
-      "id": "hover-recon-speeder",
+      "id": "holographic-forcefield",
       "url": "/assets/models/drone.jpg",
       "alt": {
-        "en": "Aerodynamic futuristic hover recon speeder bike 3D vehicle model",
-        "pt": "Modelo 3D de veículo planador hover speeder de reconhecimento"
+        "en": "Holographic hexagonal energy forcefield shield shader with Fresnel rim and animated scanlines",
+        "pt": "Shader de campo de força holográfico hexagonal com contorno Fresnel e linhas de varrimento"
       },
       "title": {
-        "en": "Aero Recon Speeder",
-        "pt": "Speeder Aéreo de Reconhecimento"
+        "en": "Holographic Hex Forcefield Shield",
+        "pt": "Escudo Holográfico Hexagonal"
       },
       "description": {
-        "en": "Low-altitude aerodynamic hover vehicle chassis with twin repulsor pods, tinted canopy, and dual rear thruster nacelles.",
-        "pt": "Chassi de veículo planador aerodinâmico de baixa altitude com cápsulas propulsoras duplas e naceles de escape traseiras."
+        "en": "Translucent sci-fi energy barrier shader combining animated scanning pulses, geometric lattice patterns, and high-contrast Fresnel silhouettes.",
+        "pt": "Barreira energética translúcida de ficção científica com pulsos animados de varrimento, malha geométrica e silhueta Fresnel."
       },
-      "category": "hard-surface",
+      "category": "shaders",
       "license": "CC0 1.0 Universal",
-      "polycount": "7,450 tris",
-      "formats": ["BLEND", "GLB", "FBX"],
-      "mesh_type": "speeder",
+      "specs": "Fresnel PBR · 42 instr",
+      "pipeline": "Alpha-Blended Shader",
+      "formats": ["SHADER", "GLSL", "UNITYPACKAGE"],
+      "effect_type": "forcefield",
       "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
       "download_url": "/assets/models/sofia-3d-sample-package.zip",
-      "download_file": "recon-speeder-pack.zip"
+      "download_file": "holographic-forcefield-pack.zip"
+    },
+    {
+      "id": "arcane-portal-vortex",
+      "url": "/assets/models/lantern.jpg",
+      "alt": {
+        "en": "Arcane portal energy vortex shader with swirling spiral disc and orbiting particle motes",
+        "pt": "Shader de vórtice energético de portal arcano com disco em espiral e partículas em órbita"
+      },
+      "title": {
+        "en": "Arcane Portal Energy Vortex",
+        "pt": "Vórtice de Portal Arcano"
+      },
+      "description": {
+        "en": "Swirling polar-coordinate portal vortex shader framed inside a runed stone ring with inward-spiraling glowing energy particles.",
+        "pt": "Shader de vórtice em coordenadas polares emoldurado por um anel rúnico de pedra com partículas luminosas em espiral."
+      },
+      "category": "particles",
+      "license": "CC0 1.0 Universal",
+      "specs": "Polar UV · 80 motes",
+      "pipeline": "Hybrid Shader + Particles",
+      "formats": ["VFX", "GLSL", "BLEND"],
+      "effect_type": "portal",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "arcane-portal-vortex-pack.zip"
+    },
+    {
+      "id": "cel-toon-crystal",
+      "url": "/assets/models/lantern.jpg",
+      "alt": {
+        "en": "Cel-shaded toon shader with stepped lighting bands, specular highlight, and ink outline",
+        "pt": "Shader cel-shaded toon com bandas de luz discretas, reflexo especular e contorno a tinta"
+      },
+      "title": {
+        "en": "Cel-Shaded Toon Rim Shader",
+        "pt": "Shader Cel-Shaded Toon com Contorno"
+      },
+      "description": {
+        "en": "Non-photorealistic stepped cel-shading pipeline featuring crisp shadow quantization, inverted-hull ink outlines, and vibrant cyan rim highlights.",
+        "pt": "Pipeline de sombreamento não-fotorrealista em degraus com quantização nítida de sombras, contorno de tinta e brilho lateral ciano."
+      },
+      "category": "shaders",
+      "license": "CC0 1.0 Universal",
+      "specs": "NPR Cel · 36 instr",
+      "pipeline": "Stylized NPR Shader",
+      "formats": ["SHADER", "GLSL", "BLEND"],
+      "effect_type": "toon",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "cel-toon-shader-pack.zip"
+    },
+    {
+      "id": "volumetric-fire-plume",
+      "url": "/assets/models/chest.jpg",
+      "alt": {
+        "en": "Stylized ember and fire plume particle VFX rising from a dark iron brazier",
+        "pt": "Efeito visual de chamas estilizadas e brasas ascendentes sobre braseiro metálico"
+      },
+      "title": {
+        "en": "Stylized Ember & Fire Plume VFX",
+        "pt": "Pluma de Fogo e Brasas Estilizada"
+      },
+      "description": {
+        "en": "Layered vertex-animated flame cones paired with rising incandescent ember particles and temperature gradient color ramping.",
+        "pt": "Cones de chama em camadas com animação de vértices combinados com partículas incandescentes ascendentes e gradiente térmico."
+      },
+      "category": "particles",
+      "license": "CC0 1.0 Universal",
+      "specs": "Vertex VFX · 75 embers",
+      "pipeline": "Shader + GPU Embers",
+      "formats": ["VFX", "GLSL", "UNITYPACKAGE"],
+      "effect_type": "fire",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "volumetric-fire-plume-pack.zip"
+    },
+    {
+      "id": "dissolve-disintegration",
+      "url": "/assets/models/drone.jpg",
+      "alt": {
+        "en": "Triplanar dissolve and glowing burn edge procedural shader disintegrating a geometric shell",
+        "pt": "Shader procedimental de dissolução triplanar com borda incandescente a desintegrar uma cápsula"
+      },
+      "title": {
+        "en": "Triplanar Dissolve & Burn Edge Shader",
+        "pt": "Shader de Dissolução Triplanar Incandescente"
+      },
+      "description": {
+        "en": "Animated procedural cutoff threshold shader revealing an incandescent magenta-to-gold burn edge across any arbitrary mesh topology.",
+        "pt": "Shader procedimental com limiar animado de corte que revela uma borda incandescente magenta e dourada sobre qualquer malha."
+      },
+      "category": "procedural",
+      "license": "CC0 1.0 Universal",
+      "specs": "Triplanar · 52 instr",
+      "pipeline": "Procedural Alpha Clip",
+      "formats": ["SHADER", "GLSL", "BLEND"],
+      "effect_type": "dissolve",
+      "sketchfab_url": "https://sketchfab.com/sofias3dcontent/models",
+      "download_url": "/assets/models/sofia-3d-sample-package.zip",
+      "download_file": "dissolve-burn-edge-pack.zip"
     }
   ]
 }
