@@ -23,6 +23,8 @@ export const translations = {
     'nav.effects': 'Effects',
     'nav.video_editing': 'Video Editing',
     'nav.image_editing': 'Image Editing',
+    'nav.edited_images': 'Edited Images',
+    'nav.free_templates': 'Free Templates',
     'nav.photography_projects': 'Photography Projects',
     'nav.analogic': 'Analogic',
     'nav.digital': 'Digital',
@@ -483,7 +485,30 @@ export const translations = {
     'imageediting.og_desc': 'Photo retouching, color manipulation, compositing, and visual post-production studies by Sofia.',
     'imageediting.section_tag': 'Digital Projects · Image Editing',
     'imageediting.title': 'Image Editing',
-    'imageediting.subtitle': 'Photo retouching, color manipulation, compositing, and expressive visual post-production studies.'
+    'imageediting.subtitle': 'Photo retouching, color manipulation, compositing, and expressive visual post-production studies.',
+
+    // Edited Images Page (edited-images.html)
+    'editedimages.meta_title': 'Edited Images — Sofia',
+    'editedimages.meta_desc': 'Photo retouching, color manipulation, compositing, and expressive edited image studies by Sofia.',
+    'editedimages.og_title': 'Edited Images — Sofia',
+    'editedimages.og_desc': 'Photo retouching, color manipulation, compositing, and expressive edited image studies by Sofia.',
+    'editedimages.section_tag': 'Digital Projects · Image Editing / Edited Images',
+    'editedimages.title': 'Edited Images',
+    'editedimages.subtitle': 'Photo retouching, color manipulation, compositing, and expressive visual post-production studies.',
+
+    // Free Templates Page (free-templates.html)
+    'freetemplates.meta_title': 'Free Templates — Sofia',
+    'freetemplates.meta_desc': 'Free downloadable graphic mockups and templates for shirts, objects, books, and editorial layouts by Sofia.',
+    'freetemplates.og_title': 'Free Templates — Sofia',
+    'freetemplates.og_desc': 'Free downloadable graphic mockups and templates for shirts, objects, books, and editorial layouts by Sofia.',
+    'freetemplates.section_tag': 'Digital Projects · Image Editing / Free Templates',
+    'freetemplates.title': 'Free Templates',
+    'freetemplates.subtitle': 'Free editable graphic mockups and design templates organized for shirts, objects, books, and visual layouts.',
+    'freetemplates.filter_all': 'All Templates',
+    'freetemplates.filter_shirts': 'Shirts',
+    'freetemplates.filter_objects': 'Objects',
+    'freetemplates.filter_books': 'Books',
+    'freetemplates.active_label': 'Category:'
   },
 
   pt: {
@@ -504,6 +529,8 @@ export const translations = {
     'nav.effects': 'Efeitos',
     'nav.video_editing': 'Edição de Vídeo',
     'nav.image_editing': 'Edição de Imagem',
+    'nav.edited_images': 'Imagens Editadas',
+    'nav.free_templates': 'Templates Gratuitos',
     'nav.photography_projects': 'Projetos de Fotografia',
     'nav.analogic': 'Analógica',
     'nav.digital': 'Digital',
@@ -964,7 +991,30 @@ export const translations = {
     'imageediting.og_desc': 'Retoque fotográfico, manipulação de cor, composição e estudos de pós-produção visual por Sofia.',
     'imageediting.section_tag': 'Projetos Digitais · Edição de Imagem',
     'imageediting.title': 'Edição de Imagem',
-    'imageediting.subtitle': 'Retoque fotográfico, manipulação de cor, composição e estudos expressivos de pós-produção visual.'
+    'imageediting.subtitle': 'Retoque fotográfico, manipulação de cor, composição e estudos expressivos de pós-produção visual.',
+
+    // Edited Images Page (edited-images.html)
+    'editedimages.meta_title': 'Imagens Editadas — Sofia',
+    'editedimages.meta_desc': 'Retoque fotográfico, manipulação de cor, composição e estudos de imagens editadas por Sofia.',
+    'editedimages.og_title': 'Imagens Editadas — Sofia',
+    'editedimages.og_desc': 'Retoque fotográfico, manipulação de cor, composição e estudos de imagens editadas por Sofia.',
+    'editedimages.section_tag': 'Projetos Digitais · Edição de Imagem / Imagens Editadas',
+    'editedimages.title': 'Imagens Editadas',
+    'editedimages.subtitle': 'Retoque fotográfico, manipulação de cor, composição e estudos expressivos de pós-produção visual.',
+
+    // Free Templates Page (free-templates.html)
+    'freetemplates.meta_title': 'Templates Gratuitos — Sofia',
+    'freetemplates.meta_desc': 'Maquetes gráficas e templates editáveis gratuitos para camisolas, objetos, livros e composições visuais por Sofia.',
+    'freetemplates.og_title': 'Templates Gratuitos — Sofia',
+    'freetemplates.og_desc': 'Maquetes gráficas e templates editáveis gratuitos para camisolas, objetos, livros e composições visuais por Sofia.',
+    'freetemplates.section_tag': 'Projetos Digitais · Edição de Imagem / Templates Gratuitos',
+    'freetemplates.title': 'Templates Gratuitos',
+    'freetemplates.subtitle': 'Maquetes gráficas e templates editáveis gratuitos organizados para camisolas, objetos, livros e composições visuais.',
+    'freetemplates.filter_all': 'Todos os Templates',
+    'freetemplates.filter_shirts': 'Camisolas',
+    'freetemplates.filter_objects': 'Objetos',
+    'freetemplates.filter_books': 'Livros',
+    'freetemplates.active_label': 'Categoria:'
   }
 };
 

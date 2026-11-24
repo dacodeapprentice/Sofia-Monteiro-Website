@@ -19,7 +19,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
     if (path.includes('instagram')) return 'instagram';
     if (path.includes('social-media')) return 'social-media';
     if (path.includes('contact')) return 'contact';
-    if (path.includes('digital') || path.includes('3d') || path.includes('video') || path.includes('models') || path.includes('effects') || path.includes('image')) return 'digital-projects';
+    if (path.includes('digital') || path.includes('3d') || path.includes('video') || path.includes('models') || path.includes('effects') || path.includes('image') || path.includes('edited-images') || path.includes('free-templates')) return 'digital-projects';
     if (path.includes('photo') || path.includes('analog') || path.includes('analogic')) return 'photography-projects';
     return 'home';
   }
@@ -190,7 +190,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
             <div
               id="digital-projects-menu"
               role="menu"
-              class="absolute top-full left-0 mt-2 w-48 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-50 hidden"
+              class="absolute top-full left-0 mt-2 w-52 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-50 hidden"
             >
               <!-- 3D Item (Name only, with submenu that opens to the right) -->
               <div class="relative group/dp3d" id="digital-projects-sub-3d">
@@ -285,17 +285,56 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                 <span class="font-title text-sm tracking-tight" data-i18n="nav.video_editing">Video Editing</span>
               </a>
 
-              <!-- Image Editing Item -->
-              <a
-                href="image-editing.html"
-                role="menuitem"
-                class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all ${path.includes('image-editing') ? 'bg-[#121e2b] text-emerald-300 font-medium' : ''}"
-              >
-                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <span class="font-title text-sm tracking-tight" data-i18n="nav.image_editing">Image Editing</span>
-              </a>
+              <!-- Image Editing Item (Title only, with submenu opening to the right) -->
+              <div class="relative group/dpimg" id="digital-projects-sub-img">
+                <div
+                  role="button"
+                  tabindex="0"
+                  id="digital-projects-img-trigger"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="flex items-center justify-between w-full px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] group-hover/dpimg:bg-[#121e2b] group-hover/dpimg:text-white group-hover/dpimg:rounded-r-none group-hover/dpimg:-mr-1.5 group-hover/dpimg:pr-3 cursor-pointer transition-all ${path.includes('edited-images') || path.includes('free-templates') || path.includes('image-editing') ? 'bg-[#121e2b] text-emerald-300 font-medium' : ''}"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span class="font-title text-sm tracking-tight" data-i18n="nav.image_editing">Image Editing</span>
+                  </div>
+                  <svg class="w-3.5 h-3.5 text-slate-400 group-hover/dpimg:text-emerald-300 group-hover/dpimg:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+
+                <!-- Submenu Opening to the Right: Edited Images & Free Templates -->
+                <div
+                  id="image-editing-submenu"
+                  role="menu"
+                  class="absolute left-full top-0 ml-0 w-48 rounded-xl bg-[#0c1520]/95 backdrop-blur-xl border border-teal-900/60 shadow-2xl p-1.5 z-[51] hidden group-hover/dpimg:block focus-within:block before:absolute before:-left-3 before:top-0 before:bottom-0 before:w-3 before:content-['']"
+                >
+                  <a
+                    href="edited-images.html"
+                    role="menuitem"
+                    class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all ${path.includes('edited-images') ? 'bg-[#121e2b] text-emerald-300 font-medium' : ''}"
+                  >
+                    <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span class="font-title text-sm tracking-tight" data-i18n="nav.edited_images">Edited Images</span>
+                  </a>
+
+                  <a
+                    href="free-templates.html"
+                    role="menuitem"
+                    class="group/item flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#121e2b] transition-all ${path.includes('free-templates') ? 'bg-[#121e2b] text-cyan-300 font-medium' : ''}"
+                  >
+                    <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+                    </svg>
+                    <span class="font-title text-sm tracking-tight" data-i18n="nav.free_templates">Free Templates</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -646,13 +685,41 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
                   <span class="font-title text-sm tracking-tight" data-i18n="nav.video_editing">Video Editing</span>
                 </a>
 
-                <!-- Image Editing -->
-                <a href="image-editing.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all ${path.includes('image-editing') ? 'bg-[#0f1924] text-emerald-300 font-medium' : ''}">
-                  <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  <span class="font-title text-sm tracking-tight" data-i18n="nav.image_editing">Image Editing</span>
-                </a>
+                <!-- Image Editing Accordion -->
+                <div>
+                  <button
+                    type="button"
+                    id="drawer-imgedit-accordion-btn"
+                    class="w-full flex items-center justify-between px-3 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-colors cursor-pointer"
+                    aria-expanded="${path.includes('edited-images') || path.includes('free-templates') || path.includes('image-editing') ? 'true' : 'false'}"
+                  >
+                    <div class="flex items-center gap-2.5">
+                      <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                      <span class="font-title text-sm tracking-tight" data-i18n="nav.image_editing">Image Editing</span>
+                    </div>
+                    <svg id="drawer-imgedit-chevron" class="w-3.5 h-3.5 text-slate-400 transition-transform duration-200 ${path.includes('edited-images') || path.includes('free-templates') || path.includes('image-editing') ? 'rotate-180 text-emerald-400' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+
+                  <div id="drawer-imgedit-sublist" class="pl-4 pr-1 pt-1 space-y-1 ${path.includes('edited-images') || path.includes('free-templates') || path.includes('image-editing') ? '' : 'hidden'}">
+                    <a href="edited-images.html" class="flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all ${path.includes('edited-images') ? 'bg-[#0f1924] text-emerald-300 font-medium' : ''}">
+                      <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                      <span class="font-title text-sm tracking-tight" data-i18n="nav.edited_images">Edited Images</span>
+                    </a>
+
+                    <a href="free-templates.html" class="flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-[#0f1924] transition-all ${path.includes('free-templates') ? 'bg-[#0f1924] text-cyan-300 font-medium' : ''}">
+                      <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+                      </svg>
+                      <span class="font-title text-sm tracking-tight" data-i18n="nav.free_templates">Free Templates</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -748,7 +815,7 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
               <span class="text-slate-600">·</span>
               <a href="video-editing.html" class="font-title text-sm ${path.includes('video-editing') ? 'text-teal-300 font-medium' : 'text-slate-400 hover:text-teal-300'} transition-colors" data-i18n="nav.video_editing">Video Editing</a>
               <span class="text-slate-600">·</span>
-              <a href="image-editing.html" class="font-title text-sm ${path.includes('image-editing') ? 'text-teal-300 font-medium' : 'text-slate-400 hover:text-teal-300'} transition-colors" data-i18n="nav.image_editing">Image Editing</a>
+              <span class="font-title text-sm text-slate-400"><span data-i18n="nav.image_editing">Image Editing</span> (<a href="edited-images.html" class="hover:text-teal-300 transition-colors ${path.includes('edited-images') ? 'text-teal-300 font-medium' : ''}"><span data-i18n="nav.edited_images">Edited Images</span></a>, <a href="free-templates.html" class="hover:text-teal-300 transition-colors ${path.includes('free-templates') ? 'text-teal-300 font-medium' : ''}"><span data-i18n="nav.free_templates">Free Templates</span></a>)</span>
             </div>
             <div class="flex items-center gap-3">
               <span class="font-title text-xs uppercase tracking-wider text-teal-400/80 font-semibold" data-i18n="footer.photo_label">Photography Projects:</span>
@@ -989,12 +1056,16 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
     const dpAssetsSubmenu = document.getElementById('assets-submenu');
     const dpAssetsTrigger = document.getElementById('digital-projects-assets-trigger');
     const dpAssetsChildrenSubmenu = document.getElementById('assets-children-submenu');
+    const dpImgTrigger = document.getElementById('digital-projects-img-trigger');
+    const dpImgSubmenu = document.getElementById('image-editing-submenu');
 
     let dpCloseTimer = null;
     let dp3dCloseTimer = null;
     let dpAssetsCloseTimer = null;
+    let dpImgCloseTimer = null;
 
     function activate3D() {
+      deactivateImageEditing();
       if (dpCloseTimer) {
         clearTimeout(dpCloseTimer);
         dpCloseTimer = null;
@@ -1063,6 +1134,42 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
       }, 250);
     }
 
+    function activateImageEditing() {
+      deactivate3D();
+      if (dpCloseTimer) {
+        clearTimeout(dpCloseTimer);
+        dpCloseTimer = null;
+      }
+      if (dpImgCloseTimer) {
+        clearTimeout(dpImgCloseTimer);
+        dpImgCloseTimer = null;
+      }
+      if (dpImgSubmenu) dpImgSubmenu.classList.remove('hidden');
+      if (dpImgTrigger) {
+        dpImgTrigger.setAttribute('aria-expanded', 'true');
+        dpImgTrigger.classList.add('bg-[#121e2b]', 'text-white', 'rounded-r-none', '-mr-1.5', 'pr-3', 'ring-1', 'ring-emerald-500/30');
+      }
+    }
+
+    function deactivateImageEditing() {
+      if (dpImgCloseTimer) {
+        clearTimeout(dpImgCloseTimer);
+        dpImgCloseTimer = null;
+      }
+      if (dpImgSubmenu) dpImgSubmenu.classList.add('hidden');
+      if (dpImgTrigger) {
+        dpImgTrigger.setAttribute('aria-expanded', 'false');
+        dpImgTrigger.classList.remove('bg-[#121e2b]', 'text-white', 'rounded-r-none', '-mr-1.5', 'pr-3', 'ring-1', 'ring-emerald-500/30');
+      }
+    }
+
+    function scheduleDeactivateImageEditing() {
+      if (dpImgCloseTimer) clearTimeout(dpImgCloseTimer);
+      dpImgCloseTimer = setTimeout(() => {
+        deactivateImageEditing();
+      }, 250);
+    }
+
     function openDigitalProjects() {
       if (dpCloseTimer) clearTimeout(dpCloseTimer);
       if (dpMenu) dpMenu.classList.remove('hidden');
@@ -1074,8 +1181,10 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
       if (dpCloseTimer) clearTimeout(dpCloseTimer);
       if (dp3dCloseTimer) clearTimeout(dp3dCloseTimer);
       if (dpAssetsCloseTimer) clearTimeout(dpAssetsCloseTimer);
+      if (dpImgCloseTimer) clearTimeout(dpImgCloseTimer);
       if (dpMenu) dpMenu.classList.add('hidden');
       deactivate3D();
+      deactivateImageEditing();
       if (dpBtn) dpBtn.setAttribute('aria-expanded', 'false');
       if (dpChevron) dpChevron.classList.remove('rotate-180', 'text-teal-400');
     }
@@ -1143,6 +1252,24 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
       if (dpAssetsWrapper) {
         dpAssetsWrapper.addEventListener('mouseenter', activateAssets);
         dpAssetsWrapper.addEventListener('mouseleave', scheduleDeactivateAssets);
+      }
+    }
+
+    if (dpImgTrigger && dpImgSubmenu) {
+      dpImgTrigger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const isHidden = dpImgSubmenu.classList.contains('hidden');
+        if (isHidden) {
+          activateImageEditing();
+        } else {
+          deactivateImageEditing();
+        }
+      });
+
+      const dpImgWrapper = document.getElementById('digital-projects-sub-img');
+      if (dpImgWrapper) {
+        dpImgWrapper.addEventListener('mouseenter', activateImageEditing);
+        dpImgWrapper.addEventListener('mouseleave', scheduleDeactivateImageEditing);
       }
     }
 
@@ -1305,6 +1432,26 @@ import { applyTranslations, bindToggleEvents, updateToggles } from '/shared/i18n
           drawerAssetsSublist.classList.add('hidden');
           drawerAssetsBtn.setAttribute('aria-expanded', 'false');
           if (drawerAssetsChevron) drawerAssetsChevron.classList.remove('rotate-180', 'text-emerald-400');
+        }
+      });
+    }
+
+    const drawerImgeditBtn = document.getElementById('drawer-imgedit-accordion-btn');
+    const drawerImgeditSublist = document.getElementById('drawer-imgedit-sublist');
+    const drawerImgeditChevron = document.getElementById('drawer-imgedit-chevron');
+
+    if (drawerImgeditBtn && drawerImgeditSublist) {
+      drawerImgeditBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const isHidden = drawerImgeditSublist.classList.contains('hidden');
+        if (isHidden) {
+          drawerImgeditSublist.classList.remove('hidden');
+          drawerImgeditBtn.setAttribute('aria-expanded', 'true');
+          if (drawerImgeditChevron) drawerImgeditChevron.classList.add('rotate-180', 'text-emerald-400');
+        } else {
+          drawerImgeditSublist.classList.add('hidden');
+          drawerImgeditBtn.setAttribute('aria-expanded', 'false');
+          if (drawerImgeditChevron) drawerImgeditChevron.classList.remove('rotate-180', 'text-emerald-400');
         }
       });
     }
