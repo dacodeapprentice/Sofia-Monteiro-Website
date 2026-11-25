@@ -24,7 +24,7 @@ export const translations = {
     'nav.video_editing': 'Video Editing',
     'nav.image_editing': 'Image Editing',
     'nav.edited_images': 'Edited Images',
-    'nav.free_templates': 'Free Templates',
+    'nav.free_mockups': 'Free Mockups',
     'nav.photography_projects': 'Photography Projects',
     'nav.analogic': 'Analogic',
     'nav.digital': 'Digital',
@@ -496,19 +496,19 @@ export const translations = {
     'editedimages.title': 'Edited Images',
     'editedimages.subtitle': 'Photo retouching, color manipulation, compositing, and expressive visual post-production studies.',
 
-    // Free Templates Page (free-templates.html)
-    'freetemplates.meta_title': 'Free Templates — Sofia',
-    'freetemplates.meta_desc': 'Free downloadable graphic mockups and templates for shirts, objects, books, and editorial layouts by Sofia.',
-    'freetemplates.og_title': 'Free Templates — Sofia',
-    'freetemplates.og_desc': 'Free downloadable graphic mockups and templates for shirts, objects, books, and editorial layouts by Sofia.',
-    'freetemplates.section_tag': 'Digital Projects · Image Editing / Free Templates',
-    'freetemplates.title': 'Free Templates',
-    'freetemplates.subtitle': 'Free editable graphic mockups and design templates organized for shirts, objects, books, and visual layouts.',
-    'freetemplates.filter_all': 'All Templates',
-    'freetemplates.filter_shirts': 'Shirts',
-    'freetemplates.filter_objects': 'Objects',
-    'freetemplates.filter_books': 'Books',
-    'freetemplates.active_label': 'Category:'
+    // Free Mockups Page (free-mockups.html)
+    'freemockups.meta_title': 'Free Mockups — Sofia',
+    'freemockups.meta_desc': 'Free downloadable graphic mockups for shirts, objects, books, and editorial layouts by Sofia.',
+    'freemockups.og_title': 'Free Mockups — Sofia',
+    'freemockups.og_desc': 'Free downloadable graphic mockups for shirts, objects, books, and editorial layouts by Sofia.',
+    'freemockups.section_tag': 'Digital Projects · Image Editing / Free Mockups',
+    'freemockups.title': 'Free Mockups',
+    'freemockups.subtitle': 'Free editable graphic mockups organized for shirts, objects, books, and visual layouts.',
+    'freemockups.filter_all': 'All Mockups',
+    'freemockups.filter_shirts': 'Shirts',
+    'freemockups.filter_objects': 'Objects',
+    'freemockups.filter_books': 'Books',
+    'freemockups.active_label': 'Category:'
   },
 
   pt: {
@@ -530,7 +530,7 @@ export const translations = {
     'nav.video_editing': 'Edição de Vídeo',
     'nav.image_editing': 'Edição de Imagem',
     'nav.edited_images': 'Imagens Editadas',
-    'nav.free_templates': 'Templates Gratuitos',
+    'nav.free_mockups': 'Mockups Gratuitos',
     'nav.photography_projects': 'Projetos de Fotografia',
     'nav.analogic': 'Analógica',
     'nav.digital': 'Digital',
@@ -1002,19 +1002,19 @@ export const translations = {
     'editedimages.title': 'Imagens Editadas',
     'editedimages.subtitle': 'Retoque fotográfico, manipulação de cor, composição e estudos expressivos de pós-produção visual.',
 
-    // Free Templates Page (free-templates.html)
-    'freetemplates.meta_title': 'Templates Gratuitos — Sofia',
-    'freetemplates.meta_desc': 'Maquetes gráficas e templates editáveis gratuitos para camisolas, objetos, livros e composições visuais por Sofia.',
-    'freetemplates.og_title': 'Templates Gratuitos — Sofia',
-    'freetemplates.og_desc': 'Maquetes gráficas e templates editáveis gratuitos para camisolas, objetos, livros e composições visuais por Sofia.',
-    'freetemplates.section_tag': 'Projetos Digitais · Edição de Imagem / Templates Gratuitos',
-    'freetemplates.title': 'Templates Gratuitos',
-    'freetemplates.subtitle': 'Maquetes gráficas e templates editáveis gratuitos organizados para camisolas, objetos, livros e composições visuais.',
-    'freetemplates.filter_all': 'Todos os Templates',
-    'freetemplates.filter_shirts': 'Camisolas',
-    'freetemplates.filter_objects': 'Objetos',
-    'freetemplates.filter_books': 'Livros',
-    'freetemplates.active_label': 'Categoria:'
+    // Free Mockups Page (free-mockups.html)
+    'freemockups.meta_title': 'Mockups Gratuitos — Sofia',
+    'freemockups.meta_desc': 'Mockups gráficos editáveis gratuitos para camisolas, objetos, livros e composições visuais por Sofia.',
+    'freemockups.og_title': 'Mockups Gratuitos — Sofia',
+    'freemockups.og_desc': 'Mockups gráficos editáveis gratuitos para camisolas, objetos, livros e composições visuais por Sofia.',
+    'freemockups.section_tag': 'Projetos Digitais · Edição de Imagem / Mockups Gratuitos',
+    'freemockups.title': 'Mockups Gratuitos',
+    'freemockups.subtitle': 'Mockups gráficos editáveis gratuitos organizados para camisolas, objetos, livros e composições visuais.',
+    'freemockups.filter_all': 'Todos os Mockups',
+    'freemockups.filter_shirts': 'Camisolas',
+    'freemockups.filter_objects': 'Objetos',
+    'freemockups.filter_books': 'Livros',
+    'freemockups.active_label': 'Categoria:'
   }
 };
 

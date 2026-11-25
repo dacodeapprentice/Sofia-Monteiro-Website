@@ -77,7 +77,7 @@ export default defineConfig(() => {
           videoediting: path.resolve(rootDir, 'video-editing.html'),
           imageediting: path.resolve(rootDir, 'image-editing.html'),
           editedimages: path.resolve(rootDir, 'edited-images.html'),
-          freetemplates: path.resolve(rootDir, 'free-templates.html'),
+          freemockups: path.resolve(rootDir, 'free-mockups.html'),
         },
       },
     },
